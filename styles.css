@@ -207,7 +207,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 }
 .nav__col { width: 220px; display: flex; align-items: center; }
 .nav__col--right { justify-content: flex-end; gap: 16px; }
-.nav__logo img { width: 114px; height: 24px; }
+.nav__logo img { width: 114px; height: 24px; transition: opacity .25s ease; }
+.nav__logo:hover img, .nav__logo:focus-visible img { opacity: .5; }
 .nav__links { display: flex; align-items: center; gap: 40px; }
 .nav__links a {
   display: inline-flex;
@@ -776,6 +777,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
    Content sits inside the 120px frame used by the hero
    ========================================================= */
 .footer { background: var(--foundation); color: var(--skyline); overflow: hidden; }
+.footer .btn--white-border { --arrow-color: var(--foundation); }
 .footer__inner { position: relative; max-width: 1440px; margin: 0 auto; padding: 0 120px; }
 
 .footer__guides { position: absolute; inset: 0; pointer-events: none; }
@@ -803,7 +805,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   padding-top: 120px;
 }
 .footer__brand { width: 360px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
-.footer__logo img { width: 114px; height: 24px; }
+.footer__logo img { width: 114px; height: 24px; transition: opacity .25s ease; }
+.footer__logo:hover img, .footer__logo:focus-visible img { opacity: .5; }
 .footer__tagline { font-size: 15px; line-height: 1.6; letter-spacing: .02em; color: var(--skyline); opacity: .8; }
 
 .footer__nav { display: flex; gap: 80px; }
@@ -826,7 +829,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   display: flex;
   align-items: center;
 }
-.footer__mark img { width: 100%; height: auto; opacity: .08; }
+.footer__mark img { width: 100%; height: auto; opacity: .08; transition: opacity .25s ease; }
+.footer__mark:hover img { opacity: .5; }
 
 .footer__bottom {
   display: flex;
@@ -1048,5 +1052,6 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 @media (prefers-reduced-motion: reduce) {
   .ticker__track { animation: none; }
   .btn__icon::before, .btn__icon::after { transition-duration: .01s; }
+  .nav__logo img, .footer__logo img, .footer__mark img { transition-duration: .01s; }
   .menu, .menu__list li, .menu__footer, .burger span { transition-duration: .01s !important; transition-delay: 0s !important; }
 }
