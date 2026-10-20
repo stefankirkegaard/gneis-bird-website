@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platform - Bird</title>
+  <meta name="description" content="Explore the Bird platform: drawings, AI insights, field capture and collaboration tools connected in one source of truth.">
+  <link rel="icon" href="assets/logos/bird-mark-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=35">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero hero--page hero--no-ticker">
+    <div class="hero__inner">
+    <div class="hero__guides" aria-hidden="true">
+      <span class="g g--h g--top"></span>
+      <span class="g g--h pg--h"></span>
+      <span class="g g--v pg--v1"></span>
+      <span class="g g--v pg--v2"></span>
+      <span class="g g--v pg--v3"></span>
+      <span class="g g--v pg--v4"></span>
+      <span class="xmark px--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+    </div>
+
+    <nav class="nav">
+      <div class="nav__col">
+        <a class="nav__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+      </div>
+      <ul class="nav__links">
+        <li><a href="platform.html" aria-current="page"><img src="assets/icons/nav-chevron.svg" width="4.5" height="7.5" alt="">Platform</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="journal.html">Journal</a></li>
+      </ul>
+      <div class="nav__col nav__col--right">
+        <button class="nav__lang" type="button">
+          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
+          <span>EN</span>
+          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+        </button>
+        <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </nav>
+
+    <div class="page-hero">
+      <div class="page-hero__text">
+        <h1 class="hero__title">Every drawing, update <br>and decision in one place</h1>
+        <p class="page-hero__lead">Bird plugs into how your teams already work, so changes, risks and timeline impact are clear from the office to the site.</p>
+      </div>
+    </div>
+
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__inner" aria-label="Mobile">
+      <p class="kicker kicker--foundation menu__kicker">Menu</p>
+      <ul class="menu__list">
+          <li style="--i:0"><a href="platform.html" aria-current="page"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:1"><a href="#"><span class="menu__idx">02</span><span class="menu__label">Pricing</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:2"><a href="about.html"><span class="menu__idx">03</span><span class="menu__label">About</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:3"><a href="contact.html"><span class="menu__idx">04</span><span class="menu__label">Contact</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:4"><a href="journal.html"><span class="menu__idx">05</span><span class="menu__label">Journal</span></a></li>
+      </ul>
+      <div class="menu__footer">
+        <a class="btn btn--m btn--charcoal" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <a class="menu__mail" href="mailto:inquiry@getbird.io">inquiry@getbird.io</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ============ DIRECTORY ============ -->
+    <section class="directory" data-filter="feature" aria-label="Platform features">
+      <div class="directory__bar">
+        <div class="tabs" role="group" aria-label="Filter by category">
+          <button class="tab" type="button" data-category="all" aria-pressed="true">All</button>
+          <button class="tab" type="button" data-category="drawings" aria-pressed="false">Drawings</button>
+          <button class="tab" type="button" data-category="ai" aria-pressed="false">AI</button>
+          <button class="tab" type="button" data-category="field" aria-pressed="false">Field</button>
+          <button class="tab" type="button" data-category="collaboration" aria-pressed="false">Collaboration</button>
+        </div>
+        <p class="directory__count" aria-live="polite">12 features</p>
+      </div>
+
+      <div class="directory__grid">
+        <!-- Drawings -->
+        <article class="feature feature--drawings" id="live-project-views" data-category="drawings">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7v2h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg></span>
+            <div><h3 class="feature__name">Live project views</h3><p class="feature__meta">Drawings</p></div>
+          </div>
+          <p class="feature__text">Review drawings on site, in the office, or on the go, always in sync. Available on desktop, iPad, and mobile.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--drawings" id="plan-intelligence" data-category="drawings">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1" stroke-linejoin="round"><path d="M2.5 6 7.5 3.5V18l-5 2.5z"/><path d="m9.5 3.5 5 2.5v14.5l-5-2.5z"/><path d="m16.5 6 5-2.5V18l-5 2.5z"/></g></svg></span>
+            <div><h3 class="feature__name">Plan intelligence</h3><p class="feature__meta">Drawings</p></div>
+          </div>
+          <p class="feature__text">Zoom, layer, and explore your drawings with clarity. Turn complex plans into something everyone can follow.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--drawings" id="measure-annotate" data-category="drawings">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 3.6a2.6 2.6 0 0 1 3.7 0l1.1 1.1a2.6 2.6 0 0 1 0 3.7L9.2 19.6a1 1 0 0 1-.46.26l-4.5 1.13a1 1 0 0 1-1.21-1.21L4.14 15.3a1 1 0 0 1 .26-.47z"/><rect x="13" y="19" width="8" height="2" rx="1"/></svg></span>
+            <div><h3 class="feature__name">Measure and annotate</h3><p class="feature__meta">Drawings</p></div>
+          </div>
+          <p class="feature__text">Measure instantly and annotate anywhere. Mark up plans directly and share notes with the right people.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <!-- AI -->
+        <article class="feature feature--ai" id="ai-project-insights" data-category="ai">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 2.5a.7.7 0 0 1 .66.46l1.62 4.36a1 1 0 0 0 .6.6l4.36 1.62a.7.7 0 0 1 0 1.32l-4.36 1.62a1 1 0 0 0-.6.6l-1.62 4.36a.7.7 0 0 1-1.32 0l-1.62-4.36a1 1 0 0 0-.6-.6L3.76 10.86a.7.7 0 0 1 0-1.32l4.36-1.62a1 1 0 0 0 .6-.6l1.62-4.36A.7.7 0 0 1 11 2.5z"/><path d="M19 13.5a.5.5 0 0 1 .47.33l.68 1.85a1 1 0 0 0 .6.6l1.85.68a.5.5 0 0 1 0 .94l-1.85.68a1 1 0 0 0-.6.6l-.68 1.85a.5.5 0 0 1-.94 0l-.68-1.85a1 1 0 0 0-.6-.6l-1.85-.68a.5.5 0 0 1 0-.94l1.85-.68a1 1 0 0 0 .6-.6l.68-1.85A.5.5 0 0 1 19 13.5z"/></svg></span>
+            <div><h3 class="feature__name">AI project insights</h3><p class="feature__meta">AI</p></div>
+          </div>
+          <p class="feature__text">Know what changed, where it changed, and what it means - without digging through drawings.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--ai" id="ai-assistant" data-category="ai">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5 3h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8.4l-3.75 3.2A1 1 0 0 1 3 19.44V5a2 2 0 0 1 2-2zm3 7.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zm4 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zm4 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5z"/></svg></span>
+            <div><h3 class="feature__name">Bird AI Assistant</h3><p class="feature__meta">AI</p></div>
+          </div>
+          <p class="feature__text">Ask questions in plain language and get instant answers to what changed, why it matters, and what to do next.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--ai" id="change-overview" data-category="ai">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="12" width="4.5" height="9" rx="1.5"/><rect x="9.75" y="7" width="4.5" height="14" rx="1.5"/><rect x="16.5" y="3" width="4.5" height="18" rx="1.5"/></svg></span>
+            <div><h3 class="feature__name">Project change overview</h3><p class="feature__meta">AI</p></div>
+          </div>
+          <p class="feature__text">Get a real-time view of changes, risks, and timeline impact - all in one place, with early risk identification.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <!-- Field -->
+        <article class="feature feature--field" id="site-capture" data-category="field">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M9.2 3h5.6a2 2 0 0 1 1.66.89l1.07 1.61H20a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8.5a3 3 0 0 1 3-3h2.47l1.07-1.61A2 2 0 0 1 9.2 3zM12 9a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/><circle cx="12" cy="13" r="2.2"/></svg></span>
+            <div><h3 class="feature__name">Site capture</h3><p class="feature__meta">Field</p></div>
+          </div>
+          <p class="feature__text">Capture progress directly from the field, attach updates to drawings, and keep office teams aligned in real time.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--field" id="issue-tracking" data-category="field">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5a1 1 0 0 1 1 1v.3c.9-.4 2-.8 3.5-.8 1.6 0 2.8.5 3.9 1 1.1.4 2 .8 3.4.8 1.6 0 2.7-.5 3.1-.8a1 1 0 0 1 1.6.8v11.2a1 1 0 0 1-.4.8c-.6.5-2.1 1.2-4.3 1.2-1.6 0-2.8-.5-3.9-1-1.1-.4-2-.8-3.4-.8-1.6 0-2.8.5-3.5.8v5.5a1 1 0 0 1-2 0v-18a1 1 0 0 1 1-1z"/></svg></span>
+            <div><h3 class="feature__name">Issue tracking</h3><p class="feature__meta">Field</p></div>
+          </div>
+          <p class="feature__text">Mark issues on site with photos attached, so the right people see them before they slow down delivery.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--field" id="mobile-app" data-category="field">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5h8a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3v-15a3 3 0 0 1 3-3zm2.5 16.5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z"/></svg></span>
+            <div><h3 class="feature__name">iOS and Android apps</h3><p class="feature__meta">Field</p></div>
+          </div>
+          <p class="feature__text">Built for where the work actually happens. Keep projects moving without friction, right from your pocket.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <!-- Collaboration -->
+        <article class="feature feature--collaboration" id="shared-timeline" data-category="collaboration">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="11" height="4" rx="2"/><rect x="7" y="10" width="14" height="4" rx="2"/><rect x="5" y="16" width="9" height="4" rx="2"/></svg></span>
+            <div><h3 class="feature__name">Shared project timeline</h3><p class="feature__meta">Collaboration</p></div>
+          </div>
+          <p class="feature__text">Every update, decision, drawing revision, and conversation stays linked to the project timeline.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--collaboration" id="team-alignment" data-category="collaboration">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7.5" r="4"/><path d="M2 19.5a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v.5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/><circle cx="17" cy="8.5" r="3"/><path d="M17.6 13.5A4.6 4.6 0 0 1 22 18.1V20a1 1 0 0 1-1 1h-3.2c.13-.32.2-.65.2-1v-.5a7.9 7.9 0 0 0-2.4-5.7c.6-.2 1.3-.3 2-.3z"/></svg></span>
+            <div><h3 class="feature__name">Team and stakeholder alignment</h3><p class="feature__meta">Collaboration</p></div>
+          </div>
+          <p class="feature__text">Keep everyone aligned as changes happen - from architects to contractors, without endless emails or meetings.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="feature feature--collaboration" id="approvals" data-category="collaboration">
+          <div class="feature__head">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm4.7 7.2a1 1 0 0 0-1.4-1.4l-4.8 4.8-1.8-1.8a1 1 0 0 0-1.4 1.4l2.5 2.5a1 1 0 0 0 1.4 0z"/></svg></span>
+            <div><h3 class="feature__name">Approvals and change tracking</h3><p class="feature__meta">Collaboration</p></div>
+          </div>
+          <p class="feature__text">Track technical clarifications, approvals, and specification changes without chasing documents.</p>
+          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+        </article>
+      </div>
+
+      <div class="directory__empty" hidden>
+        <p class="h3">No features found</p>
+        <p class="body">Browse all categories to see every feature.</p>
+        <button class="btn btn--s btn--blueprint-border directory__reset" type="button">Show all<span class="btn__icon" aria-hidden="true"></span></button>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="cta__card">
+        <div class="cta__content">
+          <div class="heading">
+            <p class="kicker kicker--skyline">Get started</p>
+            <div class="heading__body">
+              <h2 class="h2 h2--light">From scattered updates <br>to real project clarity</h2>
+              <p class="body cta__body">Get flying with Bird within 48 hours or less. Book a demo and see how changes affect progress over time.</p>
+            </div>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--m btn--white" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--m btn--white-border" href="about.html">About Bird<span class="btn__icon" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        <div class="cta__media">
+          <img src="assets/img/card-glass.webp" width="1128" height="560" alt="Curved glass facade">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__guides" aria-hidden="true">
+        <span class="g g--v fg--v1"></span>
+        <span class="g g--v fg--v2"></span>
+        <span class="g g--v fg--v3"></span>
+        <span class="g g--v fg--v4"></span>
+        <span class="g g--h fg--h1"></span>
+        <span class="g g--h fg--h2"></span>
+        <span class="xmark fx--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      </div>
+
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+          <p class="footer__tagline">Visualize projects. Collaborate better. Build faster. Drawings, updates and decisions connected for every team on site.</p>
+          <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer">
+          <div class="footer__col">
+            <p class="footer__head">Platform</p>
+            <ul>
+              <li><a href="platform.html#live-project-views">Live project views</a></li>
+              <li><a href="platform.html#shared-timeline">Visual workflows</a></li>
+              <li><a href="platform.html#plan-intelligence">Plan intelligence</a></li>
+              <li><a href="platform.html#site-capture">Site visualization</a></li>
+              <li><a href="platform.html#ai-project-insights">AI project insights</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__head">Company</p>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="journal.html">Journal</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__head">Get in touch</p>
+            <ul>
+              <li><a href="mailto:inquiry@getbird.io">inquiry@getbird.io</a></li>
+              <li><a href="#">iOS app</a></li>
+              <li><a href="#">Android app</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__mark" aria-hidden="true">
+        <img src="assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Bird. All rights reserved.</p>
+        <ul class="footer__legal">
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+        <button class="nav__lang footer__lang" type="button">
+          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
+          <span>EN</span>
+          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=6" defer></script>
+</body>
+</html>
