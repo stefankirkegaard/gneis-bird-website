@@ -1936,12 +1936,14 @@ select.input:invalid, select.input:has(option[value=""]:checked) { color: var(--
 .language__menu[hidden] { display: none; }
 .language__menu a { display: flex; align-items: center; justify-content: space-between; padding: 12px; border-radius: 6px; font-size: 14px; color: var(--charcoal); opacity: 1; }
 .language__menu a:hover, .language__menu a:focus-visible { background: var(--gray-50); }
-.language__menu a[aria-current="true"] { background: var(--ice-blue); color: var(--blueprint); }
+.language__menu a[aria-current="true"] { background: var(--gray-50); color: var(--charcoal); }
 .language__code { font-size: 11px; color: var(--ash); }
 .language.is-open .nav__lang-chev { transform: rotate(-90deg); }
 .language--footer .language__menu { top: auto; bottom: calc(100% + 12px); }
 .hero:has(.language.is-open) { overflow: visible; z-index: 105; }
-.contact__embed { min-width: 0; }
+.contact__card#form { scroll-margin-top: 24px; }
+/* Match Pipedrive's 480px form width so its internal auto margins stay left aligned. */
+.contact__embed { min-width: 0; width: 100%; max-width: 480px; align-self: flex-start; }
 .contact__embed .pipedriveWebForms { min-height: 560px; }
 .contact__embed iframe { display: block; width: 100%; border: 0; }
 .form-embed-fallback { margin-top: 16px; font-size: 14px; line-height: 1.6; color: var(--graphite); }
@@ -1955,7 +1957,6 @@ select.input:invalid, select.input:has(option[value=""]:checked) { color: var(--
   .nav .btn--white-border { font-size: 12px; }
   .contact__embed .pipedriveWebForms { min-height: 620px; }
   .contact__card:has(.contact__embed) { padding-inline: 12px; }
-  .contact__card:has(.contact__embed) > .heading { padding-inline: 12px; }
 }
 @media (max-width: 380px) {
   .nav .btn--white-border { display: none; }
