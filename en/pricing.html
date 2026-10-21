@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing - Bird</title>
+  <meta name="description" content="Find the right Bird plan for your team. Compare drawings, field collaboration, project insights and support across Starter, Team and Enterprise.">
+  <link rel="icon" href="/assets/logos/bird-mark-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/styles.css?v=60">
+  <link rel="alternate" hreflang="da" href="/pricing.html">
+  <link rel="alternate" hreflang="en" href="/en/pricing.html">
+  <link rel="alternate" hreflang="x-default" href="/pricing.html">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero hero--page hero--no-ticker hero--light hero--pricing">
+    <div class="hero__inner">
+    <div class="hero__guides" aria-hidden="true">
+      <span class="g g--h g--top"></span>
+      <span class="g g--v pg--v1"></span>
+      <span class="g g--v pg--v4"></span>
+    </div>
+
+    <nav class="nav">
+      <div class="nav__col">
+        <a class="nav__logo" href="/en/index.html" aria-label="Bird home"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+      </div>
+      <ul class="nav__links">
+        <li><a href="/en/platform.html">Platform</a></li>
+        <li><a href="/en/pricing.html" aria-current="page"><img src="/assets/icons/nav-chevron.svg" width="4.5" height="7.5" alt="">Pricing</a></li>
+        <li><a href="/en/about.html">About</a></li>
+        <li><a href="/en/contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__col nav__col--right">
+        <div class="language">
+          <button class="nav__lang" type="button" aria-label="Change language: English" aria-expanded="false" aria-controls="language-header">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>EN</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-header" hidden>
+            <li><a href="/pricing.html" lang="da" hreflang="da" data-language="da"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/pricing.html" lang="en" hreflang="en" data-language="en" aria-current="true"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
+        <a class="btn btn--s btn--white-border" href="/en/contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </nav>
+
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__inner" aria-label="Mobile">
+      <p class="kicker kicker--foundation menu__kicker">Menu</p>
+      <ul class="menu__list">
+          <li style="--i:0"><a href="/en/platform.html"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:1"><a href="/en/pricing.html" aria-current="page"><span class="menu__idx">02</span><span class="menu__label">Pricing</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:2"><a href="/en/about.html"><span class="menu__idx">03</span><span class="menu__label">About</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:3"><a href="/en/contact.html"><span class="menu__idx">04</span><span class="menu__label">Contact</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      </ul>
+      <div class="menu__footer">
+        <a class="btn btn--m btn--charcoal" href="/en/contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <a class="menu__mail" href="mailto:inquiry@getbird.io">inquiry@getbird.io</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="pricing-page" data-pricing>
+    <section class="pricing-overview" aria-labelledby="pricing-title">
+      <div class="pricing-intro">
+        <p class="kicker kicker--foundation">Pricing</p>
+        <h1 class="hero__title" id="pricing-title">Good plans.<br>Better projects.</h1>
+        <p class="body">From your first drawing to your entire portfolio.<br> Find the right Bird for the way you build.</p>
+      </div>
+      <div class="pricing-billing">
+        <div class="billing-switch" role="group" aria-label="Billing period">
+          <button type="button" data-billing="month" aria-pressed="false">Monthly</button>
+          <button type="button" data-billing="year" aria-pressed="true">Yearly</button>
+        </div>
+        <p class="pricing-billing__note">All prices in EUR, excluding VAT.</p>
+      </div>
+      <div class="pricing-plans">
+        <article class="plan-card plan-card--starter" aria-labelledby="plan-starter">
+          <div class="plan-card__top"><span class="plan-card__symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="plan-card__eyebrow">Get started</span></div>
+          <div><h2 id="plan-starter">Starter</h2><p class="plan-card__description">For small teams getting organized.</p></div>
+          <div class="plan-card__pricing"><div class="plan-card__amount"><span class="price-value">€<span data-price-month="30" data-price-year="24">24</span></span><span class="price-unit">/ user / month</span></div><p class="plan-card__billing" data-billing-year="€288 per user, billed yearly" data-billing-month="Billed monthly. Change plans anytime.">€288 per user, billed yearly</p></div>
+          <a class="btn btn--m btn--foundation-border plan-card__cta" href="/en/contact.html?plan=starter#form">Choose Starter<span class="btn__icon" aria-hidden="true"></span></a>
+          <ul class="plan-card__features"><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 active projects</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>100 GB of shared storage</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Drawings, markups and measurements</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Field notes and photo capture</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Unlimited guest viewers</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Email support</span></li></ul>
+          <a class="plan-card__compare" href="#compare-plans">Compare all features<span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="plan-card plan-card--team" aria-labelledby="plan-team">
+          <div class="plan-card__top"><span class="plan-card__symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="plan-card__badge">Most popular</span></div>
+          <div><h2 id="plan-team">Team</h2><p class="plan-card__description">For teams building better, together.</p></div>
+          <div class="plan-card__pricing"><div class="plan-card__amount"><span class="price-value">€<span data-price-month="60" data-price-year="48">48</span></span><span class="price-unit">/ user / month</span></div><p class="plan-card__billing" data-billing-year="€576 per user, billed yearly" data-billing-month="Billed monthly. Change plans anytime.">€576 per user, billed yearly</p></div>
+          <a class="btn btn--m btn--charcoal plan-card__cta" href="/en/contact.html?plan=team#form">Choose Team<span class="btn__icon" aria-hidden="true"></span></a>
+          <ul class="plan-card__features"><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Unlimited active projects</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 TB of shared storage</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Everything in Starter</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Drawing comparisons and approvals</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>AI project insights</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Priority support</span></li></ul>
+          <a class="plan-card__compare" href="#compare-plans">Compare all features<span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="plan-card plan-card--enterprise" aria-labelledby="plan-enterprise">
+          <div class="plan-card__top"><span class="plan-card__symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="plan-card__eyebrow">Scale with confidence</span></div>
+          <div><h2 id="plan-enterprise">Enterprise</h2><p class="plan-card__description">For a connected project portfolio.</p></div>
+          <div class="plan-card__pricing"><div class="plan-card__amount"><span class="price-value price-value--custom">Let’s talk</span></div><p class="plan-card__billing">A plan shaped around your organization.</p></div>
+          <a class="btn btn--m btn--foundation-border plan-card__cta" href="/en/contact.html?plan=enterprise#form">Talk to us<span class="btn__icon" aria-hidden="true"></span></a>
+          <ul class="plan-card__features"><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Everything in Team</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Flexible storage and team sizes</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Single sign-on and advanced roles</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Custom integrations and API access</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Dedicated success manager</span></li><li><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guided rollout and training</span></li></ul>
+          <a class="plan-card__compare" href="#compare-plans">Compare all features<span aria-hidden="true">↓</span></a>
+        </article>
+      </div>
+      <p class="pricing-overview__footnote">Every plan brings your office and site together. <a href="/en/contact.html#form">Let’s find your fit<span aria-hidden="true"> ↗</span></a></p>
+      <p class="visually-hidden" data-billing-status role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="pricing-comparison" id="compare-plans" aria-labelledby="comparison-title" data-compare-plan="team">
+      <div class="comparison-intro"><div><p class="kicker kicker--foundation">The details</p><h2 class="h2" id="comparison-title">See what’s included.</h2></div><p class="body">One connected workspace.<br> The right tools for every stage.</p></div>
+      <div class="compare-mobile" role="group" aria-label="Plan to compare"><button type="button" data-compare="starter" aria-pressed="false">Starter</button><button type="button" data-compare="team" aria-pressed="true">Team</button><button type="button" data-compare="enterprise" aria-pressed="false">Enterprise</button></div>
+      <table class="compare-table">
+        <caption class="visually-hidden">Bird plan features and pricing</caption>
+        <colgroup><col class="compare-label-col"><col data-plan="starter"><col data-plan="team"><col data-plan="enterprise"></colgroup>
+        <thead><tr><th scope="col" class="compare-label-head"><span>Find your fit</span><div class="billing-switch billing-switch--small" role="group" aria-label="Comparison billing period"><button type="button" data-billing="month" aria-pressed="false">Monthly</button><button type="button" data-billing="year" aria-pressed="true">Yearly</button></div></th><th scope="col" data-plan="starter"><span class="compare-plan-name">Starter</span><div class="compare-plan-price"><span class="price-value">€<span data-price-month="30" data-price-year="24">24</span></span><span class="price-unit">/ user / month</span></div><a class="btn btn--s btn--foundation-border" href="/en/contact.html?plan=starter#form">Choose Starter<span class="btn__icon" aria-hidden="true"></span></a></th><th scope="col" data-plan="team"><span class="compare-plan-name">Team</span><div class="compare-plan-price"><span class="price-value">€<span data-price-month="60" data-price-year="48">48</span></span><span class="price-unit">/ user / month</span></div><a class="btn btn--s btn--charcoal" href="/en/contact.html?plan=team#form">Choose Team<span class="btn__icon" aria-hidden="true"></span></a></th><th scope="col" data-plan="enterprise"><span class="compare-plan-name">Enterprise</span><div class="compare-plan-price"><span>Custom pricing</span></div><a class="btn btn--s btn--foundation-border" href="/en/contact.html?plan=enterprise#form">Talk to us<span class="btn__icon" aria-hidden="true"></span></a></th></tr></thead>
+<tbody aria-labelledby="compare-group-0"><tr class="compare-group"><th id="compare-group-0" scope="rowgroup" colspan="4">Project essentials</th></tr>
+<tr><th scope="row">Active projects</th><td data-plan="starter">3</td><td data-plan="team">Unlimited</td><td data-plan="enterprise">Unlimited</td></tr>
+<tr><th scope="row">Shared storage</th><td data-plan="starter">100 GB</td><td data-plan="team">1 TB</td><td data-plan="enterprise">Custom</td></tr>
+<tr><th scope="row">Guest viewers</th><td data-plan="starter">Unlimited</td><td data-plan="team">Unlimited</td><td data-plan="enterprise">Unlimited</td></tr>
+<tr><th scope="row">Drawing viewer and markups</th><td data-plan="starter"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">Version history</th><td data-plan="starter">90 days</td><td data-plan="team">Unlimited</td><td data-plan="enterprise">Unlimited</td></tr>
+<tr><th scope="row">Offline access on mobile</th><td data-plan="starter"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+</tbody>
+<tbody aria-labelledby="compare-group-1"><tr class="compare-group"><th id="compare-group-1" scope="rowgroup" colspan="4">Teamwork, on site and off</th></tr>
+<tr><th scope="row">Field notes and photo capture</th><td data-plan="starter"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">Tasks and issue tracking</th><td data-plan="starter"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">Drawing comparisons</th><td data-plan="starter"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">Review and approval workflows</th><td data-plan="starter"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">Cross-project dashboards</th><td data-plan="starter"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+</tbody>
+<tbody aria-labelledby="compare-group-2"><tr class="compare-group"><th id="compare-group-2" scope="rowgroup" colspan="4">Intelligence and integrations</th></tr>
+<tr><th scope="row">AI project questions</th><td data-plan="starter">25 / month</td><td data-plan="team">500 / month</td><td data-plan="enterprise">Custom</td></tr>
+<tr><th scope="row">Automated change detection</th><td data-plan="starter"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">IFC, BCF and PDF support</th><td data-plan="starter"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="team"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">Custom integrations and API</th><td data-plan="starter"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="team"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+</tbody>
+<tbody aria-labelledby="compare-group-3"><tr class="compare-group"><th id="compare-group-3" scope="rowgroup" colspan="4">Control and support</th></tr>
+<tr><th scope="row">User roles and permissions</th><td data-plan="starter">Basic</td><td data-plan="team">Advanced</td><td data-plan="enterprise">Custom</td></tr>
+<tr><th scope="row">Single sign-on (SSO)</th><td data-plan="starter"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="team"><span class="price-unavailable" aria-hidden="true">—</span><span class="visually-hidden">Not included</span></td><td data-plan="enterprise"><svg class="price-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden">Included</span></td></tr>
+<tr><th scope="row">Activity and audit logs</th><td data-plan="starter">30 days</td><td data-plan="team">1 year</td><td data-plan="enterprise">Unlimited</td></tr>
+<tr><th scope="row">Support</th><td data-plan="starter">Email</td><td data-plan="team">Priority</td><td data-plan="enterprise">Dedicated team</td></tr>
+<tr><th scope="row">Onboarding</th><td data-plan="starter">Self-guided</td><td data-plan="team">Team session</td><td data-plan="enterprise">Tailored rollout</td></tr>
+</tbody>
+      </table>
+    </section>
+    <section class="pricing-help"><div><p class="kicker kicker--foundation">A little guidance?</p><h2 class="h3">We’ll find the right plan together.</h2><p class="body">Tell us about your team and what you’re building.</p></div><a class="btn btn--m btn--charcoal" href="/en/contact.html#form">Book a demo<span class="btn__icon" aria-hidden="true"></span></a></section>
+    <section class="faq">
+      <div class="faq__inner">
+        <div class="heading faq__heading"><p class="kicker kicker--foundation">A few answers</p><div class="heading__body"><h2 class="h2">Good questions.<br>Clear answers.</h2><p class="body">Still wondering about something?<br><a href="/en/contact.html#form">Talk to our team.</a></p></div></div>
+        <div class="faq__list"><details class="faq__item" open><summary>Can I try Bird before choosing a plan?<span class="faq__icon" aria-hidden="true"></span></summary><p class="body">Of course. Book a demo and we’ll walk through your workflow, set up a sample project and help you find the right fit.</p></details><details class="faq__item" ><summary>Can I change plans as my team grows?<span class="faq__icon" aria-hidden="true"></span></summary><p class="body">Yes. Move between Starter and Team as your needs change. If you’re coordinating multiple teams or a larger portfolio, we’ll help you shape an Enterprise plan.</p></details><details class="faq__item" ><summary>Do guests need a paid seat?<span class="faq__icon" aria-hidden="true"></span></summary><p class="body">No. Guest viewers can open shared drawings and follow project updates. Team members who create, edit and manage work need a paid seat.</p></details><details class="faq__item" ><summary>What happens to finished projects?<span class="faq__icon" aria-hidden="true"></span></summary><p class="body">Archive completed projects to keep your workspace tidy. Your drawings, decisions and project history stay available when you need them.</p></details><details class="faq__item" ><summary>Can you help us get our team set up?<span class="faq__icon" aria-hidden="true"></span></summary><p class="body">Absolutely. Team includes a guided onboarding session. Enterprise adds a tailored rollout, training and a dedicated person to help you along the way.</p></details></div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__guides" aria-hidden="true">
+        <span class="g g--v fg--v1"></span>
+        <span class="g g--v fg--v2"></span>
+        <span class="g g--v fg--v3"></span>
+        <span class="g g--v fg--v4"></span>
+        <span class="g g--h fg--h1"></span>
+        <span class="g g--h fg--h2"></span>
+        <span class="xmark fx--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      </div>
+
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="footer__logo" href="/en/index.html" aria-label="Bird home"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+          <p class="footer__tagline">Visualize projects. Collaborate better. Meet deadlines. Drawings, updates and decisions connected for every team on site.</p>
+          <a class="btn btn--s btn--white-border" href="/en/contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer">
+          <div class="footer__col">
+            <p class="footer__head">Platform</p>
+            <ul>
+              <li><a href="/en/platform.html#live-project-views">Live project views</a></li>
+              <li><a href="/en/platform.html#shared-timeline">Visual workflows</a></li>
+              <li><a href="/en/platform.html#plan-intelligence">Plan intelligence</a></li>
+              <li><a href="/en/platform.html#site-capture">Site visualization</a></li>
+              <li><a href="/en/platform.html#ai-project-insights">AI project insights</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__head">Company</p>
+            <ul>
+              <li><a href="/en/about.html">About</a></li>
+              <li><a href="/en/pricing.html">Pricing</a></li>
+              <li><a href="/en/journal.html">Journal</a></li>
+              <li><a href="/en/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__head">Get in touch</p>
+            <ul>
+              <li><a href="mailto:inquiry@getbird.io">inquiry@getbird.io</a></li>
+              <li><a href="#">iOS app</a></li>
+              <li><a href="#">Android app</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__mark" aria-hidden="true">
+        <img src="/assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Bird. All rights reserved.</p>
+        <ul class="footer__legal">
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+        <div class="language language--footer">
+          <button class="nav__lang footer__lang" type="button" aria-label="Change language: English" aria-expanded="false" aria-controls="language-footer">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>EN</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-footer" hidden>
+            <li><a href="/pricing.html" lang="da" hreflang="da" data-language="da"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/pricing.html" lang="en" hreflang="en" data-language="en" aria-current="true"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=10" defer></script>
+  <script src="/navigation.js?v=3" defer></script>
+</body>
+</html>

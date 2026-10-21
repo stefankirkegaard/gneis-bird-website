@@ -1,15 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bird - Visualize projects. Collaborate better. Build faster.</title>
-  <meta name="description" content="Bird keeps drawings, updates, approvals and field communication connected between every stakeholder in construction delivery.">
-  <link rel="icon" href="assets/logos/bird-mark-dark.png">
+  <title>Bird – Visualisér projekter. Samarbejd bedre. Overhold tidsfrister.</title>
+  <meta name="description" content="Bird samler tegninger, opdateringer, godkendelser og kommunikation fra byggepladsen for alle involverede i byggeriet.">
+  <link rel="icon" href="/assets/logos/bird-mark-dark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=35">
+  <link rel="stylesheet" href="/styles.css?v=60">
+  <link rel="alternate" hreflang="da" href="/index.html">
+  <link rel="alternate" hreflang="en" href="/en/index.html">
+  <link rel="alternate" hreflang="x-default" href="/index.html">
 </head>
 <body>
 
@@ -25,68 +28,70 @@
       <span class="g g--v g--v3"></span>
       <span class="g g--v g--v4"></span>
       <span class="g g--v g--v5"></span>
-      <span class="xmark xmark--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark xmark--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark xmark--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark xmark--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark xmark--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark xmark--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark xmark--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark xmark--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
     </div>
 
     <nav class="nav">
       <div class="nav__col">
-        <a class="nav__logo" href="#" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+        <a class="nav__logo" href="#" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
       </div>
       <ul class="nav__links">
-        <li><a href="platform.html"><img src="assets/icons/nav-chevron.svg" width="4.5" height="7.5" alt="">Platform</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="journal.html">Journal</a></li>
+        <li><a href="/platform.html">Platform</a></li>
+        <li><a href="/pricing.html">Priser</a></li>
+        <li><a href="/about.html">Om os</a></li>
+        <li><a href="/contact.html">Kontakt</a></li>
       </ul>
       <div class="nav__col nav__col--right">
-        <button class="nav__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
-        <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
-        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+        <div class="language">
+          <button class="nav__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-header">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-header" hidden>
+            <li><a href="/index.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/index.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
+        <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
       </div>
     </nav>
 
     <div class="hero__content">
       <div class="hero__text">
-        <h1 class="hero__title">Visualize projects. <br>Collaborate better. <br>Build faster.</h1>
-        <p class="hero__lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        <h1 class="hero__title">Visualisér projekter. <br>Samarbejd bedre. <br>Overhold tidsfrister.</h1>
+        <p class="hero__lead">Lorem Ipsum er en standardtekst, der bruges i tryk- og satsindustrien. Lorem Ipsum har længe været branchens foretrukne eksempeltekst.</p>
       </div>
-      <a class="btn btn--m btn--charcoal" href="#">Get started<span class="btn__icon" aria-hidden="true"></span></a>
+      <a class="btn btn--m btn--charcoal" href="#">Kom i gang<span class="btn__icon" aria-hidden="true"></span></a>
     </div>
 
     <div class="ticker">
       <div class="ticker__track">
-        <p>Digital Blueprints • Smart Plans • Live Project Views • Visual Workflows • Plan Intelligence • Site Visualization • Real-Time Drawings • Connected Projects • Interactive Plans • Measure Instantly • Annotate Anywhere • Sync in Real Time • Share with Teams •&nbsp;</p>
-        <p aria-hidden="true">Digital Blueprints • Smart Plans • Live Project Views • Visual Workflows • Plan Intelligence • Site Visualization • Real-Time Drawings • Connected Projects • Interactive Plans • Measure Instantly • Annotate Anywhere • Sync in Real Time • Share with Teams •&nbsp;</p>
+        <p>Digitale tegninger • Intelligente planer • Live projektoverblik • Visuelle arbejdsgange • Tegningsindsigt • Visualisering af byggepladsen • Tegninger i realtid • Forbundne projekter • Interaktive planer • Mål med det samme • Tilføj noter overalt • Synkronisér i realtid • Del med teamet • </p>
+        <p aria-hidden="true">Digitale tegninger • Intelligente planer • Live projektoverblik • Visuelle arbejdsgange • Tegningsindsigt • Visualisering af byggepladsen • Tegninger i realtid • Forbundne projekter • Interaktive planer • Mål med det samme • Tilføj noter overalt • Synkronisér i realtid • Del med teamet • </p>
       </div>
     </div>
 
     <div class="hero__media">
-      <img src="assets/img/hero-architecture.webp" width="720" height="720" alt="White parametric facade of a modern building against a blue sky">
+      <img src="/assets/img/hero-architecture.webp" width="720" height="720" alt="Hvid parametrisk facade på en moderne bygning mod en blå himmel">
     </div>
     </div>
   </header>
 
   <!-- ============ MOBILE MENU ============ -->
   <div class="menu" id="menu" aria-hidden="true">
-    <nav class="menu__inner" aria-label="Mobile">
+    <nav class="menu__inner" aria-label="Mobilnavigation">
       <p class="kicker kicker--foundation menu__kicker">Menu</p>
       <ul class="menu__list">
-          <li style="--i:0"><a href="platform.html"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:1"><a href="#"><span class="menu__idx">02</span><span class="menu__label">Pricing</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:2"><a href="about.html"><span class="menu__idx">03</span><span class="menu__label">About</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:3"><a href="contact.html"><span class="menu__idx">04</span><span class="menu__label">Contact</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:4"><a href="journal.html"><span class="menu__idx">05</span><span class="menu__label">Journal</span></a></li>
+          <li style="--i:0"><a href="/platform.html"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:1"><a href="/pricing.html"><span class="menu__idx">02</span><span class="menu__label">Priser</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:2"><a href="/about.html"><span class="menu__idx">03</span><span class="menu__label">Om os</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:3"><a href="/contact.html"><span class="menu__idx">04</span><span class="menu__label">Kontakt</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
       </ul>
       <div class="menu__footer">
-        <a class="btn btn--m btn--charcoal" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <a class="btn btn--m btn--charcoal" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         <a class="menu__mail" href="mailto:inquiry@getbird.io">inquiry@getbird.io</a>
       </div>
     </nav>
@@ -99,53 +104,53 @@
       <div class="heading heading--center">
         <p class="kicker kicker--foundation">Platform</p>
         <div class="heading__body">
-          <h2 class="h2">Clarity from first draft <br>to final build</h2>
-          <p class="body body--center">Access your drawings anywhere, collaborate with your team, and keep every detail up to date, without the back and forth.</p>
+          <h2 class="h2">Overblik fra første skitse <br>til færdigt byggeri</h2>
+          <p class="body body--center">Tilgå dine tegninger overalt, samarbejd med dit team, og hold alle detaljer opdateret uden unødige omveje.</p>
         </div>
       </div>
 
       <div class="bento">
         <div class="bento__row bento__row--3">
           <article class="card card--gray">
-            <img class="card__phone" src="assets/img/card-phone.webp" alt="Bird app icon on an iPhone home screen">
+            <img class="card__phone" src="/assets/img/card-phone.webp" alt="Bird-appikon på en iPhones hjemmeskærm">
             <div class="card__content card__content--wide">
-              <h3 class="card__title">Works wherever you do</h3>
-              <p class="card__text">Review drawings on site, in the office, or on the go, always in sync. Available on desktop, iPad, and mobile.</p>
+              <h3 class="card__title">Fungerer, hvor du arbejder</h3>
+              <p class="card__text">Gennemgå tegninger på byggepladsen, på kontoret eller på farten – altid synkroniseret. Tilgængelig på computer, iPad og mobil.</p>
             </div>
           </article>
 
           <article class="card card--mint">
             <div class="card__content">
-              <h3 class="card__title">Understand every detail</h3>
-              <p class="card__text">Zoom, layer, and explore your drawings with clarity. Turn complex plans into something everyone can follow.</p>
+              <h3 class="card__title">Forstå hver eneste detalje</h3>
+              <p class="card__text">Zoom ind, arbejd med lag, og få overblik over dine tegninger. Gør komplekse planer lette at forstå for alle.</p>
             </div>
-            <img class="card__walls" src="assets/img/card-walls.webp" alt="3D model of a floor plan">
+            <img class="card__walls" src="/assets/img/card-walls.webp" alt="3D-model af en plantegning">
           </article>
 
           <article class="card card--lilac">
             <div class="card__content">
-              <h3 class="card__title">AI project insights</h3>
-              <p class="card__text">Know what changed, where it changed, and what it means - without digging through drawings.</p>
+              <h3 class="card__title">AI-projektindsigt</h3>
+              <p class="card__text">Se, hvad der er ændret, hvor det er ændret, og hvad det betyder – uden at lede i bunker af tegninger.</p>
             </div>
             <div class="ai" aria-hidden="true">
-              <div class="ai__ask"><p>Tell me about ventilation in L3, technical shaft and include relevant documents</p></div>
+              <div class="ai__ask"><p>Fortæl mig om ventilationen på etage 3 i installationsskakten, og medtag relevante dokumenter</p></div>
               <div class="ai__answer">
-                <span class="ai__chip"><img src="assets/icons/icon-sparkles.svg" width="13.6533" height="13.6533" alt="">Bird AI insights</span>
+                <span class="ai__chip"><img src="/assets/icons/icon-sparkles.svg" width="13.6533" height="13.6533" alt="">Bird AI-indsigt</span>
                 <div class="ai__result">
                   <div class="ai__item">
-                    <p class="ai__meta">Level 3, technical shaft</p>
+                    <p class="ai__meta">Etage 3, installationsskakt</p>
                     <div class="ai__desc">
-                      <p class="ai__title">Ventilation routing adjusted</p>
-                      <p class="ai__text">New window dimensions from K3 Arkitekter. Estimating an increase in facade costs by 8%.</p>
+                      <p class="ai__title">Ventilationsføringen er tilpasset</p>
+                      <p class="ai__text">Nye vinduesmål fra K3 Arkitekter. De forventede facadeomkostninger stiger med 8 %.</p>
                     </div>
                   </div>
                   <div class="ai__link">
-                    <span><img src="assets/icons/icon-file-box.svg" width="17.0667" height="17.0667" alt="">K3_TechnicalShaft_Vent_2026_A...</span>
-                    <img src="assets/icons/icon-arrow-right.svg" width="17.0667" height="17.0667" alt="">
+                    <span><img src="/assets/icons/icon-file-box.svg" width="17.0667" height="17.0667" alt="">K3_TechnicalShaft_Vent_2026_A...</span>
+                    <img src="/assets/icons/icon-arrow-right.svg" width="17.0667" height="17.0667" alt="">
                   </div>
                   <div class="ai__link">
-                    <span><img src="assets/icons/icon-file-pen.svg" width="17.0667" height="17.0667" alt="">K3_DrawingBlueprint_Vent_2026...</span>
-                    <img src="assets/icons/icon-arrow-right.svg" width="17.0667" height="17.0667" alt="">
+                    <span><img src="/assets/icons/icon-file-pen.svg" width="17.0667" height="17.0667" alt="">K3_DrawingBlueprint_Vent_2026...</span>
+                    <img src="/assets/icons/icon-arrow-right.svg" width="17.0667" height="17.0667" alt="">
                   </div>
                 </div>
               </div>
@@ -155,31 +160,31 @@
 
         <div class="bento__row bento__row--2">
           <article class="card card--blush">
-            <img class="card__bricks" src="assets/img/card-bricks.webp" alt="Stacked white 3D bricks">
+            <img class="card__bricks" src="/assets/img/card-bricks.webp" alt="Stablede hvide 3D-klodser">
             <div class="card__content card__content--wide">
-              <h3 class="card__title">Built on the field</h3>
-              <p class="card__text">Built for where the work actually happens. Capture what matters and keep projects moving without friction.</p>
+              <h3 class="card__title">Skabt på byggepladsen</h3>
+              <p class="card__text">Skabt til det sted, hvor arbejdet foregår. Registrér det vigtige, og hold fremdriften i projekterne uden besvær.</p>
             </div>
           </article>
 
           <article class="card card--ice">
             <div class="card__content">
-              <h3 class="card__title">Keep teams aligned</h3>
-              <p class="card__text">Share updates, add notes, and keep everyone on the same page - from architects to contractors.</p>
+              <h3 class="card__title">Hold alle på samme side</h3>
+              <p class="card__text">Del opdateringer, tilføj noter, og giv alle det samme overblik – fra arkitekter til entreprenører.</p>
             </div>
             <div class="card__media">
-              <img src="assets/img/card-glass.webp" alt="Curved glass facade">
+              <img src="/assets/img/card-glass.webp" alt="Buet glasfacade">
               <div class="notif" aria-hidden="true">
                 <span class="notif__glass notif__glass--back2"></span>
                 <span class="notif__glass notif__glass--back1"></span>
                 <span class="notif__glass notif__glass--main"></span>
-                <img class="notif__icon" src="assets/icons/ios-app-icon.svg" width="48.45" height="48.45" alt="">
+                <img class="notif__icon" src="/assets/icons/ios-app-icon.svg" width="48.45" height="48.45" alt="">
                 <div class="notif__body">
                   <div class="notif__text">
-                    <p class="notif__title">Project updates</p>
-                    <p class="notif__msg">New plans available from archit...</p>
+                    <p class="notif__title">Projektopdateringer</p>
+                    <p class="notif__msg">Nye tegninger fra arkitek...</p>
                   </div>
-                  <p class="notif__time">9:41 AM</p>
+                  <p class="notif__time">09.41</p>
                 </div>
               </div>
             </div>
@@ -189,11 +194,11 @@
 
       <div class="explore">
         <div class="explore__text">
-          <h3 class="h3">Explore the platform</h3>
-          <p class="body">Check out the features and learn what Bird can do for you.</p>
+          <h3 class="h3">Udforsk platformen</h3>
+          <p class="body">Se funktionerne, og find ud af, hvad Bird kan gøre for dig.</p>
         </div>
         <div class="explore__action">
-          <a class="btn btn--m btn--foundation-border" href="platform.html">Explore features<span class="btn__icon" aria-hidden="true"></span></a>
+          <a class="btn btn--m btn--foundation-border" href="/platform.html">Se funktioner<span class="btn__icon" aria-hidden="true"></span></a>
         </div>
       </div>
     </section>
@@ -202,23 +207,23 @@
     <section class="features">
       <div class="features__inner">
         <div class="heading heading--features">
-          <p class="kicker kicker--clay">Project clarity</p>
+          <p class="kicker kicker--clay">Projektoverblik</p>
           <div class="heading__body">
-            <h2 class="h2">Everything teams <br>usually lose track of</h2>
-            <p class="body">Access your drawings anywhere, collaborate with your team, and keep every detail up to date, without the back and forth.</p>
+            <h2 class="h2">Alt det, teams <br>ofte mister overblikket over</h2>
+            <p class="body">Tilgå dine tegninger overalt, samarbejd med dit team, og hold alle detaljer opdateret uden unødige omveje.</p>
           </div>
         </div>
         <ul class="pills">
-          <li class="pill">Drawing comments</li>
-          <li class="pill">Site photos</li>
-          <li class="pill">Approval history</li>
-          <li class="pill">Coordination notes</li>
-          <li class="pill">Linked documents</li>
+          <li class="pill">Kommentarer til tegninger</li>
+          <li class="pill">Fotos fra byggepladsen</li>
+          <li class="pill">Godkendelseshistorik</li>
+          <li class="pill">Koordinationsnoter</li>
+          <li class="pill">Tilknyttede dokumenter</li>
           <li class="pill">Budget</li>
-          <li class="pill">Specification updates</li>
-          <li class="pill">Contractor feedback</li>
-          <li class="pill">Change tracking</li>
-          <li class="pill">Technical decisions</li>
+          <li class="pill">Opdaterede specifikationer</li>
+          <li class="pill">Feedback fra entreprenører</li>
+          <li class="pill">Ændringshistorik</li>
+          <li class="pill">Tekniske beslutninger</li>
         </ul>
       </div>
     </section>
@@ -226,10 +231,10 @@
     <!-- ============ CONNECTED WORKFLOWS ============ -->
     <section class="workflows">
       <div class="heading heading--center">
-        <p class="kicker kicker--jade">Connected workflows</p>
+        <p class="kicker kicker--jade">Sammenhængende arbejdsgange</p>
         <div class="heading__body">
-          <h2 class="h2">See how Bird connects <br>teams across the project</h2>
-          <p class="body body--center">Keep drawings, updates, approvals, and field communication connected between every stakeholder involved in delivery.</p>
+          <h2 class="h2">Se, hvordan Bird forbinder <br>teams på tværs af projektet</h2>
+          <p class="body body--center">Saml tegninger, opdateringer, godkendelser og kommunikation fra byggepladsen for alle involverede i projektet.</p>
         </div>
       </div>
 
@@ -238,36 +243,36 @@
         <article class="flow">
           <div class="flow__copy">
             <div class="flow__content">
-              <h3 class="card__title">Shared project context</h3>
-              <p class="card__text">Every update, decision, drawing revision, and conversation stays linked to the project timeline.</p>
+              <h3 class="card__title">Fælles projektgrundlag</h3>
+              <p class="card__text">Alle opdateringer, beslutninger, tegningsrevisioner og samtaler er knyttet til projektets tidslinje.</p>
             </div>
-            <a class="btn btn--s btn--blueprint-border" href="#">Learn more<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--s btn--blueprint-border" href="#">Læs mere<span class="btn__icon" aria-hidden="true"></span></a>
           </div>
           <div class="flow__visual flow__visual--panel" aria-hidden="true">
             <div class="canvas">
-              <div class="tl-months"><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span><span>JUL</span><span>AUG</span></div>
+              <div class="tl-months"><span>MAR</span><span>APR</span><span>MAJ</span><span>JUN</span><span>JUL</span><span>AUG</span></div>
 
               <div class="tl-bar tl-bar--ivory" style="left:-228px;top:151.28px;width:427.417px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               <div class="tl-bar tl-bar--skyline" style="left:-96.06px;top:200.74px;width:390.25px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               <div class="tl-bar tl-bar--alabaster" style="left:-162.96px;top:250.21px;width:669px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 
-              <div class="tl-doc" style="left:128.8px;top:88.09px"><img class="tl-doc__bg" src="assets/icons/tile-lilac-1.svg" width="55.3105" height="60.954" alt=""><img class="tl-doc__icon" src="assets/icons/tile-icon-1.svg" width="29.7333" height="29.7333" alt=""></div>
+              <div class="tl-doc" style="left:128.8px;top:88.09px"><img class="tl-doc__bg" src="/assets/icons/tile-lilac-1.svg" width="55.3105" height="60.954" alt=""><img class="tl-doc__icon" src="/assets/icons/tile-icon-1.svg" width="29.7333" height="29.7333" alt=""></div>
               <span class="tl-badge" style="left:169.68px;top:76.94px">4</span>
 
-              <div class="tl-doc" style="left:223.57px;top:137.56px"><img class="tl-doc__bg" src="assets/icons/tile-2.svg" width="55.3096" height="60.954" alt=""><img class="tl-doc__icon" src="assets/icons/tile-icon-2.svg" width="29.7333" height="29.7333" alt=""></div>
+              <div class="tl-doc" style="left:223.57px;top:137.56px"><img class="tl-doc__bg" src="/assets/icons/tile-2.svg" width="55.3096" height="60.954" alt=""><img class="tl-doc__icon" src="/assets/icons/tile-icon-2.svg" width="29.7333" height="29.7333" alt=""></div>
 
-              <div class="tl-doc" style="left:22.88px;top:137.56px"><img class="tl-doc__bg" src="assets/icons/tile-3.svg" width="55.3096" height="60.954" alt=""><img class="tl-doc__icon" src="assets/icons/tile-icon-3.svg" width="29.7333" height="29.7333" alt=""></div>
+              <div class="tl-doc" style="left:22.88px;top:137.56px"><img class="tl-doc__bg" src="/assets/icons/tile-3.svg" width="55.3096" height="60.954" alt=""><img class="tl-doc__icon" src="/assets/icons/tile-icon-3.svg" width="29.7333" height="29.7333" alt=""></div>
               <span class="tl-badge" style="left:63.76px;top:126.41px">4</span>
 
-              <div class="tl-doc" style="left:113.93px;top:187.03px"><img class="tl-doc__bg" src="assets/icons/tile-4.svg" width="55.3105" height="60.9541" alt=""><img class="tl-doc__icon tl-doc__icon--alt" src="assets/icons/tile-icon-4.svg" width="29.7333" height="29.7333" alt=""></div>
+              <div class="tl-doc" style="left:113.93px;top:187.03px"><img class="tl-doc__bg" src="/assets/icons/tile-4.svg" width="55.3105" height="60.9541" alt=""><img class="tl-doc__icon tl-doc__icon--alt" src="/assets/icons/tile-icon-4.svg" width="29.7333" height="29.7333" alt=""></div>
 
-              <div class="tl-doc" style="left:370.38px;top:187.03px"><img class="tl-doc__bg" src="assets/icons/tile-5.svg" width="55.3105" height="60.9541" alt=""><img class="tl-doc__icon" src="assets/icons/tile-icon-5.svg" width="29.7333" height="29.7333" alt=""></div>
+              <div class="tl-doc" style="left:370.38px;top:187.03px"><img class="tl-doc__bg" src="/assets/icons/tile-5.svg" width="55.3105" height="60.9541" alt=""><img class="tl-doc__icon" src="/assets/icons/tile-icon-5.svg" width="29.7333" height="29.7333" alt=""></div>
               <span class="tl-badge" style="left:411.27px;top:175.88px">12</span>
 
               <div class="tl-avatars">
-                <img src="assets/img/avatar-3.png" width="48" height="48" alt="">
-                <img src="assets/img/avatar-2.png" width="48" height="48" alt="">
-                <img src="assets/img/avatar-1.png" width="48" height="48" alt="">
+                <img src="/assets/img/avatar-3.png" width="48" height="48" alt="">
+                <img src="/assets/img/avatar-2.png" width="48" height="48" alt="">
+                <img src="/assets/img/avatar-1.png" width="48" height="48" alt="">
               </div>
             </div>
           </div>
@@ -276,20 +281,20 @@
         <!-- Site teams -->
         <article class="flow">
           <div class="flow__visual flow__visual--camera">
-            <img class="flow__photo" src="assets/img/site-teams.webp" alt="Phone camera framing a concrete column on a construction site">
-            <img class="camera__frame" src="assets/icons/camera-frame.svg" width="180" height="180" alt="">
+            <img class="flow__photo" src="/assets/img/site-teams.webp" alt="Telefonkamera rettet mod en betonsøjle på en byggeplads">
+            <img class="camera__frame" src="/assets/icons/camera-frame.svg" width="180" height="180" alt="">
             <div class="camera__ui" aria-hidden="true">
-              <img class="camera__thumb" src="assets/img/camera-photo.webp" alt="">
-              <img src="assets/icons/camera-shutter.svg" width="42.1465" height="42.1465" alt="">
-              <span class="camera__switch"><img src="assets/icons/camera-switch.svg" width="107.707" height="107.707" alt=""></span>
+              <img class="camera__thumb" src="/assets/img/camera-photo.webp" alt="">
+              <img src="/assets/icons/camera-shutter.svg" width="42.1465" height="42.1465" alt="">
+              <span class="camera__switch"><img src="/assets/icons/camera-switch.svg" width="107.707" height="107.707" alt=""></span>
             </div>
           </div>
           <div class="flow__copy">
             <div class="flow__content">
-              <h3 class="card__title">Site teams</h3>
-              <p class="card__text">Capture progress directly from the field, attach updates to drawings, and keep office teams aligned in real time.</p>
+              <h3 class="card__title">Teams på byggepladsen</h3>
+              <p class="card__text">Registrér fremdriften direkte fra byggepladsen, knyt opdateringer til tegninger, og hold kontoret opdateret i realtid.</p>
             </div>
-            <a class="btn btn--s btn--blueprint-border" href="#">Learn more<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--s btn--blueprint-border" href="#">Læs mere<span class="btn__icon" aria-hidden="true"></span></a>
           </div>
         </article>
 
@@ -297,36 +302,36 @@
         <article class="flow">
           <div class="flow__copy">
             <div class="flow__content">
-              <h3 class="card__title">Project managers</h3>
-              <p class="card__text">See what changed, who reviewed it, and where coordination is slowing down before it impacts delivery.</p>
+              <h3 class="card__title">Projektledere</h3>
+              <p class="card__text">Se, hvad der er ændret, hvem der har gennemgået det, og hvor koordineringen går i stå, før det påvirker leveringen.</p>
             </div>
-            <a class="btn btn--s btn--blueprint-border" href="#">Learn more<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--s btn--blueprint-border" href="#">Læs mere<span class="btn__icon" aria-hidden="true"></span></a>
           </div>
           <div class="flow__visual flow__visual--panel" aria-hidden="true">
             <div class="canvas">
               <span class="act-line"></span>
 
               <!-- 19 May -->
-              <div class="act-date" style="left:84px;top:44.94px"><span class="act-date--jade">19 MAY 2026</span><img src="assets/icons/dot-jade.svg" width="21" height="21" alt=""></div>
-              <div class="act-pill" style="left:190.19px;top:36.94px;width:168.812px"><span style="height:168.812px"><img src="assets/icons/pill-bg.svg" width="38" height="172.812" alt=""></span></div>
-              <p class="act-label" style="left:205px;top:48.94px">Updated plans from architects</p>
-              <p class="act-sub" style="left:205px;top:78.94px"><img src="assets/icons/icon-sub-arrow.svg" width="10" height="10" alt="">12 files have been added</p>
-              <div class="act-file" style="top:94.94px"><span><i><img src="assets/icons/icon-file-a.svg" width="9.08151" height="9.08151" alt=""></i>K3_TechnicalShaft_Vent_2026_A...</span><img src="assets/icons/icon-eye.svg" width="9" height="9" alt=""></div>
-              <div class="act-file" style="top:119.46px"><span><i><img src="assets/icons/icon-file-b.svg" width="9.08151" height="9.08151" alt=""></i>K3_DrawingBlueprint_Vent_2026...</span><img src="assets/icons/icon-eye.svg" width="9" height="9" alt=""></div>
+              <div class="act-date" style="left:84px;top:44.94px"><span class="act-date--jade">19. MAJ 2026</span><img src="/assets/icons/dot-jade.svg" width="21" height="21" alt=""></div>
+              <div class="act-pill" style="left:190.19px;top:36.94px;width:168.812px"><span style="height:168.812px"><img src="/assets/icons/pill-bg.svg" width="38" height="172.812" alt=""></span></div>
+              <p class="act-label" style="left:205px;top:48.94px">Opdaterede tegninger fra arkitekterne</p>
+              <p class="act-sub" style="left:205px;top:78.94px"><img src="/assets/icons/icon-sub-arrow.svg" width="10" height="10" alt="">12 filer er tilføjet</p>
+              <div class="act-file" style="top:94.94px"><span><i><img src="/assets/icons/icon-file-a.svg" width="9.08151" height="9.08151" alt=""></i>K3_TechnicalShaft_Vent_2026_A...</span><img src="/assets/icons/icon-eye.svg" width="9" height="9" alt=""></div>
+              <div class="act-file" style="top:119.46px"><span><i><img src="/assets/icons/icon-file-b.svg" width="9.08151" height="9.08151" alt=""></i>K3_DrawingBlueprint_Vent_2026...</span><img src="/assets/icons/icon-eye.svg" width="9" height="9" alt=""></div>
 
               <!-- 18 May -->
-              <div class="act-date" style="left:84px;top:189.94px"><span class="act-date--brick">18 MAY 2026</span><img src="assets/icons/dot-brick.svg" width="21" height="21" alt=""></div>
-              <div class="act-pill" style="left:190.32px;top:182.94px;width:197.679px"><span style="height:197.679px"><img src="assets/icons/pill-bg-wide.svg" width="38" height="201.679" alt=""></span></div>
-              <div class="act-photos" style="left:204px;top:187.25px"><img class="act-photos__back" src="assets/img/activity-1.webp" alt=""><img class="act-photos__front" src="assets/img/activity-2.webp" alt=""></div>
-              <p class="act-label" style="left:239px;top:194.94px">Hans marked an issue on site</p>
-              <p class="act-sub" style="left:205px;top:224.94px"><img src="assets/icons/icon-sub-arrow.svg" width="10" height="10" alt="">2 photos attached</p>
+              <div class="act-date" style="left:84px;top:189.94px"><span class="act-date--brick">18. MAJ 2026</span><img src="/assets/icons/dot-brick.svg" width="21" height="21" alt=""></div>
+              <div class="act-pill" style="left:190.32px;top:182.94px;width:197.679px"><span style="height:197.679px"><img src="/assets/icons/pill-bg-wide.svg" width="38" height="201.679" alt=""></span></div>
+              <div class="act-photos" style="left:204px;top:187.25px"><img class="act-photos__back" src="/assets/img/activity-1.webp" alt=""><img class="act-photos__front" src="/assets/img/activity-2.webp" alt=""></div>
+              <p class="act-label" style="left:239px;top:194.94px">Hans registrerede et problem på pladsen</p>
+              <p class="act-sub" style="left:205px;top:224.94px"><img src="/assets/icons/icon-sub-arrow.svg" width="10" height="10" alt="">2 fotos vedhæftet</p>
 
               <!-- 16 May -->
-              <div class="act-date" style="left:83px;top:293.94px"><span class="act-date--teal">16 MAY 2026</span><img src="assets/icons/dot-teal.svg" width="21" height="21" alt=""></div>
-              <div class="act-pill" style="left:190px;top:287.94px;width:197.679px"><span style="height:197.679px"><img src="assets/icons/pill-bg-wide.svg" width="38" height="201.679" alt=""></span></div>
-              <div class="act-photos" style="left:203.68px;top:292.25px"><img class="act-photos__back" src="assets/img/activity-3.webp" alt=""><img class="act-photos__front" src="assets/img/activity-4.webp" alt=""></div>
-              <p class="act-label" style="left:238.68px;top:299.94px">Changes to the drainage...</p>
-              <p class="act-sub" style="left:204.68px;top:329.94px"><img src="assets/icons/icon-sub-arrow.svg" width="10" height="10" alt="">2 photos attached</p>
+              <div class="act-date" style="left:83px;top:293.94px"><span class="act-date--teal">16. MAJ 2026</span><img src="/assets/icons/dot-teal.svg" width="21" height="21" alt=""></div>
+              <div class="act-pill" style="left:190px;top:287.94px;width:197.679px"><span style="height:197.679px"><img src="/assets/icons/pill-bg-wide.svg" width="38" height="201.679" alt=""></span></div>
+              <div class="act-photos" style="left:203.68px;top:292.25px"><img class="act-photos__back" src="/assets/img/activity-3.webp" alt=""><img class="act-photos__front" src="/assets/img/activity-4.webp" alt=""></div>
+              <p class="act-label" style="left:238.68px;top:299.94px">Ændringer i afløbet...</p>
+              <p class="act-sub" style="left:204.68px;top:329.94px"><img src="/assets/icons/icon-sub-arrow.svg" width="10" height="10" alt="">2 fotos vedhæftet</p>
 
               <span class="act-fade"></span>
             </div>
@@ -336,44 +341,45 @@
         <!-- Contractors -->
         <article class="flow">
           <div class="flow__visual flow__visual--photo">
-            <img class="flow__photo" src="assets/img/contractor.webp" alt="Contractor in a hard hat reviewing plans on a laptop">
-            <img class="contractor__logo" src="assets/img/contractor-object.png" alt="">
+            <img class="flow__photo" src="/assets/img/contractor.webp" alt="Entreprenør med sikkerhedshjelm gennemgår tegninger på en bærbar computer">
+            <img class="contractor__logo" src="/assets/img/contractor-object.png" alt="">
           </div>
           <div class="flow__copy">
             <div class="flow__content">
-              <h3 class="card__title">Contractors</h3>
-              <p class="card__text">Track technical clarifications, approvals, and specification changes without chasing documents.</p>
+              <h3 class="card__title">Entreprenører</h3>
+              <p class="card__text">Følg tekniske afklaringer, godkendelser og ændringer i specifikationer uden at lede efter dokumenter.</p>
             </div>
-            <a class="btn btn--s btn--blueprint-border" href="#">Learn more<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--s btn--blueprint-border" href="#">Læs mere<span class="btn__icon" aria-hidden="true"></span></a>
           </div>
         </article>
       </div>
     </section>
 
     <!-- ============ GET BIRD ============ -->
-    <section class="get">
+    <section class="get get--mesh">
+      <svg class="get__mesh" width="100%" height="100%" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"></svg>
       <div class="get__inner">
         <div class="get__content">
           <div class="heading">
-            <p class="kicker kicker--marigold">Get Bird</p>
+            <p class="kicker kicker--marigold">Hent Bird</p>
             <div class="heading__body">
-              <h2 class="h2 h2--light">Available on both iOS <br>and Android</h2>
-              <p class="body body--silver">Keep drawings, updates, approvals, and field communication connected between every stakeholder involved in delivery.</p>
+              <h2 class="h2 h2--light">Tilgængelig til både iOS <br>og Android</h2>
+              <p class="body body--silver">Saml tegninger, opdateringer, godkendelser og kommunikation fra byggepladsen for alle involverede i projektet.</p>
             </div>
           </div>
           <div class="stores">
-            <a class="store" href="#" aria-label="Download on the App Store">
-              <img class="store__logo" src="assets/icons/store-apple.svg" width="23.3333" height="28" alt="">
-              <span class="store__apple"><small>Download on the</small>App Store</span>
+            <a class="store" href="#" aria-label="Hent i App Store">
+              <img class="store__logo" src="/assets/icons/store-apple.svg" width="23.3333" height="28" alt="">
+              <span class="store__apple"><small>Hent i</small>App Store</span>
             </a>
-            <a class="store" href="#" aria-label="Get it on Google Play">
-              <img class="store__logo" src="assets/icons/store-playstore.svg" width="24.5" height="28" alt="">
-              <span class="store__play"><small>GET IT ON</small><img src="assets/icons/store-google-play-text.svg" width="86.3333" height="17.5" alt=""></span>
+            <a class="store" href="#" aria-label="Hent i Google Play">
+              <img class="store__logo" src="/assets/icons/store-playstore.svg" width="24.5" height="28" alt="">
+              <span class="store__play"><small>HENT I</small><img src="/assets/icons/store-google-play-text.svg" width="86.3333" height="17.5" alt=""></span>
             </a>
           </div>
         </div>
         <div class="get__visual">
-          <img src="assets/img/app-phone.webp" alt="Bird app icon on an iPhone over an orange background">
+          <img src="/assets/img/bird-app-architecture.jpg" width="1720" height="1760" loading="lazy" alt="Bird-appikon i en glasdock indrammet af buet arkitektur og blå himmel">
         </div>
       </div>
     </section>
@@ -390,70 +396,75 @@
         <span class="g g--v fg--v4"></span>
         <span class="g g--h fg--h1"></span>
         <span class="g g--h fg--h2"></span>
-        <span class="xmark fx--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
       </div>
 
       <div class="footer__top">
         <div class="footer__brand">
-          <a class="footer__logo" href="#" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
-          <p class="footer__tagline">Visualize projects. Collaborate better. Build faster. Drawings, updates and decisions connected for every team on site.</p>
-          <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+          <a class="footer__logo" href="#" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+          <p class="footer__tagline">Visualisér projekter. Samarbejd bedre. Overhold tidsfrister. Tegninger, opdateringer og beslutninger samlet for alle teams på byggepladsen.</p>
+          <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer">
+        <nav class="footer__nav" aria-label="Sidefod">
           <div class="footer__col">
             <p class="footer__head">Platform</p>
             <ul>
-              <li><a href="platform.html#live-project-views">Live project views</a></li>
-              <li><a href="platform.html#shared-timeline">Visual workflows</a></li>
-              <li><a href="platform.html#plan-intelligence">Plan intelligence</a></li>
-              <li><a href="platform.html#site-capture">Site visualization</a></li>
-              <li><a href="platform.html#ai-project-insights">AI project insights</a></li>
+              <li><a href="/platform.html#live-project-views">Live projektoverblik</a></li>
+              <li><a href="/platform.html#shared-timeline">Visuelle arbejdsgange</a></li>
+              <li><a href="/platform.html#plan-intelligence">Tegningsindsigt</a></li>
+              <li><a href="/platform.html#site-capture">Visualisering af byggepladsen</a></li>
+              <li><a href="/platform.html#ai-project-insights">AI-projektindsigt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Company</p>
+            <p class="footer__head">Virksomhed</p>
             <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="journal.html">Journal</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/about.html">Om os</a></li>
+              <li><a href="/pricing.html">Priser</a></li>
+              <li><a href="/journal.html">Artikler</a></li>
+              <li><a href="/contact.html">Kontakt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Get in touch</p>
+            <p class="footer__head">Kontakt os</p>
             <ul>
               <li><a href="mailto:inquiry@getbird.io">inquiry@getbird.io</a></li>
-              <li><a href="#">iOS app</a></li>
-              <li><a href="#">Android app</a></li>
+              <li><a href="#">iOS-app</a></li>
+              <li><a href="#">Android-app</a></li>
             </ul>
           </div>
         </nav>
       </div>
 
       <div class="footer__mark" aria-hidden="true">
-        <img src="assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
+        <img src="/assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
       </div>
 
       <div class="footer__bottom">
-        <p>© 2026 Bird. All rights reserved.</p>
+        <p>© 2026 Bird. Alle rettigheder forbeholdes.</p>
         <ul class="footer__legal">
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privatlivspolitik</a></li>
+          <li><a href="#">Vilkår</a></li>
           <li><a href="#">Cookies</a></li>
         </ul>
-        <button class="nav__lang footer__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
+        <div class="language language--footer">
+          <button class="nav__lang footer__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-footer">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-footer" hidden>
+            <li><a href="/index.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/index.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=6" defer></script>
+  <script src="/script.js?v=10" defer></script>
+  <script src="/navigation.js?v=3" defer></script>
 </body>
 </html>

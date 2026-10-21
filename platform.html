@@ -1,20 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Platform - Bird</title>
-  <meta name="description" content="Explore the Bird platform: drawings, AI insights, field capture and collaboration tools connected in one source of truth.">
-  <link rel="icon" href="assets/logos/bird-mark-dark.png">
+  <title>Platform – Bird</title>
+  <meta name="description" content="Udforsk Bird-platformen: tegninger, AI-indsigt, registrering på byggepladsen og samarbejdsværktøjer samlet ét sted.">
+  <link rel="icon" href="/assets/logos/bird-mark-dark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=35">
+  <link rel="stylesheet" href="/styles.css?v=60">
+  <link rel="alternate" hreflang="da" href="/platform.html">
+  <link rel="alternate" hreflang="en" href="/en/platform.html">
+  <link rel="alternate" hreflang="x-default" href="/platform.html">
 </head>
 <body>
 
   <!-- ============ HERO ============ -->
-  <header class="hero hero--page hero--no-ticker">
+  <header class="hero hero--page hero--no-ticker hero--light hero--platform">
     <div class="hero__inner">
     <div class="hero__guides" aria-hidden="true">
       <span class="g g--h g--top"></span>
@@ -23,38 +26,471 @@
       <span class="g g--v pg--v2"></span>
       <span class="g g--v pg--v3"></span>
       <span class="g g--v pg--v4"></span>
-      <span class="xmark px--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
     </div>
 
     <nav class="nav">
       <div class="nav__col">
-        <a class="nav__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+        <a class="nav__logo" href="/index.html" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
       </div>
       <ul class="nav__links">
-        <li><a href="platform.html" aria-current="page"><img src="assets/icons/nav-chevron.svg" width="4.5" height="7.5" alt="">Platform</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="journal.html">Journal</a></li>
+        <li><a href="/platform.html" aria-current="page"><img src="/assets/icons/nav-chevron.svg" width="4.5" height="7.5" alt="">Platform</a></li>
+        <li><a href="/pricing.html">Priser</a></li>
+        <li><a href="/about.html">Om os</a></li>
+        <li><a href="/contact.html">Kontakt</a></li>
       </ul>
       <div class="nav__col nav__col--right">
-        <button class="nav__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
-        <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
-        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+        <div class="language">
+          <button class="nav__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-header">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-header" hidden>
+            <li><a href="/platform.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/platform.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
+        <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
       </div>
     </nav>
 
-    <div class="page-hero">
+    <div class="page-hero page-hero--platform">
       <div class="page-hero__text">
-        <h1 class="hero__title">Every drawing, update <br>and decision in one place</h1>
-        <p class="page-hero__lead">Bird plugs into how your teams already work, so changes, risks and timeline impact are clear from the office to the site.</p>
+        <h1 class="hero__title">Alle tegninger, opdateringer <br>og beslutninger ét sted</h1>
+        <p class="page-hero__lead">Bird passer ind i den måde, dine teams allerede arbejder på, så ændringer, risici og påvirkninger af tidsplanen er tydelige fra kontoret til byggepladsen.</p>
+      </div>
+      <div class="flowmap">
+        <svg class="flowmap__svg" viewBox="0 0 1280 362" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="IFC-modeller, BCF-sager, IDS-regler og COBie-data går ind i Bird og kommer ud som PDF-dokumenter">
+          <defs>
+            <linearGradient id="fm-profile-color">
+              <stop offset="0" stop-color="#1468EB" stop-opacity="0"/><stop offset="0.28" stop-color="#1468EB" stop-opacity="0"/><stop offset="0.5" stop-color="#1477F5" stop-opacity="0.16"/><stop offset="0.68" stop-color="#1684FF" stop-opacity="0.6"/><stop offset="0.82" stop-color="#299BFF" stop-opacity="1"/><stop offset="0.93" stop-color="#58B7FF" stop-opacity="1"/><stop offset="0.98" stop-color="#8BD1FF" stop-opacity="0.65"/><stop offset="1" stop-color="#8BD1FF" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="fm-profile-bloom">
+              <stop offset="0" stop-color="#145BEA" stop-opacity="0"/><stop offset="0.2" stop-color="#145BEA" stop-opacity="0"/><stop offset="0.48" stop-color="#1D73F3" stop-opacity="0.12"/><stop offset="0.68" stop-color="#258DFF" stop-opacity="0.48"/><stop offset="0.84" stop-color="#389DFF" stop-opacity="0.9"/><stop offset="0.94" stop-color="#62BDFF" stop-opacity="1"/><stop offset="1" stop-color="#8BD1FF" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="fm-profile-core">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.46" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.62" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="0.74" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="0.94" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="0.98" stop-color="#FFFFFF" stop-opacity="0.65"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="fm-flare"><stop offset="0" stop-color="#E6F6FF" stop-opacity=".85"/><stop offset=".2" stop-color="#8BD1FF" stop-opacity=".6"/><stop offset=".5" stop-color="#258DFF" stop-opacity=".24"/><stop offset="1" stop-color="#1468EB" stop-opacity="0"/></radialGradient>
+            <filter id="fm-bloom" x="-5%" y="-15%" width="110%" height="130%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="7"/></filter>
+            <filter id="fm-diffusion" x="-5%" y="-10%" width="110%" height="120%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="3.5"/></filter>
+            <filter id="fm-inner" x="-5%" y="-10%" width="110%" height="120%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.65"/></filter>
+            <filter id="fm-halo" x="-5%" y="-10%" width="110%" height="120%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="2"/></filter>
+            <linearGradient id="fm-in-0" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-0-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-0-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-1" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-1-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-1-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-2" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-2-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-2-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-3" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-3-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-in-3-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="-21" y1="0" x2="199" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.4;.56;1" keySplines=".4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-0" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-0-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-0-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-1" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-1-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-1-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-2" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-2-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-2-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-3" href="#fm-profile-color" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-3-bloom" href="#fm-profile-bloom" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-out-3-core" href="#fm-profile-core" gradientUnits="userSpaceOnUse" x1="550" y1="0" x2="770" y2="0">
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.46;.84;.973333333;1" keySplines="0 0 1 1;.4 0 .6 1;0 0 .6 1;0 0 1 1" values="-24 0;-24 0;322 0;551 0;551 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-199-0" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="191" y1="30" x2="207" y2="34">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;0.053;0.143;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-199-1" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="191" y1="129" x2="207" y2="133">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;0.053;0.143;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-199-2" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="191" y1="228" x2="207" y2="232">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;0.053;0.143;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-199-3" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="191" y1="327" x2="207" y2="331">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;0.053;0.143;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-510-0" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="502" y1="108" x2="518" y2="112">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;0.381667;0.471667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-510-1" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="502" y1="155" x2="518" y2="159">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;0.381667;0.471667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-510-2" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="502" y1="202" x2="518" y2="206">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;0.381667;0.471667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-510-3" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="502" y1="249" x2="518" y2="253">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;0.381667;0.471667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-770-0" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="762" y1="108" x2="778" y2="112">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;0.508;0.598;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-770-1" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="762" y1="155" x2="778" y2="159">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;0.508;0.598;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-770-2" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="762" y1="202" x2="778" y2="206">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;0.508;0.598;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-770-3" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="762" y1="249" x2="778" y2="253">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;0.508;0.598;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-1081-0" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="1073" y1="30" x2="1089" y2="34">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;0.817667;0.907667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-1081-1" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="1073" y1="129" x2="1089" y2="133">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;0.817667;0.907667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-1081-2" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="1073" y1="228" x2="1089" y2="232">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;0.817667;0.907667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <linearGradient id="fm-dot-1081-3" gradientTransform="translate(-18 0)" gradientUnits="userSpaceOnUse" x1="1073" y1="327" x2="1089" y2="331">
+              <stop offset="0" stop-color="#5EB9FF" stop-opacity="0"/><stop offset="0.25" stop-color="#8CD6FF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#F4FBFF" stop-opacity="0.95"/><stop offset="0.7" stop-color="#B8E5FF" stop-opacity="0.65"/><stop offset="1" stop-color="#5EB9FF" stop-opacity="0"/>
+              <animateTransform attributeName="gradientTransform" type="translate" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;0.817667;0.907667;1" values="-18 0;-18 0;18 0;18 0"/>
+            </linearGradient>
+            <clipPath id="fm-hub-interior"><rect x="512" y="53" width="256" height="256" rx="39"/></clipPath>
+          </defs>
+
+          <!-- Stationary tracks with six graduated blue light layers and a sharp pale core. -->
+          <g class="flowmap__tracks">
+            <path class="flowmap__track" d="M199 32C354.5 32 354.5 110 510 110"/>
+            <path class="flowmap__track" d="M199 131C354.5 131 354.5 157 510 157"/>
+            <path class="flowmap__track" d="M199 230C354.5 230 354.5 204 510 204"/>
+            <path class="flowmap__track" d="M199 329C354.5 329 354.5 251 510 251"/>
+            <path class="flowmap__track" d="M770 110C925.5 110 925.5 32 1081 32"/>
+            <path class="flowmap__track" d="M770 157C925.5 157 925.5 131 1081 131"/>
+            <path class="flowmap__track" d="M770 204C925.5 204 925.5 230 1081 230"/>
+            <path class="flowmap__track" d="M770 251C925.5 251 925.5 329 1081 329"/>
+          </g>
+          <g class="flowmap__beams" aria-hidden="true">
+            <g class="flowmap__bloom" filter="url(#fm-bloom)">
+              <path d="M199 32C354.5 32 354.5 110 510 110" stroke="url(#fm-in-0-bloom)"/>
+              <path d="M199 131C354.5 131 354.5 157 510 157" stroke="url(#fm-in-1-bloom)"/>
+              <path d="M199 230C354.5 230 354.5 204 510 204" stroke="url(#fm-in-2-bloom)"/>
+              <path d="M199 329C354.5 329 354.5 251 510 251" stroke="url(#fm-in-3-bloom)"/>
+              <path d="M770 110C925.5 110 925.5 32 1081 32" stroke="url(#fm-out-0-bloom)"/>
+              <path d="M770 157C925.5 157 925.5 131 1081 131" stroke="url(#fm-out-1-bloom)"/>
+              <path d="M770 204C925.5 204 925.5 230 1081 230" stroke="url(#fm-out-2-bloom)"/>
+              <path d="M770 251C925.5 251 925.5 329 1081 329" stroke="url(#fm-out-3-bloom)"/>
+            </g>
+            <g class="flowmap__diffusion" filter="url(#fm-diffusion)">
+              <path d="M199 32C354.5 32 354.5 110 510 110" stroke="url(#fm-in-0-bloom)"/>
+              <path d="M199 131C354.5 131 354.5 157 510 157" stroke="url(#fm-in-1-bloom)"/>
+              <path d="M199 230C354.5 230 354.5 204 510 204" stroke="url(#fm-in-2-bloom)"/>
+              <path d="M199 329C354.5 329 354.5 251 510 251" stroke="url(#fm-in-3-bloom)"/>
+              <path d="M770 110C925.5 110 925.5 32 1081 32" stroke="url(#fm-out-0-bloom)"/>
+              <path d="M770 157C925.5 157 925.5 131 1081 131" stroke="url(#fm-out-1-bloom)"/>
+              <path d="M770 204C925.5 204 925.5 230 1081 230" stroke="url(#fm-out-2-bloom)"/>
+              <path d="M770 251C925.5 251 925.5 329 1081 329" stroke="url(#fm-out-3-bloom)"/>
+            </g>
+            <g class="flowmap__halo" filter="url(#fm-halo)">
+              <path d="M199 32C354.5 32 354.5 110 510 110" stroke="url(#fm-in-0-bloom)"/>
+              <path d="M199 131C354.5 131 354.5 157 510 157" stroke="url(#fm-in-1-bloom)"/>
+              <path d="M199 230C354.5 230 354.5 204 510 204" stroke="url(#fm-in-2-bloom)"/>
+              <path d="M199 329C354.5 329 354.5 251 510 251" stroke="url(#fm-in-3-bloom)"/>
+              <path d="M770 110C925.5 110 925.5 32 1081 32" stroke="url(#fm-out-0-bloom)"/>
+              <path d="M770 157C925.5 157 925.5 131 1081 131" stroke="url(#fm-out-1-bloom)"/>
+              <path d="M770 204C925.5 204 925.5 230 1081 230" stroke="url(#fm-out-2-bloom)"/>
+              <path d="M770 251C925.5 251 925.5 329 1081 329" stroke="url(#fm-out-3-bloom)"/>
+            </g>
+            <g class="flowmap__inner" filter="url(#fm-inner)">
+              <path d="M199 32C354.5 32 354.5 110 510 110" stroke="url(#fm-in-0)"/>
+              <path d="M199 131C354.5 131 354.5 157 510 157" stroke="url(#fm-in-1)"/>
+              <path d="M199 230C354.5 230 354.5 204 510 204" stroke="url(#fm-in-2)"/>
+              <path d="M199 329C354.5 329 354.5 251 510 251" stroke="url(#fm-in-3)"/>
+              <path d="M770 110C925.5 110 925.5 32 1081 32" stroke="url(#fm-out-0)"/>
+              <path d="M770 157C925.5 157 925.5 131 1081 131" stroke="url(#fm-out-1)"/>
+              <path d="M770 204C925.5 204 925.5 230 1081 230" stroke="url(#fm-out-2)"/>
+              <path d="M770 251C925.5 251 925.5 329 1081 329" stroke="url(#fm-out-3)"/>
+            </g>
+            <g class="flowmap__lit">
+              <path d="M199 32C354.5 32 354.5 110 510 110" stroke="url(#fm-in-0)"/>
+              <path d="M199 131C354.5 131 354.5 157 510 157" stroke="url(#fm-in-1)"/>
+              <path d="M199 230C354.5 230 354.5 204 510 204" stroke="url(#fm-in-2)"/>
+              <path d="M199 329C354.5 329 354.5 251 510 251" stroke="url(#fm-in-3)"/>
+              <path d="M770 110C925.5 110 925.5 32 1081 32" stroke="url(#fm-out-0)"/>
+              <path d="M770 157C925.5 157 925.5 131 1081 131" stroke="url(#fm-out-1)"/>
+              <path d="M770 204C925.5 204 925.5 230 1081 230" stroke="url(#fm-out-2)"/>
+              <path d="M770 251C925.5 251 925.5 329 1081 329" stroke="url(#fm-out-3)"/>
+            </g>
+            <g class="flowmap__core">
+              <path d="M199 32C354.5 32 354.5 110 510 110" stroke="url(#fm-in-0-core)"/>
+              <path d="M199 131C354.5 131 354.5 157 510 157" stroke="url(#fm-in-1-core)"/>
+              <path d="M199 230C354.5 230 354.5 204 510 204" stroke="url(#fm-in-2-core)"/>
+              <path d="M199 329C354.5 329 354.5 251 510 251" stroke="url(#fm-in-3-core)"/>
+              <path d="M770 110C925.5 110 925.5 32 1081 32" stroke="url(#fm-out-0-core)"/>
+              <path d="M770 157C925.5 157 925.5 131 1081 131" stroke="url(#fm-out-1-core)"/>
+              <path d="M770 204C925.5 204 925.5 230 1081 230" stroke="url(#fm-out-2-core)"/>
+              <path d="M770 251C925.5 251 925.5 329 1081 329" stroke="url(#fm-out-3-core)"/>
+            </g>
+          </g>
+
+          <!-- hub -->
+          <rect class="flowmap__hub" x="510.5" y="51.5" width="259" height="259" rx="40" fill="#EEFAFF" fill-opacity="0.5"/>
+          <g fill="#B3D3E5" fill-opacity="0.5" clip-path="url(#fm-hub-interior)" aria-hidden="true">
+            <rect class="flowmap__square" style="--twinkle-duration: 4.820s; --twinkle-delay: -2.187s;" x="541" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.987s; --twinkle-delay: -1.913s;" x="557" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.873s; --twinkle-delay: -0.933s;" x="589" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.640s; --twinkle-delay: -3.540s;" x="621" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.140s; --twinkle-delay: -4.653s;" x="637" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.127s; --twinkle-delay: -1.473s;" x="669" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.173s; --twinkle-delay: -0.553s;" x="701" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.440s; --twinkle-delay: -1.767s;" x="717" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.153s; --twinkle-delay: -2.407s;" x="749" y="66" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.273s; --twinkle-delay: -6.240s;" x="525" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.693s; --twinkle-delay: -1.887s;" x="557" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.427s; --twinkle-delay: -3.980s;" x="589" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.947s; --twinkle-delay: -3.253s;" x="605" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.987s; --twinkle-delay: -1.787s;" x="637" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.987s; --twinkle-delay: -4.780s;" x="669" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.540s; --twinkle-delay: -4.653s;" x="685" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.320s; --twinkle-delay: -1.507s;" x="717" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.987s; --twinkle-delay: -3.500s;" x="749" y="82" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.500s; --twinkle-delay: -0.540s;" x="525" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.400s; --twinkle-delay: -1.453s;" x="557" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.180s; --twinkle-delay: -1.113s;" x="573" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.813s; --twinkle-delay: -5.347s;" x="605" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.920s; --twinkle-delay: -0.393s;" x="637" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.807s; --twinkle-delay: -0.700s;" x="653" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.513s; --twinkle-delay: -2.107s;" x="685" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.333s; --twinkle-delay: -0.120s;" x="717" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.913s; --twinkle-delay: -0.653s;" x="733" y="98" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.920s; --twinkle-delay: -2.253s;" x="525" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.973s; --twinkle-delay: -2.313s;" x="541" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.993s; --twinkle-delay: -0.093s;" x="573" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.940s; --twinkle-delay: -3.553s;" x="605" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.547s; --twinkle-delay: -0.440s;" x="621" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.180s; --twinkle-delay: -5.853s;" x="653" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.567s; --twinkle-delay: -0.893s;" x="685" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.287s; --twinkle-delay: -2.440s;" x="701" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.667s; --twinkle-delay: -4.180s;" x="733" y="114" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.413s; --twinkle-delay: -1.913s;" x="541" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.120s; --twinkle-delay: -2.367s;" x="573" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.740s; --twinkle-delay: -2.700s;" x="589" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.847s; --twinkle-delay: -1.887s;" x="621" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.833s; --twinkle-delay: -5.580s;" x="653" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.080s; --twinkle-delay: -3.913s;" x="669" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.800s; --twinkle-delay: -2.347s;" x="701" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.013s; --twinkle-delay: -2.747s;" x="733" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.933s; --twinkle-delay: -2.920s;" x="749" y="130" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.380s; --twinkle-delay: -6.260s;" x="541" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.453s; --twinkle-delay: -2.827s;" x="557" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.733s; --twinkle-delay: -0.280s;" x="589" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.827s; --twinkle-delay: -1.487s;" x="621" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.380s; --twinkle-delay: -1.633s;" x="637" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.887s; --twinkle-delay: -2.660s;" x="669" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.747s; --twinkle-delay: -0.267s;" x="701" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.387s; --twinkle-delay: -2.547s;" x="717" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.353s; --twinkle-delay: -3.440s;" x="749" y="146" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.873s; --twinkle-delay: -3.080s;" x="525" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.947s; --twinkle-delay: -2.867s;" x="557" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.607s; --twinkle-delay: -0.607s;" x="589" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.427s; --twinkle-delay: -3.747s;" x="605" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.773s; --twinkle-delay: -2.060s;" x="637" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.413s; --twinkle-delay: -0.527s;" x="669" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.227s; --twinkle-delay: -6.160s;" x="685" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.867s; --twinkle-delay: -3.227s;" x="717" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.627s; --twinkle-delay: -3.427s;" x="749" y="162" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.213s; --twinkle-delay: -3.800s;" x="525" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.947s; --twinkle-delay: -1.427s;" x="557" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.433s; --twinkle-delay: -2.560s;" x="573" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.173s; --twinkle-delay: -0.727s;" x="605" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.493s; --twinkle-delay: -1.033s;" x="637" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.733s; --twinkle-delay: -1.420s;" x="653" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.573s; --twinkle-delay: -2.020s;" x="685" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.913s; --twinkle-delay: -3.820s;" x="717" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.513s; --twinkle-delay: -2.800s;" x="733" y="178" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.613s; --twinkle-delay: -2.573s;" x="525" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.167s; --twinkle-delay: -3.507s;" x="541" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.593s; --twinkle-delay: -1.387s;" x="573" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.007s; --twinkle-delay: -3.833s;" x="605" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.753s; --twinkle-delay: -3.587s;" x="621" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.367s; --twinkle-delay: -0.640s;" x="653" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.267s; --twinkle-delay: -4.720s;" x="685" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.687s; --twinkle-delay: -2.580s;" x="701" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.820s; --twinkle-delay: -2.440s;" x="733" y="194" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.473s; --twinkle-delay: -2.227s;" x="541" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.340s; --twinkle-delay: -0.727s;" x="573" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.353s; --twinkle-delay: -1.740s;" x="589" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.373s; --twinkle-delay: -0.953s;" x="621" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.187s; --twinkle-delay: -0.613s;" x="653" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.553s; --twinkle-delay: -0.233s;" x="669" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.773s; --twinkle-delay: -1.627s;" x="701" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.133s; --twinkle-delay: -2.700s;" x="733" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.240s; --twinkle-delay: -0.620s;" x="749" y="210" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.580s; --twinkle-delay: -2.347s;" x="541" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.373s; --twinkle-delay: -0.707s;" x="557" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.080s; --twinkle-delay: -1.113s;" x="589" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.967s; --twinkle-delay: -0.133s;" x="621" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.300s; --twinkle-delay: -3.747s;" x="637" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.200s; --twinkle-delay: -0.080s;" x="669" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.687s; --twinkle-delay: -2.013s;" x="701" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.247s; --twinkle-delay: -3.033s;" x="717" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.540s; --twinkle-delay: -3.627s;" x="749" y="226" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.740s; --twinkle-delay: -4.073s;" x="525" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.360s; --twinkle-delay: -0.827s;" x="557" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.453s; --twinkle-delay: -3.880s;" x="589" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.273s; --twinkle-delay: -2.127s;" x="605" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.500s; --twinkle-delay: -1.527s;" x="637" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.933s; --twinkle-delay: -0.500s;" x="669" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.533s; --twinkle-delay: -2.780s;" x="685" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.560s; --twinkle-delay: -3.553s;" x="717" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.120s; --twinkle-delay: -4.600s;" x="749" y="242" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.267s; --twinkle-delay: -1.480s;" x="525" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.827s; --twinkle-delay: -1.147s;" x="557" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.833s; --twinkle-delay: -5.787s;" x="573" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.313s; --twinkle-delay: -1.780s;" x="605" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.853s; --twinkle-delay: -5.647s;" x="637" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.467s; --twinkle-delay: -2.000s;" x="653" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.180s; --twinkle-delay: -0.233s;" x="685" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.880s; --twinkle-delay: -3.767s;" x="717" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.680s; --twinkle-delay: -5.627s;" x="733" y="258" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.127s; --twinkle-delay: -0.180s;" x="525" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.560s; --twinkle-delay: -4.033s;" x="541" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.933s; --twinkle-delay: -4.100s;" x="573" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.247s; --twinkle-delay: -1.073s;" x="605" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.567s; --twinkle-delay: -2.047s;" x="621" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.053s; --twinkle-delay: -2.993s;" x="653" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.720s; --twinkle-delay: -4.767s;" x="685" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.513s; --twinkle-delay: -0.393s;" x="701" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.947s; --twinkle-delay: -4.147s;" x="733" y="274" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.220s; --twinkle-delay: -0.267s;" x="541" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.267s; --twinkle-delay: -1.127s;" x="573" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.207s; --twinkle-delay: -2.087s;" x="589" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 3.267s; --twinkle-delay: -2.640s;" x="621" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 6.173s; --twinkle-delay: -4.973s;" x="653" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.647s; --twinkle-delay: -3.927s;" x="669" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.787s; --twinkle-delay: -3.200s;" x="701" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 5.093s; --twinkle-delay: -0.133s;" x="733" y="290" width="6" height="6"/>
+            <rect class="flowmap__square" style="--twinkle-duration: 4.687s; --twinkle-delay: -4.587s;" x="749" y="290" width="6" height="6"/>
+          </g>
+          <image href="/assets/bird-platform-card.png" x="532" y="95" width="216" height="264" preserveAspectRatio="xMidYMid meet"/>
+
+          <!-- inputs -->
+          <rect x="0.5" y="0.5" width="198" height="63" rx="31.5" fill="#ECFFF2" stroke="#C0E6D1"/>
+          <path d="M70 22H48C47.4696 22 46.9609 22.2107 46.5858 22.5858C46.2107 22.9609 46 23.4696 46 24V44C45.9977 44.3814 46.1056 44.7553 46.3107 45.0768C46.5159 45.3984 46.8095 45.6538 47.1563 45.8125C47.4206 45.9356 47.7085 45.9995 48 46C48.4695 45.9989 48.9235 45.8315 49.2813 45.5275L49.2925 45.5187L53.375 42H70C70.5305 42 71.0392 41.7893 71.4142 41.4142C71.7893 41.0391 72 40.5304 72 40V24C72 23.4696 71.7893 22.9609 71.4142 22.5858C71.0392 22.2107 70.5305 22 70 22ZM63 35H55C54.7348 35 54.4805 34.8946 54.2929 34.7071C54.1054 34.5196 54 34.2652 54 34C54 33.7348 54.1054 33.4804 54.2929 33.2929C54.4805 33.1054 54.7348 33 55 33H63C63.2653 33 63.5196 33.1054 63.7071 33.2929C63.8947 33.4804 64 33.7348 64 34C64 34.2652 63.8947 34.5196 63.7071 34.7071C63.5196 34.8946 63.2653 35 63 35ZM63 31H55C54.7348 31 54.4805 30.8946 54.2929 30.7071C54.1054 30.5196 54 30.2652 54 30C54 29.7348 54.1054 29.4804 54.2929 29.2929C54.4805 29.1054 54.7348 29 55 29H63C63.2653 29 63.5196 29.1054 63.7071 29.2929C63.8947 29.4804 64 29.7348 64 30C64 30.2652 63.8947 30.5196 63.7071 30.7071C63.5196 30.8946 63.2653 31 63 31Z" fill="#38835F" transform="translate(-19.0 0)"/>
+          <text class="flowmap__label" x="67.0" y="39">IFC-modeller</text>
+          <rect x="0.5" y="99.5" width="198" height="63" rx="31.5" fill="#EEFAFF" stroke="#B3D3E5"/>
+          <path d="M70 124H48C47.4696 124 46.9609 124.211 46.5858 124.586C46.2107 124.961 46 125.47 46 126V146C45.9977 146.381 46.1056 146.755 46.3107 147.077C46.5159 147.398 46.8095 147.654 47.1563 147.812C47.4206 147.936 47.7085 148 48 148C48.4695 147.999 48.9235 147.831 49.2813 147.528L49.2925 147.519L53.375 144H70C70.5305 144 71.0392 143.789 71.4142 143.414C71.7893 143.039 72 142.53 72 142V126C72 125.47 71.7893 124.961 71.4142 124.586C71.0392 124.211 70.5305 124 70 124ZM63 137H55C54.7348 137 54.4805 136.895 54.2929 136.707C54.1054 136.52 54 136.265 54 136C54 135.735 54.1054 135.48 54.2929 135.293C54.4805 135.105 54.7348 135 55 135H63C63.2653 135 63.5196 135.105 63.7071 135.293C63.8947 135.48 64 135.735 64 136C64 136.265 63.8947 136.52 63.7071 136.707C63.5196 136.895 63.2653 137 63 137ZM63 133H55C54.7348 133 54.4805 132.895 54.2929 132.707C54.1054 132.52 54 132.265 54 132C54 131.735 54.1054 131.48 54.2929 131.293C54.4805 131.105 54.7348 131 55 131H63C63.2653 131 63.5196 131.105 63.7071 131.293C63.8947 131.48 64 131.735 64 132C64 132.265 63.8947 132.52 63.7071 132.707C63.5196 132.895 63.2653 133 63 133Z" fill="#0E74F1" transform="translate(-18.8 -3)"/>
+          <text class="flowmap__label" x="67.2" y="138">BCF-sager</text>
+          <rect x="0.5" y="198.5" width="198" height="63" rx="31.5" fill="#F4EBFE" stroke="#E2CFFF"/>
+          <path d="M85 226H63C62.4696 226 61.9609 226.211 61.5858 226.586C61.2107 226.961 61 227.47 61 228V248C60.9977 248.381 61.1056 248.755 61.3107 249.077C61.5159 249.398 61.8095 249.654 62.1563 249.812C62.4206 249.936 62.7085 250 63 250C63.4695 249.999 63.9235 249.831 64.2813 249.528L64.2925 249.519L68.375 246H85C85.5305 246 86.0392 245.789 86.4142 245.414C86.7893 245.039 87 244.53 87 244V228C87 227.47 86.7893 226.961 86.4142 226.586C86.0392 226.211 85.5305 226 85 226ZM78 239H70C69.7348 239 69.4805 238.895 69.2929 238.707C69.1054 238.52 69 238.265 69 238C69 237.735 69.1054 237.48 69.2929 237.293C69.4805 237.105 69.7348 237 70 237H78C78.2653 237 78.5196 237.105 78.7071 237.293C78.8947 237.48 79 237.735 79 238C79 238.265 78.8947 238.52 78.7071 238.707C78.5196 238.895 78.2653 239 78 239ZM78 235H70C69.7348 235 69.4805 234.895 69.2929 234.707C69.1054 234.52 69 234.265 69 234C69 233.735 69.1054 233.48 69.2929 233.293C69.4805 233.105 69.7348 233 70 233H78C78.2653 233 78.5196 233.105 78.7071 233.293C78.8947 233.48 79 233.735 79 234C79 234.265 78.8947 234.52 78.7071 234.707C78.5196 234.895 78.2653 235 78 235Z" fill="#593D92" transform="translate(-26.5 -6)"/>
+          <text class="flowmap__label" x="74.5" y="237">IDS-regler</text>
+          <rect x="0.5" y="297.5" width="198" height="63" rx="31.5" fill="#FFF9E6" stroke="#FAE7B0"/>
+          <path d="M67 320H45C44.4696 320 43.9609 320.211 43.5858 320.586C43.2107 320.961 43 321.47 43 322V342C42.9977 342.381 43.1056 342.755 43.3107 343.077C43.5159 343.398 43.8095 343.654 44.1563 343.812C44.4206 343.936 44.7085 344 45 344C45.4695 343.999 45.9235 343.831 46.2813 343.528L46.2925 343.519L50.375 340H67C67.5305 340 68.0392 339.789 68.4142 339.414C68.7893 339.039 69 338.53 69 338V322C69 321.47 68.7893 320.961 68.4142 320.586C68.0392 320.211 67.5305 320 67 320ZM60 333H52C51.7348 333 51.4805 332.895 51.2929 332.707C51.1054 332.52 51 332.265 51 332C51 331.735 51.1054 331.48 51.2929 331.293C51.4805 331.105 51.7348 331 52 331H60C60.2653 331 60.5196 331.105 60.7071 331.293C60.8947 331.48 61 331.735 61 332C61 332.265 60.8947 332.52 60.7071 332.707C60.5196 332.895 60.2653 333 60 333ZM60 329H52C51.7348 329 51.4805 328.895 51.2929 328.707C51.1054 328.52 51 328.265 51 328C51 327.735 51.1054 327.48 51.2929 327.293C51.4805 327.105 51.7348 327 52 327H60C60.2653 327 60.5196 327.105 60.7071 327.293C60.8947 327.48 61 327.735 61 328C61 328.265 60.8947 328.52 60.7071 328.707C60.5196 328.895 60.2653 329 60 329Z" fill="#A84F0B" transform="translate(-17.6 -1)"/>
+          <text class="flowmap__label" x="65.4" y="336">COBie-data</text>
+
+          <!-- outputs -->
+          <rect x="1081.5" y="0.5" width="198" height="63" rx="11.5" fill="#F6F6F6" stroke="#E6E6E6"/>
+          <path d="M1120 31H1141C1141.13 31 1141.26 30.9473 1141.35 30.8536C1141.45 30.7598 1141.5 30.6326 1141.5 30.5V27C1141.5 26.8686 1141.47 26.7385 1141.42 26.6172C1141.37 26.4958 1141.3 26.3854 1141.21 26.2925L1134.21 19.2925C1134.11 19.1997 1134 19.1261 1133.88 19.0759C1133.76 19.0257 1133.63 18.9999 1133.5 19H1121.5C1120.97 19 1120.46 19.2107 1120.09 19.5858C1119.71 19.9609 1119.5 20.4696 1119.5 21V30.5C1119.5 30.6326 1119.55 30.7598 1119.65 30.8536C1119.74 30.9473 1119.87 31 1120 31ZM1133.5 21.5L1139 27H1133.5V21.5ZM1142.5 35.0662C1142.48 35.3233 1142.36 35.5624 1142.17 35.7355C1141.98 35.9087 1141.73 36.0032 1141.47 36H1138.5V38H1140.47C1140.72 37.9965 1140.97 38.0909 1141.17 38.2641C1141.36 38.4374 1141.48 38.6766 1141.5 38.9338C1141.51 39.0705 1141.49 39.2077 1141.44 39.3368C1141.4 39.4659 1141.32 39.5841 1141.23 39.6841C1141.14 39.7841 1141.02 39.8637 1140.9 39.9181C1140.77 39.9724 1140.63 40.0003 1140.5 40H1138.5V41.9662C1138.5 42.2243 1138.41 42.4741 1138.24 42.6655C1138.06 42.8568 1137.82 42.9754 1137.57 42.9975C1137.43 43.0066 1137.29 42.9874 1137.16 42.9413C1137.03 42.8951 1136.92 42.8229 1136.82 42.7291C1136.72 42.6353 1136.64 42.522 1136.58 42.3961C1136.53 42.2703 1136.5 42.1346 1136.5 41.9975V35C1136.5 34.7348 1136.61 34.4804 1136.79 34.2929C1136.98 34.1054 1137.23 34 1137.5 34H1141.5C1141.64 33.9997 1141.77 34.0276 1141.9 34.0819C1142.02 34.1363 1142.14 34.2159 1142.23 34.3159C1142.33 34.4159 1142.4 34.5341 1142.44 34.6632C1142.49 34.7923 1142.51 34.9295 1142.5 35.0662ZM1122.5 34H1120.5C1120.23 34 1119.98 34.1054 1119.79 34.2929C1119.61 34.4804 1119.5 34.7348 1119.5 35V41.9662C1119.5 42.2247 1119.59 42.4752 1119.76 42.667C1119.94 42.8589 1120.18 42.9779 1120.43 43C1120.57 43.0091 1120.71 42.9899 1120.84 42.9438C1120.97 42.8976 1121.08 42.8254 1121.18 42.7316C1121.28 42.6378 1121.36 42.5245 1121.42 42.3986C1121.47 42.2728 1121.5 42.1371 1121.5 42V41H1122.43C1124.33 41 1125.94 39.51 1126 37.6063C1126.01 37.1379 1125.93 36.6714 1125.76 36.2345C1125.59 35.7976 1125.34 35.3992 1125.01 35.0629C1124.69 34.7265 1124.3 34.4591 1123.86 34.2766C1123.43 34.094 1122.97 34 1122.5 34ZM1122.46 39H1121.5V36H1122.5C1122.71 35.999 1122.92 36.0421 1123.11 36.1263C1123.3 36.2106 1123.47 36.3343 1123.62 36.4893C1123.76 36.6443 1123.86 36.8273 1123.93 37.0264C1124 37.2254 1124.02 37.4362 1124 37.645C1123.96 38.022 1123.77 38.3694 1123.49 38.6197C1123.2 38.8701 1122.84 39.0056 1122.46 39ZM1130.5 34H1128.5C1128.23 34 1127.98 34.1054 1127.79 34.2929C1127.61 34.4804 1127.5 34.7348 1127.5 35V42C1127.5 42.2652 1127.61 42.5196 1127.79 42.7071C1127.98 42.8946 1128.23 43 1128.5 43H1130.42C1132.87 43 1134.94 41.065 1135 38.6087C1135.01 38.0088 1134.91 37.412 1134.69 36.8535C1134.47 36.2951 1134.14 35.7861 1133.72 35.3567C1133.3 34.9272 1132.8 34.586 1132.25 34.353C1131.69 34.12 1131.1 34 1130.5 34ZM1130.44 41H1129.5V36H1130.5C1130.84 35.9998 1131.17 36.0675 1131.48 36.1991C1131.79 36.3307 1132.07 36.5235 1132.3 36.7659C1132.54 37.0084 1132.72 37.2954 1132.84 37.61C1132.96 37.9245 1133.01 38.2599 1133 38.5963C1132.95 39.9487 1131.79 41 1130.44 41Z" fill="#161616" transform="translate(23.0 0)"/>
+          <text class="flowmap__label" x="1179.5" y="39">PDF</text>
+          <rect x="1081.5" y="99.5" width="198" height="63" rx="11.5" fill="#F6F6F6" stroke="#E6E6E6"/>
+          <path d="M1120 133H1141C1141.13 133 1141.26 132.947 1141.35 132.854C1141.45 132.76 1141.5 132.633 1141.5 132.5V129C1141.5 128.869 1141.47 128.739 1141.42 128.617C1141.37 128.496 1141.3 128.385 1141.21 128.293L1134.21 121.293C1134.11 121.2 1134 121.126 1133.88 121.076C1133.76 121.026 1133.63 121 1133.5 121H1121.5C1120.97 121 1120.46 121.211 1120.09 121.586C1119.71 121.961 1119.5 122.47 1119.5 123V132.5C1119.5 132.633 1119.55 132.76 1119.65 132.854C1119.74 132.947 1119.87 133 1120 133ZM1133.5 123.5L1139 129H1133.5V123.5ZM1142.5 137.066C1142.48 137.323 1142.36 137.562 1142.17 137.736C1141.98 137.909 1141.73 138.003 1141.47 138H1138.5V140H1140.47C1140.72 139.997 1140.97 140.091 1141.17 140.264C1141.36 140.437 1141.48 140.677 1141.5 140.934C1141.51 141.071 1141.49 141.208 1141.44 141.337C1141.4 141.466 1141.32 141.584 1141.23 141.684C1141.14 141.784 1141.02 141.864 1140.9 141.918C1140.77 141.972 1140.63 142 1140.5 142H1138.5V143.966C1138.5 144.224 1138.41 144.474 1138.24 144.665C1138.06 144.857 1137.82 144.975 1137.57 144.997C1137.43 145.007 1137.29 144.987 1137.16 144.941C1137.03 144.895 1136.92 144.823 1136.82 144.729C1136.72 144.635 1136.64 144.522 1136.58 144.396C1136.53 144.27 1136.5 144.135 1136.5 143.997V137C1136.5 136.735 1136.61 136.48 1136.79 136.293C1136.98 136.105 1137.23 136 1137.5 136H1141.5C1141.64 136 1141.77 136.028 1141.9 136.082C1142.02 136.136 1142.14 136.216 1142.23 136.316C1142.33 136.416 1142.4 136.534 1142.44 136.663C1142.49 136.792 1142.51 136.929 1142.5 137.066ZM1122.5 136H1120.5C1120.23 136 1119.98 136.105 1119.79 136.293C1119.61 136.48 1119.5 136.735 1119.5 137V143.966C1119.5 144.225 1119.59 144.475 1119.76 144.667C1119.94 144.859 1120.18 144.978 1120.43 145C1120.57 145.009 1120.71 144.99 1120.84 144.944C1120.97 144.898 1121.08 144.825 1121.18 144.732C1121.28 144.638 1121.36 144.524 1121.42 144.399C1121.47 144.273 1121.5 144.137 1121.5 144V143H1122.43C1124.33 143 1125.94 141.51 1126 139.606C1126.01 139.138 1125.93 138.671 1125.76 138.234C1125.59 137.798 1125.34 137.399 1125.01 137.063C1124.69 136.727 1124.3 136.459 1123.86 136.277C1123.43 136.094 1122.97 136 1122.5 136ZM1122.46 141H1121.5V138H1122.5C1122.71 137.999 1122.92 138.042 1123.11 138.126C1123.3 138.211 1123.47 138.334 1123.62 138.489C1123.76 138.644 1123.86 138.827 1123.93 139.026C1124 139.225 1124.02 139.436 1124 139.645C1123.96 140.022 1123.77 140.369 1123.49 140.62C1123.2 140.87 1122.84 141.006 1122.46 141ZM1130.5 136H1128.5C1128.23 136 1127.98 136.105 1127.79 136.293C1127.61 136.48 1127.5 136.735 1127.5 137V144C1127.5 144.265 1127.61 144.52 1127.79 144.707C1127.98 144.895 1128.23 145 1128.5 145H1130.42C1132.87 145 1134.94 143.065 1135 140.609C1135.01 140.009 1134.91 139.412 1134.69 138.854C1134.47 138.295 1134.14 137.786 1133.72 137.357C1133.3 136.927 1132.8 136.586 1132.25 136.353C1131.69 136.12 1131.1 136 1130.5 136ZM1130.44 143H1129.5V138H1130.5C1130.84 138 1131.17 138.067 1131.48 138.199C1131.79 138.331 1132.07 138.523 1132.3 138.766C1132.54 139.008 1132.72 139.295 1132.84 139.61C1132.96 139.924 1133.01 140.26 1133 140.596C1132.95 141.949 1131.79 143 1130.44 143Z" fill="#161616" transform="translate(23.0 -3)"/>
+          <text class="flowmap__label" x="1179.5" y="138">PDF</text>
+          <rect x="1081.5" y="198.5" width="198" height="63" rx="11.5" fill="#F6F6F6" stroke="#E6E6E6"/>
+          <path d="M1120 235H1141C1141.13 235 1141.26 234.947 1141.35 234.854C1141.45 234.76 1141.5 234.633 1141.5 234.5V231C1141.5 230.869 1141.47 230.739 1141.42 230.617C1141.37 230.496 1141.3 230.385 1141.21 230.293L1134.21 223.293C1134.11 223.2 1134 223.126 1133.88 223.076C1133.76 223.026 1133.63 223 1133.5 223H1121.5C1120.97 223 1120.46 223.211 1120.09 223.586C1119.71 223.961 1119.5 224.47 1119.5 225V234.5C1119.5 234.633 1119.55 234.76 1119.65 234.854C1119.74 234.947 1119.87 235 1120 235ZM1133.5 225.5L1139 231H1133.5V225.5ZM1142.5 239.066C1142.48 239.323 1142.36 239.562 1142.17 239.736C1141.98 239.909 1141.73 240.003 1141.47 240H1138.5V242H1140.47C1140.72 241.997 1140.97 242.091 1141.17 242.264C1141.36 242.437 1141.48 242.677 1141.5 242.934C1141.51 243.071 1141.49 243.208 1141.44 243.337C1141.4 243.466 1141.32 243.584 1141.23 243.684C1141.14 243.784 1141.02 243.864 1140.9 243.918C1140.77 243.972 1140.63 244 1140.5 244H1138.5V245.966C1138.5 246.224 1138.41 246.474 1138.24 246.665C1138.06 246.857 1137.82 246.975 1137.57 246.997C1137.43 247.007 1137.29 246.987 1137.16 246.941C1137.03 246.895 1136.92 246.823 1136.82 246.729C1136.72 246.635 1136.64 246.522 1136.58 246.396C1136.53 246.27 1136.5 246.135 1136.5 245.997V239C1136.5 238.735 1136.61 238.48 1136.79 238.293C1136.98 238.105 1137.23 238 1137.5 238H1141.5C1141.64 238 1141.77 238.028 1141.9 238.082C1142.02 238.136 1142.14 238.216 1142.23 238.316C1142.33 238.416 1142.4 238.534 1142.44 238.663C1142.49 238.792 1142.51 238.929 1142.5 239.066ZM1122.5 238H1120.5C1120.23 238 1119.98 238.105 1119.79 238.293C1119.61 238.48 1119.5 238.735 1119.5 239V245.966C1119.5 246.225 1119.59 246.475 1119.76 246.667C1119.94 246.859 1120.18 246.978 1120.43 247C1120.57 247.009 1120.71 246.99 1120.84 246.944C1120.97 246.898 1121.08 246.825 1121.18 246.732C1121.28 246.638 1121.36 246.524 1121.42 246.399C1121.47 246.273 1121.5 246.137 1121.5 246V245H1122.43C1124.33 245 1125.94 243.51 1126 241.606C1126.01 241.138 1125.93 240.671 1125.76 240.234C1125.59 239.798 1125.34 239.399 1125.01 239.063C1124.69 238.727 1124.3 238.459 1123.86 238.277C1123.43 238.094 1122.97 238 1122.5 238ZM1122.46 243H1121.5V240H1122.5C1122.71 239.999 1122.92 240.042 1123.11 240.126C1123.3 240.211 1123.47 240.334 1123.62 240.489C1123.76 240.644 1123.86 240.827 1123.93 241.026C1124 241.225 1124.02 241.436 1124 241.645C1123.96 242.022 1123.77 242.369 1123.49 242.62C1123.2 242.87 1122.84 243.006 1122.46 243ZM1130.5 238H1128.5C1128.23 238 1127.98 238.105 1127.79 238.293C1127.61 238.48 1127.5 238.735 1127.5 239V246C1127.5 246.265 1127.61 246.52 1127.79 246.707C1127.98 246.895 1128.23 247 1128.5 247H1130.42C1132.87 247 1134.94 245.065 1135 242.609C1135.01 242.009 1134.91 241.412 1134.69 240.854C1134.47 240.295 1134.14 239.786 1133.72 239.357C1133.3 238.927 1132.8 238.586 1132.25 238.353C1131.69 238.12 1131.1 238 1130.5 238ZM1130.44 245H1129.5V240H1130.5C1130.84 240 1131.17 240.067 1131.48 240.199C1131.79 240.331 1132.07 240.523 1132.3 240.766C1132.54 241.008 1132.72 241.295 1132.84 241.61C1132.96 241.924 1133.01 242.26 1133 242.596C1132.95 243.949 1131.79 245 1130.44 245Z" fill="#161616" transform="translate(23.0 -6)"/>
+          <text class="flowmap__label" x="1179.5" y="237">PDF</text>
+          <rect x="1081.5" y="297.5" width="198" height="63" rx="11.5" fill="#F6F6F6" stroke="#E6E6E6"/>
+          <path d="M1120 329H1141C1141.13 329 1141.26 328.947 1141.35 328.854C1141.45 328.76 1141.5 328.633 1141.5 328.5V325C1141.5 324.869 1141.47 324.739 1141.42 324.617C1141.37 324.496 1141.3 324.385 1141.21 324.293L1134.21 317.293C1134.11 317.2 1134 317.126 1133.88 317.076C1133.76 317.026 1133.63 317 1133.5 317H1121.5C1120.97 317 1120.46 317.211 1120.09 317.586C1119.71 317.961 1119.5 318.47 1119.5 319V328.5C1119.5 328.633 1119.55 328.76 1119.65 328.854C1119.74 328.947 1119.87 329 1120 329ZM1133.5 319.5L1139 325H1133.5V319.5ZM1142.5 333.066C1142.48 333.323 1142.36 333.562 1142.17 333.736C1141.98 333.909 1141.73 334.003 1141.47 334H1138.5V336H1140.47C1140.72 335.997 1140.97 336.091 1141.17 336.264C1141.36 336.437 1141.48 336.677 1141.5 336.934C1141.51 337.071 1141.49 337.208 1141.44 337.337C1141.4 337.466 1141.32 337.584 1141.23 337.684C1141.14 337.784 1141.02 337.864 1140.9 337.918C1140.77 337.972 1140.63 338 1140.5 338H1138.5V339.966C1138.5 340.224 1138.41 340.474 1138.24 340.665C1138.06 340.857 1137.82 340.975 1137.57 340.997C1137.43 341.007 1137.29 340.987 1137.16 340.941C1137.03 340.895 1136.92 340.823 1136.82 340.729C1136.72 340.635 1136.64 340.522 1136.58 340.396C1136.53 340.27 1136.5 340.135 1136.5 339.997V333C1136.5 332.735 1136.61 332.48 1136.79 332.293C1136.98 332.105 1137.23 332 1137.5 332H1141.5C1141.64 332 1141.77 332.028 1141.9 332.082C1142.02 332.136 1142.14 332.216 1142.23 332.316C1142.33 332.416 1142.4 332.534 1142.44 332.663C1142.49 332.792 1142.51 332.929 1142.5 333.066ZM1122.5 332H1120.5C1120.23 332 1119.98 332.105 1119.79 332.293C1119.61 332.48 1119.5 332.735 1119.5 333V339.966C1119.5 340.225 1119.59 340.475 1119.76 340.667C1119.94 340.859 1120.18 340.978 1120.43 341C1120.57 341.009 1120.71 340.99 1120.84 340.944C1120.97 340.898 1121.08 340.825 1121.18 340.732C1121.28 340.638 1121.36 340.524 1121.42 340.399C1121.47 340.273 1121.5 340.137 1121.5 340V339H1122.43C1124.33 339 1125.94 337.51 1126 335.606C1126.01 335.138 1125.93 334.671 1125.76 334.234C1125.59 333.798 1125.34 333.399 1125.01 333.063C1124.69 332.727 1124.3 332.459 1123.86 332.277C1123.43 332.094 1122.97 332 1122.5 332ZM1122.46 337H1121.5V334H1122.5C1122.71 333.999 1122.92 334.042 1123.11 334.126C1123.3 334.211 1123.47 334.334 1123.62 334.489C1123.76 334.644 1123.86 334.827 1123.93 335.026C1124 335.225 1124.02 335.436 1124 335.645C1123.96 336.022 1123.77 336.369 1123.49 336.62C1123.2 336.87 1122.84 337.006 1122.46 337ZM1130.5 332H1128.5C1128.23 332 1127.98 332.105 1127.79 332.293C1127.61 332.48 1127.5 332.735 1127.5 333V340C1127.5 340.265 1127.61 340.52 1127.79 340.707C1127.98 340.895 1128.23 341 1128.5 341H1130.42C1132.87 341 1134.94 339.065 1135 336.609C1135.01 336.009 1134.91 335.412 1134.69 334.854C1134.47 334.295 1134.14 333.786 1133.72 333.357C1133.3 332.927 1132.8 332.586 1132.25 332.353C1131.69 332.12 1131.1 332 1130.5 332ZM1130.44 339H1129.5V334H1130.5C1130.84 334 1131.17 334.067 1131.48 334.199C1131.79 334.331 1132.07 334.523 1132.3 334.766C1132.54 335.008 1132.72 335.295 1132.84 335.61C1132.96 335.924 1133.01 336.26 1133 336.596C1132.95 337.949 1131.79 339 1130.44 339Z" fill="#161616" transform="translate(23.0 -1)"/>
+          <text class="flowmap__label" x="1179.5" y="336">PDF</text>
+
+          <!-- flares where the light arrives, under the dots -->
+          <circle class="flowmap__flare" cx="510" cy="110" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="6;6;14;18;18"/></circle>
+          <circle class="flowmap__flare" cx="510" cy="157" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="6;6;14;18;18"/></circle>
+          <circle class="flowmap__flare" cx="510" cy="204" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="6;6;14;18;18"/></circle>
+          <circle class="flowmap__flare" cx="510" cy="251" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;.37;.41;.55;1" values="6;6;14;18;18"/></circle>
+          <circle class="flowmap__flare" cx="1081" cy="32" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.00s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="6;6;14;18;18"/></circle>
+          <circle class="flowmap__flare" cx="1081" cy="131" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.24s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="6;6;14;18;18"/></circle>
+          <circle class="flowmap__flare" cx="1081" cy="230" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.48s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="6;6;14;18;18"/></circle>
+          <circle class="flowmap__flare" cx="1081" cy="329" r="6" fill="url(#fm-flare)" opacity="0"><animate attributeName="opacity" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="0;0;.65;0;0"/><animate attributeName="r" dur="4.8s" begin="0.72s" repeatCount="indefinite" keyTimes="0;.81;.85;.97;1" values="6;6;14;18;18"/></circle>
+
+          <!-- connectors -->
+          <g class="flowmap__dots">
+            <circle cx="199" cy="32" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="199" cy="32" r="6" fill="url(#fm-dot-199-0)" aria-hidden="true"/><circle cx="199" cy="32" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="199" cy="131" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="199" cy="131" r="6" fill="url(#fm-dot-199-1)" aria-hidden="true"/><circle cx="199" cy="131" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="199" cy="230" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="199" cy="230" r="6" fill="url(#fm-dot-199-2)" aria-hidden="true"/><circle cx="199" cy="230" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="199" cy="329" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="199" cy="329" r="6" fill="url(#fm-dot-199-3)" aria-hidden="true"/><circle cx="199" cy="329" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="510" cy="110" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="510" cy="110" r="6" fill="url(#fm-dot-510-0)" aria-hidden="true"/><circle cx="510" cy="110" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="510" cy="157" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="510" cy="157" r="6" fill="url(#fm-dot-510-1)" aria-hidden="true"/><circle cx="510" cy="157" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="510" cy="204" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="510" cy="204" r="6" fill="url(#fm-dot-510-2)" aria-hidden="true"/><circle cx="510" cy="204" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="510" cy="251" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="510" cy="251" r="6" fill="url(#fm-dot-510-3)" aria-hidden="true"/><circle cx="510" cy="251" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="770" cy="110" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="770" cy="110" r="6" fill="url(#fm-dot-770-0)" aria-hidden="true"/><circle cx="770" cy="110" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="770" cy="157" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="770" cy="157" r="6" fill="url(#fm-dot-770-1)" aria-hidden="true"/><circle cx="770" cy="157" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="770" cy="204" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="770" cy="204" r="6" fill="url(#fm-dot-770-2)" aria-hidden="true"/><circle cx="770" cy="204" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="770" cy="251" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="770" cy="251" r="6" fill="url(#fm-dot-770-3)" aria-hidden="true"/><circle cx="770" cy="251" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="1081" cy="32" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="1081" cy="32" r="6" fill="url(#fm-dot-1081-0)" aria-hidden="true"/><circle cx="1081" cy="32" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="1081" cy="131" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="1081" cy="131" r="6" fill="url(#fm-dot-1081-1)" aria-hidden="true"/><circle cx="1081" cy="131" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="1081" cy="230" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="1081" cy="230" r="6" fill="url(#fm-dot-1081-2)" aria-hidden="true"/><circle cx="1081" cy="230" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+            <circle cx="1081" cy="329" r="6" fill="#0E74F1"/><circle class="flowmap__dot-flash" cx="1081" cy="329" r="6" fill="url(#fm-dot-1081-3)" aria-hidden="true"/><circle cx="1081" cy="329" r="7.5" stroke="#FFFFFF" stroke-width="3"/>
+          </g>
+        </svg>
       </div>
     </div>
 
@@ -63,17 +499,16 @@
 
   <!-- ============ MOBILE MENU ============ -->
   <div class="menu" id="menu" aria-hidden="true">
-    <nav class="menu__inner" aria-label="Mobile">
+    <nav class="menu__inner" aria-label="Mobilnavigation">
       <p class="kicker kicker--foundation menu__kicker">Menu</p>
       <ul class="menu__list">
-          <li style="--i:0"><a href="platform.html" aria-current="page"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:1"><a href="#"><span class="menu__idx">02</span><span class="menu__label">Pricing</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:2"><a href="about.html"><span class="menu__idx">03</span><span class="menu__label">About</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:3"><a href="contact.html"><span class="menu__idx">04</span><span class="menu__label">Contact</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:4"><a href="journal.html"><span class="menu__idx">05</span><span class="menu__label">Journal</span></a></li>
+          <li style="--i:0"><a href="/platform.html" aria-current="page"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:1"><a href="/pricing.html"><span class="menu__idx">02</span><span class="menu__label">Priser</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:2"><a href="/about.html"><span class="menu__idx">03</span><span class="menu__label">Om os</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:3"><a href="/contact.html"><span class="menu__idx">04</span><span class="menu__label">Kontakt</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
       </ul>
       <div class="menu__footer">
-        <a class="btn btn--m btn--charcoal" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <a class="btn btn--m btn--charcoal" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         <a class="menu__mail" href="mailto:inquiry@getbird.io">inquiry@getbird.io</a>
       </div>
     </nav>
@@ -82,16 +517,18 @@
   <main>
 
     <!-- ============ DIRECTORY ============ -->
-    <section class="directory" data-filter="feature" aria-label="Platform features">
+    <section class="directory" data-filter="feature" aria-label="Platformens funktioner">
+
+
       <div class="directory__bar">
-        <div class="tabs" role="group" aria-label="Filter by category">
-          <button class="tab" type="button" data-category="all" aria-pressed="true">All</button>
-          <button class="tab" type="button" data-category="drawings" aria-pressed="false">Drawings</button>
+        <div class="tabs" role="group" aria-label="Filtrér efter kategori">
+          <button class="tab" type="button" data-category="all" aria-pressed="true">Alle</button>
+          <button class="tab" type="button" data-category="drawings" aria-pressed="false">Tegninger</button>
           <button class="tab" type="button" data-category="ai" aria-pressed="false">AI</button>
-          <button class="tab" type="button" data-category="field" aria-pressed="false">Field</button>
-          <button class="tab" type="button" data-category="collaboration" aria-pressed="false">Collaboration</button>
+          <button class="tab" type="button" data-category="field" aria-pressed="false">Byggeplads</button>
+          <button class="tab" type="button" data-category="collaboration" aria-pressed="false">Samarbejde</button>
         </div>
-        <p class="directory__count" aria-live="polite">12 features</p>
+        <p class="directory__count" aria-live="polite">12 funktioner</p>
       </div>
 
       <div class="directory__grid">
@@ -99,119 +536,119 @@
         <article class="feature feature--drawings" id="live-project-views" data-category="drawings">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7v2h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg></span>
-            <div><h3 class="feature__name">Live project views</h3><p class="feature__meta">Drawings</p></div>
+            <div><h3 class="feature__name">Live projektoverblik</h3><p class="feature__meta">Tegninger</p></div>
           </div>
-          <p class="feature__text">Review drawings on site, in the office, or on the go, always in sync. Available on desktop, iPad, and mobile.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Gennemgå tegninger på byggepladsen, på kontoret eller på farten – altid synkroniseret. Tilgængelig på computer, iPad og mobil.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--drawings" id="plan-intelligence" data-category="drawings">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1" stroke-linejoin="round"><path d="M2.5 6 7.5 3.5V18l-5 2.5z"/><path d="m9.5 3.5 5 2.5v14.5l-5-2.5z"/><path d="m16.5 6 5-2.5V18l-5 2.5z"/></g></svg></span>
-            <div><h3 class="feature__name">Plan intelligence</h3><p class="feature__meta">Drawings</p></div>
+            <div><h3 class="feature__name">Tegningsindsigt</h3><p class="feature__meta">Tegninger</p></div>
           </div>
-          <p class="feature__text">Zoom, layer, and explore your drawings with clarity. Turn complex plans into something everyone can follow.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Zoom ind, arbejd med lag, og få overblik over dine tegninger. Gør komplekse planer lette at forstå for alle.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--drawings" id="measure-annotate" data-category="drawings">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.6 3.6a2.6 2.6 0 0 1 3.7 0l1.1 1.1a2.6 2.6 0 0 1 0 3.7L9.2 19.6a1 1 0 0 1-.46.26l-4.5 1.13a1 1 0 0 1-1.21-1.21L4.14 15.3a1 1 0 0 1 .26-.47z"/><rect x="13" y="19" width="8" height="2" rx="1"/></svg></span>
-            <div><h3 class="feature__name">Measure and annotate</h3><p class="feature__meta">Drawings</p></div>
+            <div><h3 class="feature__name">Opmåling og noter</h3><p class="feature__meta">Tegninger</p></div>
           </div>
-          <p class="feature__text">Measure instantly and annotate anywhere. Mark up plans directly and share notes with the right people.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Mål med det samme, og tilføj noter overalt. Lav markeringer direkte på tegninger, og del noter med de rette personer.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <!-- AI -->
         <article class="feature feature--ai" id="ai-project-insights" data-category="ai">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 2.5a.7.7 0 0 1 .66.46l1.62 4.36a1 1 0 0 0 .6.6l4.36 1.62a.7.7 0 0 1 0 1.32l-4.36 1.62a1 1 0 0 0-.6.6l-1.62 4.36a.7.7 0 0 1-1.32 0l-1.62-4.36a1 1 0 0 0-.6-.6L3.76 10.86a.7.7 0 0 1 0-1.32l4.36-1.62a1 1 0 0 0 .6-.6l1.62-4.36A.7.7 0 0 1 11 2.5z"/><path d="M19 13.5a.5.5 0 0 1 .47.33l.68 1.85a1 1 0 0 0 .6.6l1.85.68a.5.5 0 0 1 0 .94l-1.85.68a1 1 0 0 0-.6.6l-.68 1.85a.5.5 0 0 1-.94 0l-.68-1.85a1 1 0 0 0-.6-.6l-1.85-.68a.5.5 0 0 1 0-.94l1.85-.68a1 1 0 0 0 .6-.6l.68-1.85A.5.5 0 0 1 19 13.5z"/></svg></span>
-            <div><h3 class="feature__name">AI project insights</h3><p class="feature__meta">AI</p></div>
+            <div><h3 class="feature__name">AI-projektindsigt</h3><p class="feature__meta">AI</p></div>
           </div>
-          <p class="feature__text">Know what changed, where it changed, and what it means - without digging through drawings.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Se, hvad der er ændret, hvor det er ændret, og hvad det betyder – uden at lede i bunker af tegninger.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--ai" id="ai-assistant" data-category="ai">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5 3h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8.4l-3.75 3.2A1 1 0 0 1 3 19.44V5a2 2 0 0 1 2-2zm3 7.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zm4 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zm4 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5z"/></svg></span>
-            <div><h3 class="feature__name">Bird AI Assistant</h3><p class="feature__meta">AI</p></div>
+            <div><h3 class="feature__name">Bird AI-assistent</h3><p class="feature__meta">AI</p></div>
           </div>
-          <p class="feature__text">Ask questions in plain language and get instant answers to what changed, why it matters, and what to do next.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Stil spørgsmål i almindeligt sprog, og få straks svar på, hvad der er ændret, hvorfor det er vigtigt, og hvad næste skridt er.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--ai" id="change-overview" data-category="ai">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="12" width="4.5" height="9" rx="1.5"/><rect x="9.75" y="7" width="4.5" height="14" rx="1.5"/><rect x="16.5" y="3" width="4.5" height="18" rx="1.5"/></svg></span>
-            <div><h3 class="feature__name">Project change overview</h3><p class="feature__meta">AI</p></div>
+            <div><h3 class="feature__name">Overblik over projektændringer</h3><p class="feature__meta">AI</p></div>
           </div>
-          <p class="feature__text">Get a real-time view of changes, risks, and timeline impact - all in one place, with early risk identification.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Få et overblik i realtid over ændringer, risici og effekten på tidsplanen – alt samlet ét sted med tidlig identifikation af risici.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <!-- Field -->
         <article class="feature feature--field" id="site-capture" data-category="field">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M9.2 3h5.6a2 2 0 0 1 1.66.89l1.07 1.61H20a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8.5a3 3 0 0 1 3-3h2.47l1.07-1.61A2 2 0 0 1 9.2 3zM12 9a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/><circle cx="12" cy="13" r="2.2"/></svg></span>
-            <div><h3 class="feature__name">Site capture</h3><p class="feature__meta">Field</p></div>
+            <div><h3 class="feature__name">Registrering på byggepladsen</h3><p class="feature__meta">Byggeplads</p></div>
           </div>
-          <p class="feature__text">Capture progress directly from the field, attach updates to drawings, and keep office teams aligned in real time.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Registrér fremdriften direkte fra byggepladsen, knyt opdateringer til tegninger, og hold kontoret opdateret i realtid.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--field" id="issue-tracking" data-category="field">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5a1 1 0 0 1 1 1v.3c.9-.4 2-.8 3.5-.8 1.6 0 2.8.5 3.9 1 1.1.4 2 .8 3.4.8 1.6 0 2.7-.5 3.1-.8a1 1 0 0 1 1.6.8v11.2a1 1 0 0 1-.4.8c-.6.5-2.1 1.2-4.3 1.2-1.6 0-2.8-.5-3.9-1-1.1-.4-2-.8-3.4-.8-1.6 0-2.8.5-3.5.8v5.5a1 1 0 0 1-2 0v-18a1 1 0 0 1 1-1z"/></svg></span>
-            <div><h3 class="feature__name">Issue tracking</h3><p class="feature__meta">Field</p></div>
+            <div><h3 class="feature__name">Registrering af problemer</h3><p class="feature__meta">Byggeplads</p></div>
           </div>
-          <p class="feature__text">Mark issues on site with photos attached, so the right people see them before they slow down delivery.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Registrér problemer på byggepladsen med vedhæftede fotos, så de rette personer ser dem, før de forsinker leveringen.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--field" id="mobile-app" data-category="field">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5h8a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3v-15a3 3 0 0 1 3-3zm2.5 16.5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z"/></svg></span>
-            <div><h3 class="feature__name">iOS and Android apps</h3><p class="feature__meta">Field</p></div>
+            <div><h3 class="feature__name">Apps til iOS og Android</h3><p class="feature__meta">Byggeplads</p></div>
           </div>
-          <p class="feature__text">Built for where the work actually happens. Keep projects moving without friction, right from your pocket.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Skabt til det sted, hvor arbejdet foregår. Hold projekterne i gang uden besvær – direkte fra lommen.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <!-- Collaboration -->
         <article class="feature feature--collaboration" id="shared-timeline" data-category="collaboration">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="11" height="4" rx="2"/><rect x="7" y="10" width="14" height="4" rx="2"/><rect x="5" y="16" width="9" height="4" rx="2"/></svg></span>
-            <div><h3 class="feature__name">Shared project timeline</h3><p class="feature__meta">Collaboration</p></div>
+            <div><h3 class="feature__name">Fælles projekttidslinje</h3><p class="feature__meta">Samarbejde</p></div>
           </div>
-          <p class="feature__text">Every update, decision, drawing revision, and conversation stays linked to the project timeline.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Alle opdateringer, beslutninger, tegningsrevisioner og samtaler er knyttet til projektets tidslinje.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--collaboration" id="team-alignment" data-category="collaboration">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7.5" r="4"/><path d="M2 19.5a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v.5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/><circle cx="17" cy="8.5" r="3"/><path d="M17.6 13.5A4.6 4.6 0 0 1 22 18.1V20a1 1 0 0 1-1 1h-3.2c.13-.32.2-.65.2-1v-.5a7.9 7.9 0 0 0-2.4-5.7c.6-.2 1.3-.3 2-.3z"/></svg></span>
-            <div><h3 class="feature__name">Team and stakeholder alignment</h3><p class="feature__meta">Collaboration</p></div>
+            <div><h3 class="feature__name">Koordinering af teams og interessenter</h3><p class="feature__meta">Samarbejde</p></div>
           </div>
-          <p class="feature__text">Keep everyone aligned as changes happen - from architects to contractors, without endless emails or meetings.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Hold alle opdateret, når der sker ændringer – fra arkitekter til entreprenører, uden endeløse mails eller møder.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
 
         <article class="feature feature--collaboration" id="approvals" data-category="collaboration">
           <div class="feature__head">
             <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm4.7 7.2a1 1 0 0 0-1.4-1.4l-4.8 4.8-1.8-1.8a1 1 0 0 0-1.4 1.4l2.5 2.5a1 1 0 0 0 1.4 0z"/></svg></span>
-            <div><h3 class="feature__name">Approvals and change tracking</h3><p class="feature__meta">Collaboration</p></div>
+            <div><h3 class="feature__name">Godkendelser og ændringshistorik</h3><p class="feature__meta">Samarbejde</p></div>
           </div>
-          <p class="feature__text">Track technical clarifications, approvals, and specification changes without chasing documents.</p>
-          <a class="feature__link" href="#">Learn more<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
+          <p class="feature__text">Følg tekniske afklaringer, godkendelser og ændringer i specifikationer uden at lede efter dokumenter.</p>
+          <a class="feature__link" href="#">Læs mere<svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6"/></svg></a>
         </article>
       </div>
 
       <div class="directory__empty" hidden>
-        <p class="h3">No features found</p>
-        <p class="body">Browse all categories to see every feature.</p>
-        <button class="btn btn--s btn--blueprint-border directory__reset" type="button">Show all<span class="btn__icon" aria-hidden="true"></span></button>
+        <p class="h3">Ingen funktioner fundet</p>
+        <p class="body">Gennemse alle kategorier for at se samtlige funktioner.</p>
+        <button class="btn btn--s btn--blueprint-border directory__reset" type="button">Vis alle<span class="btn__icon" aria-hidden="true"></span></button>
       </div>
     </section>
 
@@ -220,19 +657,19 @@
       <div class="cta__card">
         <div class="cta__content">
           <div class="heading">
-            <p class="kicker kicker--skyline">Get started</p>
+            <p class="kicker kicker--skyline">Kom i gang</p>
             <div class="heading__body">
-              <h2 class="h2 h2--light">From scattered updates <br>to real project clarity</h2>
-              <p class="body cta__body">Get flying with Bird within 48 hours or less. Book a demo and see how changes affect progress over time.</p>
+              <h2 class="h2 h2--light">Fra spredte opdateringer <br>til reelt projektoverblik</h2>
+              <p class="body cta__body">Kom godt i gang med Bird på 48 timer eller mindre. Book en demo, og se, hvordan ændringer påvirker fremdriften over tid.</p>
             </div>
           </div>
           <div class="cta__actions">
-            <a class="btn btn--m btn--white" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
-            <a class="btn btn--m btn--white-border" href="about.html">About Bird<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--m btn--white" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--m btn--white-border" href="/about.html">Om Bird<span class="btn__icon" aria-hidden="true"></span></a>
           </div>
         </div>
         <div class="cta__media">
-          <img src="assets/img/card-glass.webp" width="1128" height="560" alt="Curved glass facade">
+          <img src="/assets/img/card-glass.webp" width="1128" height="560" alt="Buet glasfacade">
         </div>
       </div>
     </section>
@@ -249,70 +686,75 @@
         <span class="g g--v fg--v4"></span>
         <span class="g g--h fg--h1"></span>
         <span class="g g--h fg--h2"></span>
-        <span class="xmark fx--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
       </div>
 
       <div class="footer__top">
         <div class="footer__brand">
-          <a class="footer__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
-          <p class="footer__tagline">Visualize projects. Collaborate better. Build faster. Drawings, updates and decisions connected for every team on site.</p>
-          <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+          <a class="footer__logo" href="/index.html" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+          <p class="footer__tagline">Visualisér projekter. Samarbejd bedre. Overhold tidsfrister. Tegninger, opdateringer og beslutninger samlet for alle teams på byggepladsen.</p>
+          <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer">
+        <nav class="footer__nav" aria-label="Sidefod">
           <div class="footer__col">
             <p class="footer__head">Platform</p>
             <ul>
-              <li><a href="platform.html#live-project-views">Live project views</a></li>
-              <li><a href="platform.html#shared-timeline">Visual workflows</a></li>
-              <li><a href="platform.html#plan-intelligence">Plan intelligence</a></li>
-              <li><a href="platform.html#site-capture">Site visualization</a></li>
-              <li><a href="platform.html#ai-project-insights">AI project insights</a></li>
+              <li><a href="/platform.html#live-project-views">Live projektoverblik</a></li>
+              <li><a href="/platform.html#shared-timeline">Visuelle arbejdsgange</a></li>
+              <li><a href="/platform.html#plan-intelligence">Tegningsindsigt</a></li>
+              <li><a href="/platform.html#site-capture">Visualisering af byggepladsen</a></li>
+              <li><a href="/platform.html#ai-project-insights">AI-projektindsigt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Company</p>
+            <p class="footer__head">Virksomhed</p>
             <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="journal.html">Journal</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/about.html">Om os</a></li>
+              <li><a href="/pricing.html">Priser</a></li>
+              <li><a href="/journal.html">Artikler</a></li>
+              <li><a href="/contact.html">Kontakt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Get in touch</p>
+            <p class="footer__head">Kontakt os</p>
             <ul>
               <li><a href="mailto:inquiry@getbird.io">inquiry@getbird.io</a></li>
-              <li><a href="#">iOS app</a></li>
-              <li><a href="#">Android app</a></li>
+              <li><a href="#">iOS-app</a></li>
+              <li><a href="#">Android-app</a></li>
             </ul>
           </div>
         </nav>
       </div>
 
       <div class="footer__mark" aria-hidden="true">
-        <img src="assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
+        <img src="/assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
       </div>
 
       <div class="footer__bottom">
-        <p>© 2026 Bird. All rights reserved.</p>
+        <p>© 2026 Bird. Alle rettigheder forbeholdes.</p>
         <ul class="footer__legal">
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privatlivspolitik</a></li>
+          <li><a href="#">Vilkår</a></li>
           <li><a href="#">Cookies</a></li>
         </ul>
-        <button class="nav__lang footer__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
+        <div class="language language--footer">
+          <button class="nav__lang footer__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-footer">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-footer" hidden>
+            <li><a href="/platform.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/platform.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=6" defer></script>
+  <script src="/script.js?v=10" defer></script>
+  <script src="/navigation.js?v=3" defer></script>
 </body>
 </html>

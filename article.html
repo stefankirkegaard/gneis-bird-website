@@ -1,15 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Why construction updates get lost - Bird Journal</title>
-  <meta name="description" content="Emails, calls, photos and meeting notes all carry decisions that matter. Where construction updates slip through the cracks, and how to stop it.">
-  <link rel="icon" href="assets/logos/bird-mark-dark.png">
+  <title>Hvorfor opdateringer i byggeriet går tabt – Bird Artikler</title>
+  <meta name="description" content="Mails, opkald, fotos og mødereferater indeholder vigtige beslutninger. Se, hvor opdateringer i byggeriet går tabt, og hvordan det undgås.">
+  <link rel="icon" href="/assets/logos/bird-mark-dark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=35">
+  <link rel="stylesheet" href="/styles.css?v=60">
+  <link rel="alternate" hreflang="da" href="/article.html">
+  <link rel="alternate" hreflang="en" href="/en/article.html">
+  <link rel="alternate" hreflang="x-default" href="/article.html">
 </head>
 <body>
 
@@ -23,38 +26,41 @@
       <span class="g g--v pg--v2"></span>
       <span class="g g--v pg--v3"></span>
       <span class="g g--v pg--v4"></span>
-      <span class="xmark px--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
     </div>
 
     <nav class="nav">
       <div class="nav__col">
-        <a class="nav__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+        <a class="nav__logo" href="/index.html" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
       </div>
       <ul class="nav__links">
-        <li><a href="platform.html">Platform</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="journal.html" aria-current="page">Journal</a></li>
+        <li><a href="/platform.html">Platform</a></li>
+        <li><a href="/pricing.html">Priser</a></li>
+        <li><a href="/about.html">Om os</a></li>
+        <li><a href="/contact.html">Kontakt</a></li>
       </ul>
       <div class="nav__col nav__col--right">
-        <button class="nav__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
-        <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
-        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+        <div class="language">
+          <button class="nav__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-header">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-header" hidden>
+            <li><a href="/article.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/article.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
+        <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
       </div>
     </nav>
 
     <div class="page-hero">
       <div class="page-hero__text">
-        <h1 class="hero__title">Why construction updates <br>get lost, and how to stop it</h1>
-        <p class="page-hero__lead">Emails, calls, photos and meeting notes all carry decisions that matter. We looked at where they slip through the cracks on site.</p>
+        <h1 class="hero__title">Hvorfor opdateringer i byggeriet <br>går tabt – og hvordan det undgås</h1>
+        <p class="page-hero__lead">Mails, opkald, fotos og mødereferater indeholder vigtige beslutninger. Vi har set på, hvor de går tabt på byggepladsen.</p>
       </div>
     </div>
 
@@ -63,17 +69,16 @@
 
   <!-- ============ MOBILE MENU ============ -->
   <div class="menu" id="menu" aria-hidden="true">
-    <nav class="menu__inner" aria-label="Mobile">
+    <nav class="menu__inner" aria-label="Mobilnavigation">
       <p class="kicker kicker--foundation menu__kicker">Menu</p>
       <ul class="menu__list">
-          <li style="--i:0"><a href="platform.html"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:1"><a href="#"><span class="menu__idx">02</span><span class="menu__label">Pricing</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:2"><a href="about.html"><span class="menu__idx">03</span><span class="menu__label">About</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:3"><a href="contact.html"><span class="menu__idx">04</span><span class="menu__label">Contact</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:4"><a href="journal.html" aria-current="page"><span class="menu__idx">05</span><span class="menu__label">Journal</span></a></li>
+          <li style="--i:0"><a href="/platform.html"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:1"><a href="/pricing.html"><span class="menu__idx">02</span><span class="menu__label">Priser</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:2"><a href="/about.html"><span class="menu__idx">03</span><span class="menu__label">Om os</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:3"><a href="/contact.html"><span class="menu__idx">04</span><span class="menu__label">Kontakt</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
       </ul>
       <div class="menu__footer">
-        <a class="btn btn--m btn--charcoal" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <a class="btn btn--m btn--charcoal" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         <a class="menu__mail" href="mailto:inquiry@getbird.io">inquiry@getbird.io</a>
       </div>
     </nav>
@@ -85,50 +90,50 @@
     <article class="article">
       <div class="article__frame">
         <div class="article__cover">
-          <img src="assets/img/hero-architecture.webp" width="1440" height="1440" alt="White parametric facade of a modern building against a blue sky">
+          <img src="/assets/img/hero-architecture.webp" width="1440" height="1440" alt="Hvid parametrisk facade på en moderne bygning mod en blå himmel">
         </div>
 
         <div class="article__meta post--field">
-          <a class="article__back" href="journal.html"><svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M7.5 1.5l-6 6 6 6"/></svg>Back to journal</a>
-          <p class="post__meta"><span class="post__tag">Field notes</span>8 Oct 2026 · 6 min read</p>
+          <a class="article__back" href="/journal.html"><svg width="6" height="10" viewBox="0 0 9 15" aria-hidden="true"><path d="M7.5 1.5l-6 6 6 6"/></svg>Tilbage til artikler</a>
+          <p class="post__meta"><span class="post__tag">Noter fra byggepladsen</span>8. okt. 2026 · 6 min. læsetid</p>
         </div>
 
         <div class="article__body">
-          <h2>Where updates go missing</h2>
-          <p>On a typical project, a single change can travel through an email thread, a phone call, a photo in a group chat and a line in the meeting minutes before it reaches the drawing. Every hand-off is a chance for context to drop out, and by the time the change reaches the site team, the reason behind it is often gone.</p>
-          <p>None of this happens because people are careless. It happens because updates arrive in many formats, from many stakeholders, and nobody has one place where they all come together.</p>
+          <h2>Her går opdateringerne tabt</h2>
+          <p>På et typisk projekt kan en enkelt ændring passere gennem en mailtråd, et telefonopkald, et foto i en gruppechat og en linje i mødereferatet, før den når frem til tegningen. Hver overlevering er en risiko for, at sammenhængen går tabt. Når ændringen når ud til teamet på pladsen, er årsagen bag den ofte forsvundet.</p>
+          <p>Det sker ikke, fordi folk er uopmærksomme. Det sker, fordi opdateringer kommer i mange formater fra mange parter, og ingen har ét sted, hvor det hele samles.</p>
 
-          <h2>The cost of a missed change</h2>
-          <p>When a revised window dimension never reaches the facade contractor, the problem rarely shows up right away. It shows up weeks later as rework, a delayed delivery or a tense coordination meeting. The later a change is caught, the more it costs to fix.</p>
+          <h2>Prisen for en overset ændring</h2>
+          <p>Når et revideret vinduesmål aldrig når frem til facadeentreprenøren, viser problemet sig sjældent med det samme. Det dukker op uger senere som omarbejde, en forsinket levering eller et anspændt koordinationsmøde. Jo senere en ændring opdages, jo dyrere er den at rette.</p>
 
           <figure class="article__figure">
-            <img src="assets/img/site-teams.webp" width="918" height="688" alt="Concrete column cast between rebar on a construction site">
-            <figcaption>Small changes on site often have the biggest knock-on effects on the timeline.</figcaption>
+            <img src="/assets/img/site-teams.webp" width="918" height="688" alt="Betonsøjle støbt mellem armeringsjern på en byggeplads">
+            <figcaption>Små ændringer på byggepladsen har ofte de største følgevirkninger for tidsplanen.</figcaption>
           </figure>
 
-          <blockquote class="article__quote">Bird was born on the construction site, shaped by real, everyday challenges.</blockquote>
+          <blockquote class="article__quote">Bird er skabt på byggepladsen og formet af virkelighedens daglige udfordringer.</blockquote>
 
-          <h2>One clear source of truth</h2>
-          <p>The fix is not more meetings or longer reports. It is a shared place where every update, drawing revision and decision stays linked to the project timeline, so anyone can see what changed, why it matters and what to do next.</p>
+          <h2>Ét klart og fælles grundlag</h2>
+          <p>Løsningen er et fælles sted, hvor alle opdateringer, tegningsrevisioner og beslutninger er knyttet til projektets tidslinje. Her kan alle se, hvad der er ændret, hvorfor det er vigtigt, og hvad næste skridt er.</p>
           <ul>
-            <li>Live change detection across drawings and documents</li>
-            <li>Timeline impact analysis the moment a change lands</li>
-            <li>Early risk identification before issues reach the site</li>
+            <li>Registrering af ændringer i tegninger og dokumenter i realtid</li>
+            <li>Analyse af effekten på tidsplanen, så snart en ændring opstår</li>
+            <li>Tidlig identifikation af risici, før problemerne når byggepladsen</li>
           </ul>
 
-          <h2>Getting started</h2>
-          <p>Start with one project and one team. Bring in the drawings and the updates you already have, and let the structure build itself from there. Most teams are flying with Bird within 48 hours or less.</p>
+          <h2>Kom godt i gang</h2>
+          <p>Start med ét projekt og ét team. Tilføj de tegninger og opdateringer, du allerede har, og lad strukturen tage form derfra. De fleste teams er godt i gang med Bird på 48 timer eller mindre.</p>
         </div>
 
         <aside class="author">
-          <span class="author__avatar"><img src="assets/logos/bird-mark-light.png" width="437" height="375" alt=""></span>
+          <span class="author__avatar"><img src="/assets/logos/bird-mark-light.png" width="437" height="375" alt=""></span>
           <div class="author__content">
-            <p class="author__bio">Built by experienced developers working closely with construction professionals and leading Danish contractors, Bird is grounded in reality and designed to work where projects are built.</p>
+            <p class="author__bio">Bird er udviklet af erfarne udviklere i tæt samarbejde med fagfolk i byggeriet og førende danske entreprenører. Platformen er forankret i virkeligheden og skabt til det sted, hvor projekterne bliver til.</p>
             <div class="author__name">
-              <p>The Bird team</p>
-              <p>Holbæk and Copenhagen</p>
+              <p>Bird-teamet</p>
+              <p>Holbæk og København</p>
             </div>
-            <a class="btn btn--s btn--blueprint-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--s btn--blueprint-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
           </div>
         </aside>
       </div>
@@ -137,37 +142,37 @@
     <!-- ============ RELATED ============ -->
     <section class="related">
       <div class="related__frame">
-        <h2 class="h2">Related articles</h2>
+        <h2 class="h2">Relaterede artikler</h2>
         <div class="related__grid">
           <article class="post post--field">
             <a class="post__link" href="#">
-              <div class="post__media post__media--ice"><img src="assets/img/card-glass.webp" width="1128" height="560" alt="Curved glass facade"></div>
+              <div class="post__media post__media--ice"><img src="/assets/img/card-glass.webp" width="1128" height="560" alt="Buet glasfacade"></div>
               <div class="post__body">
-                <p class="post__meta"><span class="post__tag">Field notes</span>12 Aug 2026 · 5 min read</p>
-                <h3 class="post__title">Five ways to cut coordination meetings in half</h3>
-                <p class="post__excerpt">Practical habits for project managers who want fewer status meetings and faster decisions.</p>
+                <p class="post__meta"><span class="post__tag">Noter fra byggepladsen</span>12. aug. 2026 · 5 min. læsetid</p>
+                <h3 class="post__title">Fem måder at halvere koordinationsmøderne på</h3>
+                <p class="post__excerpt">Praktiske vaner for projektledere, der ønsker færre statusmøder og hurtigere beslutninger.</p>
               </div>
             </a>
           </article>
 
           <article class="post post--field">
             <a class="post__link" href="#">
-              <div class="post__media"><img src="assets/img/site-teams.webp" width="918" height="688" alt="Concrete column cast between rebar on a construction site"></div>
+              <div class="post__media"><img src="/assets/img/site-teams.webp" width="918" height="688" alt="Betonsøjle støbt mellem armeringsjern på en byggeplads"></div>
               <div class="post__body">
-                <p class="post__meta"><span class="post__tag">Field notes</span>10 Sep 2026 · 5 min read</p>
-                <h3 class="post__title">From site photo to drawing in seconds</h3>
-                <p class="post__excerpt">How site teams capture progress in the field and keep the office aligned without a single extra call.</p>
+                <p class="post__meta"><span class="post__tag">Noter fra byggepladsen</span>10. sep. 2026 · 5 min. læsetid</p>
+                <h3 class="post__title">Fra foto på pladsen til tegning på få sekunder</h3>
+                <p class="post__excerpt">Sådan registrerer teams fremdrift på byggepladsen og holder kontoret opdateret uden ekstra opkald.</p>
               </div>
             </a>
           </article>
 
           <article class="post post--company">
             <a class="post__link" href="#">
-              <div class="post__media post__media--blush"><img src="assets/img/card-bricks.webp" width="1256" height="856" alt="Stacked white 3D bricks"></div>
+              <div class="post__media post__media--blush"><img src="/assets/img/card-bricks.webp" width="1256" height="856" alt="Stablede hvide 3D-klodser"></div>
               <div class="post__body">
-                <p class="post__meta"><span class="post__tag">Company</span>9 Jul 2026 · 6 min read</p>
-                <h3 class="post__title">Building one source of truth for every project</h3>
-                <p class="post__excerpt">Why we think the future of construction delivery starts with structured data, not more documents.</p>
+                <p class="post__meta"><span class="post__tag">Virksomhed</span>9. jul. 2026 · 6 min. læsetid</p>
+                <h3 class="post__title">Et fælles grundlag for hvert projekt</h3>
+                <p class="post__excerpt">Derfor mener vi, at fremtidens byggeri begynder med strukturerede data frem for flere dokumenter.</p>
               </div>
             </a>
           </article>
@@ -179,24 +184,24 @@
     <section class="newsletter">
       <div class="newsletter__inner">
         <div class="heading">
-          <p class="kicker kicker--marigold">Newsletter</p>
+          <p class="kicker kicker--marigold">Nyhedsbrev</p>
           <div class="heading__body">
-            <h2 class="h2 h2--light">Get the journal <br>in your inbox</h2>
-            <p class="body body--silver">One email a month with product news and stories from the field. No noise.</p>
+            <h2 class="h2 h2--light">Få artiklerne <br>i din indbakke</h2>
+            <p class="body body--silver">Én mail om måneden med produktnyheder og historier fra byggepladsen. Uden støj.</p>
           </div>
         </div>
         <form class="newsletter__form" action="#" data-local-form>
           <div class="form__body">
             <label class="subscribe">
-              <span class="visually-hidden">Email address</span>
-              <input type="email" name="email" placeholder="Your work email" autocomplete="email" required>
-              <button class="btn btn--m btn--charcoal" type="submit">Subscribe<span class="btn__icon" aria-hidden="true"></span></button>
+              <span class="visually-hidden">E-mailadresse</span>
+              <input type="email" name="email" placeholder="Din arbejdsmail" autocomplete="email" required>
+              <button class="btn btn--m btn--charcoal" type="submit">Tilmeld dig<span class="btn__icon" aria-hidden="true"></span></button>
             </label>
-            <p class="form__note form__note--dark">You can unsubscribe at any time.</p>
+            <p class="form__note form__note--dark">Du kan til enhver tid afmelde dig.</p>
           </div>
           <div class="form__success form__success--dark" tabindex="-1" hidden>
             <span class="form__check" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
-            <p class="body body--silver">Thanks for subscribing. See you in your inbox.</p>
+            <p class="body body--silver">Tak for din tilmelding. Vi ses i din indbakke.</p>
           </div>
         </form>
       </div>
@@ -214,70 +219,75 @@
         <span class="g g--v fg--v4"></span>
         <span class="g g--h fg--h1"></span>
         <span class="g g--h fg--h2"></span>
-        <span class="xmark fx--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
       </div>
 
       <div class="footer__top">
         <div class="footer__brand">
-          <a class="footer__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
-          <p class="footer__tagline">Visualize projects. Collaborate better. Build faster. Drawings, updates and decisions connected for every team on site.</p>
-          <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+          <a class="footer__logo" href="/index.html" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+          <p class="footer__tagline">Visualisér projekter. Samarbejd bedre. Overhold tidsfrister. Tegninger, opdateringer og beslutninger samlet for alle teams på byggepladsen.</p>
+          <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer">
+        <nav class="footer__nav" aria-label="Sidefod">
           <div class="footer__col">
             <p class="footer__head">Platform</p>
             <ul>
-              <li><a href="platform.html#live-project-views">Live project views</a></li>
-              <li><a href="platform.html#shared-timeline">Visual workflows</a></li>
-              <li><a href="platform.html#plan-intelligence">Plan intelligence</a></li>
-              <li><a href="platform.html#site-capture">Site visualization</a></li>
-              <li><a href="platform.html#ai-project-insights">AI project insights</a></li>
+              <li><a href="/platform.html#live-project-views">Live projektoverblik</a></li>
+              <li><a href="/platform.html#shared-timeline">Visuelle arbejdsgange</a></li>
+              <li><a href="/platform.html#plan-intelligence">Tegningsindsigt</a></li>
+              <li><a href="/platform.html#site-capture">Visualisering af byggepladsen</a></li>
+              <li><a href="/platform.html#ai-project-insights">AI-projektindsigt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Company</p>
+            <p class="footer__head">Virksomhed</p>
             <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="journal.html">Journal</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/about.html">Om os</a></li>
+              <li><a href="/pricing.html">Priser</a></li>
+              <li><a href="/journal.html">Artikler</a></li>
+              <li><a href="/contact.html">Kontakt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Get in touch</p>
+            <p class="footer__head">Kontakt os</p>
             <ul>
               <li><a href="mailto:inquiry@getbird.io">inquiry@getbird.io</a></li>
-              <li><a href="#">iOS app</a></li>
-              <li><a href="#">Android app</a></li>
+              <li><a href="#">iOS-app</a></li>
+              <li><a href="#">Android-app</a></li>
             </ul>
           </div>
         </nav>
       </div>
 
       <div class="footer__mark" aria-hidden="true">
-        <img src="assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
+        <img src="/assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
       </div>
 
       <div class="footer__bottom">
-        <p>© 2026 Bird. All rights reserved.</p>
+        <p>© 2026 Bird. Alle rettigheder forbeholdes.</p>
         <ul class="footer__legal">
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privatlivspolitik</a></li>
+          <li><a href="#">Vilkår</a></li>
           <li><a href="#">Cookies</a></li>
         </ul>
-        <button class="nav__lang footer__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
+        <div class="language language--footer">
+          <button class="nav__lang footer__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-footer">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-footer" hidden>
+            <li><a href="/article.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/article.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=6" defer></script>
+  <script src="/script.js?v=10" defer></script>
+  <script src="/navigation.js?v=3" defer></script>
 </body>
 </html>

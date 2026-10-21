@@ -1,15 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact - Bird</title>
-  <meta name="description" content="Book a demo, ask about pricing or get in touch with the Bird team in Holbæk and Copenhagen.">
-  <link rel="icon" href="assets/logos/bird-mark-dark.png">
+  <title>Kontakt – Bird</title>
+  <meta name="description" content="Book en demo, spørg om priser, eller kontakt Bird-teamet i Holbæk og København.">
+  <link rel="icon" href="/assets/logos/bird-mark-dark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=35">
+  <link rel="stylesheet" href="/styles.css?v=60">
+  <link rel="alternate" hreflang="da" href="/contact.html">
+  <link rel="alternate" hreflang="en" href="/en/contact.html">
+  <link rel="alternate" hreflang="x-default" href="/contact.html">
 </head>
 <body>
 
@@ -23,45 +26,48 @@
       <span class="g g--v pg--v2"></span>
       <span class="g g--v pg--v3"></span>
       <span class="g g--v pg--v4"></span>
-      <span class="xmark px--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-      <span class="xmark px--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+      <span class="xmark px--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
     </div>
 
     <nav class="nav">
       <div class="nav__col">
-        <a class="nav__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+        <a class="nav__logo" href="/index.html" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
       </div>
       <ul class="nav__links">
-        <li><a href="platform.html">Platform</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" aria-current="page"><img src="assets/icons/nav-chevron.svg" width="4.5" height="7.5" alt="">Contact</a></li>
-        <li><a href="journal.html">Journal</a></li>
+        <li><a href="/platform.html">Platform</a></li>
+        <li><a href="/pricing.html">Priser</a></li>
+        <li><a href="/about.html">Om os</a></li>
+        <li><a href="/contact.html" aria-current="page"><img src="/assets/icons/nav-chevron.svg" width="4.5" height="7.5" alt="">Kontakt</a></li>
       </ul>
       <div class="nav__col nav__col--right">
-        <button class="nav__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
-        <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
-        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+        <div class="language">
+          <button class="nav__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-header">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-header" hidden>
+            <li><a href="/contact.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/contact.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
+        <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
       </div>
     </nav>
 
     <div class="page-hero">
       <div class="page-hero__text">
-        <h1 class="hero__title">Let's talk about <br>your next project</h1>
-        <p class="page-hero__lead">Book a demo, ask about pricing, or just say hello. Our team in Denmark will help you get flying with Bird.</p>
+        <h1 class="hero__title">Lad os tale om <br>dit næste projekt</h1>
+        <p class="page-hero__lead">Book en demo, spørg om priser, eller sig bare hej. Vores team i Danmark hjælper dig godt i gang med Bird.</p>
       </div>
     </div>
 
     <div class="ticker">
       <div class="ticker__track">
-        <p>Digital Blueprints • Smart Plans • Live Project Views • Visual Workflows • Plan Intelligence • Site Visualization • Real-Time Drawings • Connected Projects • Interactive Plans • Measure Instantly • Annotate Anywhere • Sync in Real Time • Share with Teams •&nbsp;</p>
-        <p aria-hidden="true">Digital Blueprints • Smart Plans • Live Project Views • Visual Workflows • Plan Intelligence • Site Visualization • Real-Time Drawings • Connected Projects • Interactive Plans • Measure Instantly • Annotate Anywhere • Sync in Real Time • Share with Teams •&nbsp;</p>
+        <p>Digitale tegninger • Intelligente planer • Live projektoverblik • Visuelle arbejdsgange • Tegningsindsigt • Visualisering af byggepladsen • Tegninger i realtid • Forbundne projekter • Interaktive planer • Mål med det samme • Tilføj noter overalt • Synkronisér i realtid • Del med teamet • </p>
+        <p aria-hidden="true">Digitale tegninger • Intelligente planer • Live projektoverblik • Visuelle arbejdsgange • Tegningsindsigt • Visualisering af byggepladsen • Tegninger i realtid • Forbundne projekter • Interaktive planer • Mål med det samme • Tilføj noter overalt • Synkronisér i realtid • Del med teamet • </p>
       </div>
     </div>
     </div>
@@ -69,17 +75,16 @@
 
   <!-- ============ MOBILE MENU ============ -->
   <div class="menu" id="menu" aria-hidden="true">
-    <nav class="menu__inner" aria-label="Mobile">
+    <nav class="menu__inner" aria-label="Mobilnavigation">
       <p class="kicker kicker--foundation menu__kicker">Menu</p>
       <ul class="menu__list">
-          <li style="--i:0"><a href="platform.html"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:1"><a href="#"><span class="menu__idx">02</span><span class="menu__label">Pricing</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:2"><a href="about.html"><span class="menu__idx">03</span><span class="menu__label">About</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:3"><a href="contact.html" aria-current="page"><span class="menu__idx">04</span><span class="menu__label">Contact</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-          <li style="--i:4"><a href="journal.html"><span class="menu__idx">05</span><span class="menu__label">Journal</span></a></li>
+          <li style="--i:0"><a href="/platform.html"><span class="menu__idx">01</span><span class="menu__label">Platform</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:1"><a href="/pricing.html"><span class="menu__idx">02</span><span class="menu__label">Priser</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:2"><a href="/about.html"><span class="menu__idx">03</span><span class="menu__label">Om os</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          <li style="--i:3"><a href="/contact.html" aria-current="page"><span class="menu__idx">04</span><span class="menu__label">Kontakt</span><svg class="menu__chev" width="9" height="15" viewBox="0 0 9 15" aria-hidden="true"><path d="M1.5 1.5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
       </ul>
       <div class="menu__footer">
-        <a class="btn btn--m btn--charcoal" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+        <a class="btn btn--m btn--charcoal" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         <a class="menu__mail" href="mailto:inquiry@getbird.io">inquiry@getbird.io</a>
       </div>
     </nav>
@@ -92,88 +97,39 @@
       <div class="contact__inner">
         <div class="contact__card">
           <div class="heading">
-            <p class="kicker kicker--foundation">Send a message</p>
-            <div class="heading__body">
-              <h2 class="h3">How can we help?</h2>
-              <p class="body">Tell us a bit about your project and we'll get back to you shortly.</p>
-            </div>
+            <p class="kicker kicker--foundation">Send en besked</p>
           </div>
 
-          <form class="form" action="#" data-local-form>
-            <div class="form__body">
-              <div class="form__row">
-                <label class="field">
-                  <span class="field__label">Full name</span>
-                  <input class="input" type="text" name="name" autocomplete="name" required>
-                </label>
-                <label class="field">
-                  <span class="field__label">Work email</span>
-                  <input class="input" type="email" name="email" autocomplete="email" required>
-                </label>
-              </div>
-
-              <div class="form__row">
-                <label class="field">
-                  <span class="field__label">Company</span>
-                  <input class="input" type="text" name="company" autocomplete="organization">
-                </label>
-                <label class="field">
-                  <span class="field__label">Role</span>
-                  <select class="input" name="role">
-                    <option value="">Select your role</option>
-                    <option>Construction manager</option>
-                    <option>Project leader</option>
-                    <option>Site team</option>
-                    <option>Contractor</option>
-                    <option>Architect or engineer</option>
-                    <option>Other</option>
-                  </select>
-                </label>
-              </div>
-
-              <label class="field field--grow">
-                <span class="field__label">Message</span>
-                <textarea class="input" name="message" rows="5" placeholder="What are you working on?"></textarea>
-              </label>
-
-              <div class="form__footer">
-                <p class="form__note">By sending this form you agree to our <a href="#">privacy policy</a>.</p>
-                <button class="btn btn--m btn--charcoal" type="submit">Send message<span class="btn__icon" aria-hidden="true"></span></button>
-              </div>
-            </div>
-
-            <div class="form__success" tabindex="-1" hidden>
-              <span class="form__check" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
-              <p class="h3">Thanks, message received</p>
-              <p class="body">We'll be in touch shortly. In the meantime, take a look around the platform.</p>
-              <a class="btn btn--s btn--blueprint-border" href="platform.html">Explore the platform<span class="btn__icon" aria-hidden="true"></span></a>
-            </div>
-          </form>
+          <div class="contact__embed">
+            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/c5eqm69LNkTmo4NzZtN8bRsV8mhYO8FGNoPloq1U9BtP3EYBczBhuyLyeqU72vrv1x"></div>
+            <p class="form-embed-fallback" hidden>Kan formularen ikke indlæses? <a href="https://webforms.pipedrive.com/f/c5eqm69LNkTmo4NzZtN8bRsV8mhYO8FGNoPloq1U9BtP3EYBczBhuyLyeqU72vrv1x" target="_blank" rel="noopener">Åbn kontaktformularen</a></p>
+            <noscript><p><a href="https://webforms.pipedrive.com/f/c5eqm69LNkTmo4NzZtN8bRsV8mhYO8FGNoPloq1U9BtP3EYBczBhuyLyeqU72vrv1x" target="_blank" rel="noopener">Åbn kontaktformularen</a></p></noscript>
+          </div>
         </div>
 
-        <aside class="contact__aside" aria-label="Contact details">
+        <aside class="contact__aside" aria-label="Kontaktoplysninger">
           <article class="office office--contact">
             <div class="office__content">
-              <p class="office__label">Talk to the team</p>
-              <h3 class="card__title">Prefer to reach out directly?</h3>
+              <p class="office__label">Tal med teamet</p>
+              <h3 class="card__title">Vil du hellere kontakte os direkte?</h3>
               <p class="card__text"><a href="mailto:inquiry@getbird.io">inquiry@getbird.io</a><br><a href="tel:+4528403882">+45 28 40 38 82</a></p>
             </div>
           </article>
           <article class="office">
             <div class="office__content">
-              <p class="office__label">Office</p>
+              <p class="office__label">Kontor</p>
               <h3 class="card__title">Holbæk</h3>
               <address class="card__text">Tuse Næs Vej 7C<br>4300 Holbæk</address>
             </div>
-            <a class="btn btn--s btn--blueprint-border" href="https://maps.google.com/?q=Tuse+N%C3%A6s+Vej+7C,+4300+Holb%C3%A6k" target="_blank" rel="noopener">Open in Maps<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--s btn--blueprint-border" href="https://maps.google.com/?q=Tuse+N%C3%A6s+Vej+7C,+4300+Holb%C3%A6k" target="_blank" rel="noopener">Åbn i Maps<span class="btn__icon" aria-hidden="true"></span></a>
           </article>
           <article class="office">
             <div class="office__content">
-              <p class="office__label">Office</p>
-              <h3 class="card__title">Copenhagen</h3>
-              <address class="card__text">Bredgade 20A<br>1260 Copenhagen</address>
+              <p class="office__label">Kontor</p>
+              <h3 class="card__title">København</h3>
+              <address class="card__text">Bredgade 20A<br>1260 København</address>
             </div>
-            <a class="btn btn--s btn--blueprint-border" href="https://maps.google.com/?q=Bredgade+20A,+1260+K%C3%B8benhavn" target="_blank" rel="noopener">Open in Maps<span class="btn__icon" aria-hidden="true"></span></a>
+            <a class="btn btn--s btn--blueprint-border" href="https://maps.google.com/?q=Bredgade+20A,+1260+K%C3%B8benhavn" target="_blank" rel="noopener">Åbn i Maps<span class="btn__icon" aria-hidden="true"></span></a>
           </article>
         </aside>
       </div>
@@ -183,32 +139,32 @@
     <section class="faq">
       <div class="faq__inner">
         <div class="heading faq__heading">
-          <p class="kicker kicker--clay">FAQ</p>
+          <p class="kicker kicker--clay">Spørgsmål og svar</p>
           <div class="heading__body">
-            <h2 class="h2">Frequently asked <br>questions</h2>
-            <p class="body">Can't find what you're looking for? Send us a message and we'll help you out.</p>
+            <h2 class="h2">Ofte stillede <br>spørgsmål</h2>
+            <p class="body">Finder du ikke det, du leder efter? Send os en besked, så hjælper vi dig videre.</p>
           </div>
         </div>
         <div class="faq__list">
           <details class="faq__item" open>
-            <summary>What is Bird?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <p class="body">Bird is an AI-powered construction management platform that brings all project updates into one clear source of truth, helping teams spot changes early and keep projects on track.</p>
+            <summary>Hvad er Bird?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p class="body">Bird er en AI-drevet platform til byggestyring, der samler alle projektopdateringer ét sted, så teams kan opdage ændringer tidligt og holde projekterne på rette kurs.</p>
           </details>
           <details class="faq__item">
-            <summary>Who is Bird built for?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <p class="body">Bird is built for construction managers, project leaders, site teams and contractors - everyone involved in delivery, from the office to the site.</p>
+            <summary>Hvem er Bird bygget til?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p class="body">Bird er bygget til byggeledere, projektledere, teams på byggepladsen og entreprenører – alle, der er involveret i leveringen, fra kontoret til pladsen.</p>
           </details>
           <details class="faq__item">
-            <summary>How does Bird use AI?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <p class="body">Bird turns unstructured input like drawings, notes and site updates into structured data. It detects changes and risks, shows their timeline impact, and answers questions in plain language.</p>
+            <summary>Hvordan bruger Bird AI?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p class="body">Bird omdanner ustruktureret input som tegninger, noter og opdateringer fra byggepladsen til strukturerede data. Platformen opdager ændringer og risici, viser effekten på tidsplanen og besvarer spørgsmål i almindeligt sprog.</p>
           </details>
           <details class="faq__item">
-            <summary>What problems does Bird solve on site?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <p class="body">Scattered updates, missed changes and endless back and forth. Bird keeps every update, drawing revision and decision in one shared place, so teams catch issues early and decide faster.</p>
+            <summary>Hvilke problemer løser Bird på byggepladsen?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p class="body">Spredte opdateringer, oversete ændringer og endeløs frem og tilbage. Bird samler alle opdateringer, tegningsrevisioner og beslutninger ét sted, så teams opdager problemer tidligt og træffer beslutninger hurtigere.</p>
           </details>
           <details class="faq__item">
-            <summary>How fast can we get started?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <p class="body">Most teams are flying with Bird within 48 hours or less. Book a demo and we'll set up your first project with you.</p>
+            <summary>Hvor hurtigt kan vi komme i gang?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p class="body">De fleste teams er godt i gang med Bird på 48 timer eller mindre. Book en demo, så hjælper vi med at oprette dit første projekt.</p>
           </details>
         </div>
       </div>
@@ -226,70 +182,75 @@
         <span class="g g--v fg--v4"></span>
         <span class="g g--h fg--h1"></span>
         <span class="g g--h fg--h2"></span>
-        <span class="xmark fx--tl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--tr"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--bl"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
-        <span class="xmark fx--br"><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--tr"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--bl"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
+        <span class="xmark fx--br"><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i><i><img src="/assets/icons/hero-x.svg" width="12" height="12" alt=""></i></span>
       </div>
 
       <div class="footer__top">
         <div class="footer__brand">
-          <a class="footer__logo" href="index.html" aria-label="Bird home"><img src="assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
-          <p class="footer__tagline">Visualize projects. Collaborate better. Build faster. Drawings, updates and decisions connected for every team on site.</p>
-          <a class="btn btn--s btn--white-border" href="contact.html#form">Book demo<span class="btn__icon" aria-hidden="true"></span></a>
+          <a class="footer__logo" href="/index.html" aria-label="Birds forside"><img src="/assets/icons/logo-wordmark.svg" width="114" height="24" alt="Bird"></a>
+          <p class="footer__tagline">Visualisér projekter. Samarbejd bedre. Overhold tidsfrister. Tegninger, opdateringer og beslutninger samlet for alle teams på byggepladsen.</p>
+          <a class="btn btn--s btn--white-border" href="/contact.html#form">Book en demo<span class="btn__icon" aria-hidden="true"></span></a>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer">
+        <nav class="footer__nav" aria-label="Sidefod">
           <div class="footer__col">
             <p class="footer__head">Platform</p>
             <ul>
-              <li><a href="platform.html#live-project-views">Live project views</a></li>
-              <li><a href="platform.html#shared-timeline">Visual workflows</a></li>
-              <li><a href="platform.html#plan-intelligence">Plan intelligence</a></li>
-              <li><a href="platform.html#site-capture">Site visualization</a></li>
-              <li><a href="platform.html#ai-project-insights">AI project insights</a></li>
+              <li><a href="/platform.html#live-project-views">Live projektoverblik</a></li>
+              <li><a href="/platform.html#shared-timeline">Visuelle arbejdsgange</a></li>
+              <li><a href="/platform.html#plan-intelligence">Tegningsindsigt</a></li>
+              <li><a href="/platform.html#site-capture">Visualisering af byggepladsen</a></li>
+              <li><a href="/platform.html#ai-project-insights">AI-projektindsigt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Company</p>
+            <p class="footer__head">Virksomhed</p>
             <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="journal.html">Journal</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/about.html">Om os</a></li>
+              <li><a href="/pricing.html">Priser</a></li>
+              <li><a href="/journal.html">Artikler</a></li>
+              <li><a href="/contact.html">Kontakt</a></li>
             </ul>
           </div>
           <div class="footer__col">
-            <p class="footer__head">Get in touch</p>
+            <p class="footer__head">Kontakt os</p>
             <ul>
               <li><a href="mailto:inquiry@getbird.io">inquiry@getbird.io</a></li>
-              <li><a href="#">iOS app</a></li>
-              <li><a href="#">Android app</a></li>
+              <li><a href="#">iOS-app</a></li>
+              <li><a href="#">Android-app</a></li>
             </ul>
           </div>
         </nav>
       </div>
 
       <div class="footer__mark" aria-hidden="true">
-        <img src="assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
+        <img src="/assets/logos/bird-logo-light.svg" width="1784" height="375" alt="">
       </div>
 
       <div class="footer__bottom">
-        <p>© 2026 Bird. All rights reserved.</p>
+        <p>© 2026 Bird. Alle rettigheder forbeholdes.</p>
         <ul class="footer__legal">
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privatlivspolitik</a></li>
+          <li><a href="#">Vilkår</a></li>
           <li><a href="#">Cookies</a></li>
         </ul>
-        <button class="nav__lang footer__lang" type="button">
-          <img src="assets/icons/globe.svg" width="16" height="16" alt="">
-          <span>EN</span>
-          <img class="nav__lang-chev" src="assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
-        </button>
+        <div class="language language--footer">
+          <button class="nav__lang footer__lang" type="button" aria-label="Skift sprog: Dansk" aria-expanded="false" aria-controls="language-footer">
+            <img src="/assets/icons/globe.svg" width="16" height="16" alt=""><span>DA</span><img class="nav__lang-chev" src="/assets/icons/lang-chevron.svg" width="4.5" height="7.5" alt="">
+          </button>
+          <ul class="language__menu" id="language-footer" hidden>
+            <li><a href="/contact.html" lang="da" hreflang="da" data-language="da" aria-current="true"><span>Dansk</span><span class="language__code">DA</span></a></li>
+            <li><a href="/en/contact.html" lang="en" hreflang="en" data-language="en"><span>English</span><span class="language__code">EN</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=6" defer></script>
+  <script src="/script.js?v=10" defer></script>
+  <script src="/navigation.js?v=3" defer></script>
 </body>
 </html>
