@@ -19,10 +19,10 @@ Open http://localhost:5174/design-system/colors. Each sidebar section has a dire
 - `public/palette.json`: the 38 named Bird brand colors from the supplied palette reference. Edit here, then run `python3 scripts/build-palette.py` to regenerate `public/palette.css`.
 - `public/local.css`: light/dark semantic token mappings, sidebar layout, and component style overrides.
 - `public/local.js`: sidebar navigation, separate section views, the color reference, and swatch copying. Existing React examples remain interactive.
-- `public/catalog/catalog.json`: the Geist comparison inventory, page metadata, categories, and baseline coverage.
+- `public/catalog/catalog.json`: page metadata and component categories.
 - `public/catalog/index.js`: lazy page rendering, shared usage guidance, and catalogue search.
 - `public/catalog/recipes.js` / `runtime.js` / `catalog.css`: component examples, interactions, and Bird styling.
-- `public/catalog/foundations.js`: materials, spacing, icons, accessibility, introduction, and the comparison report.
+- `public/catalog/foundations.js`: materials, spacing, icons, accessibility, and introduction.
 - `public/badges.js`: platform badge variants, priorities, issue states/types, commercial workflows, and palette mapping for original examples.
 - `public/buttons.js`: the consolidated Button catalogue, interactive examples, and platform control inventory.
 - `public/design-system.html`: the downloaded document with the local CSS/JS hooks added.
@@ -63,11 +63,11 @@ The Badges page combines the shared Badge variants with the four issue prioritie
 
 Badge colors use dedicated `--badge-*-fill`, `--badge-*-ink`, and `--badge-*-mark` aliases to the named palette. Light fills pair with dark text; dark mode uses deeper fills and pale labels. Green uses Foundation text on Mint Foam with Forest Jade for the status dot or outline. The same mappings decorate the original React badge examples, including tables and listings. All displayed record data is fictional.
 
-## Geist comparison and expanded catalogue
+## Expanded catalogue
 
-Reviewed the public [Geist index](https://vercel.com/geist/introduction) on 2026-10-22. Its 74 component entries map to four existing Bird catalogues, 15 previously grouped examples, and 55 missing patterns. Bird now has 88 documentation routes: the existing 12, 70 dedicated component examples, and six new foundation/assessment pages.
+The catalogue has 87 documentation routes covering Bird’s foundations and component examples.
 
-Start at `/design-system/introduction` or read the complete before/after table at `/design-system/coverage`. Components are grouped by purpose in the sidebar; its filter and the global command search work across all pages. New pages render lazily when opened. Existing React examples remain mounted and interactive.
+Start at `/design-system/introduction`. Components are grouped by purpose in the sidebar; its filter and global search work across all pages. New pages render lazily when opened. Existing React examples remain mounted and interactive.
 
 The new patterns include searchable selection, calendar, menus and commands, native-dialog overlays, file trees, filters with URL state, pagination, feedback and validation, copying, local sample exports, loading, and media. Materials and spacing share CSS tokens. All examples use Bird's palette, Geist type, and integer radii.
 
@@ -77,4 +77,4 @@ After adding or changing catalogue routes, run `python3 scripts/export-pages.py`
 
 ### Catalogue verification
 
-`node scripts/check-catalog.cjs` uses Playwright to check all 88 pages on desktop and mobile, representative dark-mode pages, keyboard menus, calendar selection, mixed checkboxes, multi-select, modal focus return, filters and URL state, pagination, file selection, clipboard, validation and retry, tabs, progress, undo, PDF sample export, media/captions, and documentation search. Set `BIRD_DOCS_URL` for another preview or production, and `BROWSER_EXECUTABLE_PATH` for an existing Chromium installation.
+`node scripts/check-catalog.cjs` uses Playwright to check all 87 pages on desktop and mobile, representative dark-mode pages, keyboard menus, calendar selection, mixed checkboxes, multi-select, modal focus return, filters and URL state, pagination, file selection, clipboard, validation and retry, tabs, progress, undo, PDF sample export, media/captions, and documentation search. Set `BIRD_DOCS_URL` for another preview or production, and `BROWSER_EXECUTABLE_PATH` for an existing Chromium installation.

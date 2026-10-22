@@ -1,6 +1,4 @@
 {
-  "reviewed": "2026-10-22",
-  "reference": "https://vercel.com/geist/introduction",
   "foundations": [
     {
       "slug": "introduction",
@@ -9,7 +7,6 @@
       "group": "Foundations",
       "category": "Foundations",
       "id": "catalog-introduction",
-      "was": "Missing",
       "existing": false
     },
     {
@@ -19,7 +16,6 @@
       "group": "Foundations",
       "category": "Foundations",
       "id": "catalog-materials",
-      "was": "Missing",
       "existing": false
     },
     {
@@ -29,7 +25,6 @@
       "group": "Foundations",
       "category": "Foundations",
       "id": "catalog-spacing",
-      "was": "Missing",
       "existing": false
     },
     {
@@ -39,7 +34,6 @@
       "group": "Foundations",
       "category": "Foundations",
       "id": "catalog-icons",
-      "was": "Missing",
       "existing": false
     },
     {
@@ -49,17 +43,6 @@
       "group": "Foundations",
       "category": "Foundations",
       "id": "catalog-accessibility",
-      "was": "Missing",
-      "existing": false
-    },
-    {
-      "slug": "coverage",
-      "title": "Geist comparison",
-      "description": "The assessment of Geist\u2019s public catalogue against Bird\u2019s original documentation.",
-      "group": "Foundations",
-      "category": "Foundations",
-      "id": "catalog-coverage",
-      "was": "Missing",
       "existing": false
     }
   ],
@@ -71,7 +54,6 @@
       "description": "Capture a site address with explicit street, city, and postal fields.",
       "group": "Components",
       "id": "catalog-address-input",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/address-input"
     },
@@ -82,7 +64,6 @@
       "description": "Represent people with initials, sizes, groups, and an accessible name.",
       "group": "Components",
       "id": "catalog-avatar",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/avatar"
     },
@@ -93,7 +74,6 @@
       "description": "Use the existing Bird badge catalogue.",
       "group": "Components",
       "id": "catalog-badges",
-      "was": "Dedicated page",
       "existing": true,
       "source": "https://vercel.com/geist/badge"
     },
@@ -104,7 +84,6 @@
       "description": "A dismissible message that sits above the current content.",
       "group": "Components",
       "id": "catalog-banner",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/banner"
     },
@@ -115,7 +94,6 @@
       "description": "Present a project handbook or guide as a document cover.",
       "group": "Components",
       "id": "catalog-book",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/book"
     },
@@ -126,7 +104,6 @@
       "description": "Show where a page sits in a project hierarchy.",
       "group": "Components",
       "id": "catalog-breadcrumbs",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/breadcrumbs"
     },
@@ -137,7 +114,6 @@
       "description": "Frame a product preview inside a quiet browser shell.",
       "group": "Components",
       "id": "catalog-browser",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/browser"
     },
@@ -148,7 +124,6 @@
       "description": "Use Bird\u2019s established button variants and interaction states.",
       "group": "Components",
       "id": "catalog-buttons",
-      "was": "Dedicated page",
       "existing": true,
       "source": "https://vercel.com/geist/button"
     },
@@ -159,7 +134,6 @@
       "description": "Choose a date with month navigation and keyboard support.",
       "group": "Components",
       "id": "catalog-calendar",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/calendar"
     },
@@ -170,7 +144,6 @@
       "description": "Select independent options, including a mixed parent state.",
       "group": "Components",
       "id": "catalog-checkbox",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/checkbox"
     },
@@ -181,7 +154,6 @@
       "description": "Choose between detailed options with a single selected card.",
       "group": "Components",
       "id": "catalog-choicebox",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/choicebox"
     },
@@ -192,7 +164,6 @@
       "description": "Clear a field without losing keyboard focus.",
       "group": "Components",
       "id": "catalog-clearable-input",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/clearable-input"
     },
@@ -203,7 +174,6 @@
       "description": "Use a readable inline style for short identifiers and code.",
       "group": "Components",
       "id": "catalog-code",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/code"
     },
@@ -214,7 +184,6 @@
       "description": "Display a code example with a language label and copy control.",
       "group": "Components",
       "id": "catalog-code-block",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/code-block"
     },
@@ -225,7 +194,6 @@
       "description": "Reveal supporting information without leaving the page.",
       "group": "Components",
       "id": "catalog-collapse",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/collapse"
     },
@@ -236,7 +204,6 @@
       "description": "Search a set of options, then select one with mouse or keyboard.",
       "group": "Components",
       "id": "catalog-combobox",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/combobox"
     },
@@ -247,7 +214,6 @@
       "description": "Search project commands and run one from a focused overlay.",
       "group": "Components",
       "id": "catalog-command-menu",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/command-menu"
     },
@@ -258,7 +224,6 @@
       "description": "Reveal useful detail when a related entity is focused or hovered.",
       "group": "Components",
       "id": "catalog-context-card",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/context-card"
     },
@@ -269,7 +234,6 @@
       "description": "Offer actions on a specific file with right-click or keyboard access.",
       "group": "Components",
       "id": "catalog-context-menu",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/context-menu"
     },
@@ -280,7 +244,6 @@
       "description": "Copy a value and give clear confirmation of the result.",
       "group": "Components",
       "id": "catalog-copy-button",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/copy-button"
     },
@@ -291,7 +254,6 @@
       "description": "Pair labels with values in a clear, consistent description list.",
       "group": "Components",
       "id": "catalog-description",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/description"
     },
@@ -302,7 +264,6 @@
       "description": "Require deliberate confirmation before a consequential action.",
       "group": "Components",
       "id": "catalog-destructive-action-modal",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/destructive-action-modal"
     },
@@ -313,7 +274,6 @@
       "description": "Keep secondary actions in an accessible overflow menu.",
       "group": "Components",
       "id": "catalog-dots-menu",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/dots-menu"
     },
@@ -324,7 +284,6 @@
       "description": "A compact bottom panel for focused mobile tasks.",
       "group": "Components",
       "id": "catalog-drawer",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/drawer"
     },
@@ -335,7 +294,6 @@
       "description": "Use the existing first-use, filtered, and search empty states.",
       "group": "Components",
       "id": "catalog-empty-states",
-      "was": "Dedicated page",
       "existing": true,
       "source": "https://vercel.com/geist/empty-state"
     },
@@ -346,7 +304,6 @@
       "description": "Combine an icon, title, status, and metadata into one resource row.",
       "group": "Components",
       "id": "catalog-entity",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/entity"
     },
@@ -357,7 +314,6 @@
       "description": "Place an actionable error beside the field or action that failed.",
       "group": "Components",
       "id": "catalog-error",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/error"
     },
@@ -368,7 +324,6 @@
       "description": "Explain a failed panel and provide a working retry action.",
       "group": "Components",
       "id": "catalog-error-card",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/error-card"
     },
@@ -379,7 +334,6 @@
       "description": "Collect a rating and a short comment without leaving the page.",
       "group": "Components",
       "id": "catalog-feedback-form",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/feedback"
     },
@@ -390,7 +344,6 @@
       "description": "Group related fields with a legend, guidance, and a save action.",
       "group": "Components",
       "id": "catalog-fieldset",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/fieldset"
     },
@@ -401,7 +354,6 @@
       "description": "Browse nested drawing folders and select a document.",
       "group": "Components",
       "id": "catalog-file-tree",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/file-tree"
     },
@@ -412,7 +364,6 @@
       "description": "Combine filters, remove individual constraints, and reset the view.",
       "group": "Components",
       "id": "catalog-filter-params",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/filter-params"
     },
@@ -423,7 +374,6 @@
       "description": "Show a single measured value and its range.",
       "group": "Components",
       "id": "catalog-gauge",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/gauge"
     },
@@ -434,7 +384,6 @@
       "description": "Illustrate responsive columns, gaps, and aligned content.",
       "group": "Components",
       "id": "catalog-grid",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/grid"
     },
@@ -445,7 +394,6 @@
       "description": "Text fields in default, disabled, required, and invalid states.",
       "group": "Components",
       "id": "catalog-input",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/input"
     },
@@ -456,7 +404,6 @@
       "description": "Inspect structured project data with expandable keys.",
       "group": "Components",
       "id": "catalog-json-view",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/json-view"
     },
@@ -467,7 +414,6 @@
       "description": "Capture and display a keyboard shortcut.",
       "group": "Components",
       "id": "catalog-keyboard-input",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/keyboard-input"
     },
@@ -478,7 +424,6 @@
       "description": "Associate a readable label and optional hint with a field.",
       "group": "Components",
       "id": "catalog-label",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/label"
     },
@@ -489,7 +434,6 @@
       "description": "Append records while showing loading and completion states.",
       "group": "Components",
       "id": "catalog-load-more-button",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/load-more-button"
     },
@@ -500,7 +444,6 @@
       "description": "A small animated indicator for work with an unknown duration.",
       "group": "Components",
       "id": "catalog-loading-dots",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/loading-dots"
     },
@@ -511,7 +454,6 @@
       "description": "A named menu with keyboard navigation and explicit actions.",
       "group": "Components",
       "id": "catalog-menu",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/menu"
     },
@@ -522,7 +464,6 @@
       "description": "Shorten a long filename while preserving its beginning and extension.",
       "group": "Components",
       "id": "catalog-middle-truncate",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/middle-truncate"
     },
@@ -533,7 +474,6 @@
       "description": "A focused dialog with a clear title, one task, and a return path.",
       "group": "Components",
       "id": "catalog-modal",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/modal"
     },
@@ -544,7 +484,6 @@
       "description": "Choose several disciplines and keep selected values visible.",
       "group": "Components",
       "id": "catalog-multi-select",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/multi-select"
     },
@@ -555,7 +494,6 @@
       "description": "Inline information, success, warning, and error messages.",
       "group": "Components",
       "id": "catalog-note",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/note"
     },
@@ -566,7 +504,6 @@
       "description": "Move between record pages while keeping the result count visible.",
       "group": "Components",
       "id": "catalog-pagination",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/pagination"
     },
@@ -577,7 +514,6 @@
       "description": "Combine a country calling code with a labeled telephone field.",
       "group": "Components",
       "id": "catalog-phone",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/phone"
     },
@@ -588,7 +524,6 @@
       "description": "Compact filter labels with a removable selected state.",
       "group": "Components",
       "id": "catalog-pill",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/pill"
     },
@@ -599,7 +534,6 @@
       "description": "Show measurable progress with a value and a descriptive label.",
       "group": "Components",
       "id": "catalog-progress",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/progress"
     },
@@ -610,7 +544,6 @@
       "description": "Identify a project and its current state at a glance.",
       "group": "Components",
       "id": "catalog-project-banner",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/project-banner"
     },
@@ -621,7 +554,6 @@
       "description": "Pick one option from a small, mutually exclusive set.",
       "group": "Components",
       "id": "catalog-radio",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/radio"
     },
@@ -632,7 +564,6 @@
       "description": "Pair a relative timestamp with its full local date and time.",
       "group": "Components",
       "id": "catalog-relative-time-card",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/relative-time-card"
     },
@@ -643,7 +574,6 @@
       "description": "Browse a horizontal set without overflowing the page.",
       "group": "Components",
       "id": "catalog-scroller",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/scroller"
     },
@@ -654,7 +584,6 @@
       "description": "Filter visible records with a labeled, clearable search field.",
       "group": "Components",
       "id": "catalog-search-input",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/search-input"
     },
@@ -665,7 +594,6 @@
       "description": "Choose one value from a known set of options.",
       "group": "Components",
       "id": "catalog-select",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/select"
     },
@@ -676,7 +604,6 @@
       "description": "Separate related groups horizontally or vertically.",
       "group": "Components",
       "id": "catalog-separator",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/separator"
     },
@@ -687,7 +614,6 @@
       "description": "Keep project context in view while opening a side panel.",
       "group": "Components",
       "id": "catalog-sheet",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/sheet"
     },
@@ -698,7 +624,6 @@
       "description": "Expand long content in place and collapse it again.",
       "group": "Components",
       "id": "catalog-show-more",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/show-more"
     },
@@ -709,7 +634,6 @@
       "description": "Reserve the shape of content while it loads.",
       "group": "Components",
       "id": "catalog-skeleton",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/skeleton"
     },
@@ -720,7 +644,6 @@
       "description": "Adjust a numeric value with a pointer or arrow keys.",
       "group": "Components",
       "id": "catalog-slider",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/slider"
     },
@@ -731,7 +654,6 @@
       "description": "A short copyable command or project identifier.",
       "group": "Components",
       "id": "catalog-snippet",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/snippet"
     },
@@ -742,7 +664,6 @@
       "description": "A named loading indicator for a pending action.",
       "group": "Components",
       "id": "catalog-spinner",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/spinner"
     },
@@ -753,7 +674,6 @@
       "description": "Pair a default action with a menu of alternatives.",
       "group": "Components",
       "id": "catalog-split-button",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/split-button"
     },
@@ -764,7 +684,6 @@
       "description": "Combine a colored status mark with an explicit text label.",
       "group": "Components",
       "id": "catalog-status-dot",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/status-dot"
     },
@@ -775,7 +694,6 @@
       "description": "Turn an immediate preference on or off.",
       "group": "Components",
       "id": "catalog-switch",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/switch"
     },
@@ -786,7 +704,6 @@
       "description": "Use the existing Bird data table.",
       "group": "Components",
       "id": "catalog-table",
-      "was": "Dedicated page",
       "existing": true,
       "source": "https://vercel.com/geist/table"
     },
@@ -797,7 +714,6 @@
       "description": "Switch related panels with pointer and keyboard controls.",
       "group": "Components",
       "id": "catalog-tabs",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/tabs"
     },
@@ -808,7 +724,6 @@
       "description": "Keep a value visible alongside a copy action.",
       "group": "Components",
       "id": "catalog-text-with-copy-button",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/text-with-copy-button"
     },
@@ -819,7 +734,6 @@
       "description": "Collect longer text with guidance and a character count.",
       "group": "Components",
       "id": "catalog-textarea",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/textarea"
     },
@@ -830,7 +744,6 @@
       "description": "Preview the Bird interface in light, dark, or system mode.",
       "group": "Components",
       "id": "catalog-theme-switcher",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/theme-switcher"
     },
@@ -841,7 +754,6 @@
       "description": "Confirm a completed action with optional undo.",
       "group": "Components",
       "id": "catalog-toast",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/toast"
     },
@@ -852,7 +764,6 @@
       "description": "Expose a pressed state for an optional view preference.",
       "group": "Components",
       "id": "catalog-toggle",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/toggle"
     },
@@ -863,7 +774,6 @@
       "description": "Show short supporting text on hover and keyboard focus.",
       "group": "Components",
       "id": "catalog-tooltip",
-      "was": "Grouped example",
       "existing": false,
       "source": "https://vercel.com/geist/tooltip"
     },
@@ -874,7 +784,6 @@
       "description": "A locally hosted project walkthrough with native media controls.",
       "group": "Components",
       "id": "catalog-video",
-      "was": "Missing",
       "existing": false,
       "source": "https://vercel.com/geist/video"
     }

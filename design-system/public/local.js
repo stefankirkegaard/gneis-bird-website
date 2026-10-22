@@ -188,7 +188,7 @@
     const categories = ['Actions','Inputs','Navigation','Overlays','Data display','Feedback','Layout'];
     const existingCategories = {buttons:'Actions',badges:'Data display',forms:'Inputs',table:'Data display',listing:'Data display','empty-states':'Feedback','loading-states':'Feedback','thinking-orbs':'Feedback',feedback:'Feedback'};
     pages.forEach(page => { page.category ||= existingCategories[page.slug] || 'Foundations'; });
-    const foundationOrder = ['introduction','colors','typography','materials','radius','spacing','icons','accessibility','coverage'];
+    const foundationOrder = ['introduction','colors','typography','materials','radius','spacing','icons','accessibility'];
     pages.sort((a,b) => a.group !== b.group ? (a.group === 'Foundations' ? -1 : 1) : a.group === 'Foundations' ? foundationOrder.indexOf(a.slug)-foundationOrder.indexOf(b.slug) : categories.indexOf(a.category)-categories.indexOf(b.category) || a.title.localeCompare(b.title));
     const storedTheme = localStorage.getItem('bird-docs-theme');
     if (storedTheme) chooseTheme(storedTheme);

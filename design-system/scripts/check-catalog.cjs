@@ -1,14 +1,14 @@
 const {chromium}=require('playwright');const assert=require('node:assert/strict');
 (async()=>{const base=process.env.BIRD_DOCS_URL||'http://localhost:5174';const b=await chromium.launch({executablePath:process.env.BROWSER_EXECUTABLE_PATH||undefined});const context=await b.newContext({viewport:{width:1440,height:1000},permissions:['clipboard-read','clipboard-write']});const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')errors.push(m.text())});p.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url())});
-await p.goto(base+'/design-system/coverage');await p.locator('.ds-ready').waitFor();assert.equal(await p.locator('.cat-coverage-table tbody tr').count(),74);assert.equal(await p.locator('.ds-sidebar [data-doc-page]').count(),88);
+await p.goto(base+'/design-system/introduction');await p.locator('.ds-ready').waitFor();assert.equal(await p.locator('.ds-sidebar [data-doc-page]').count(),87);
 const pages=await p.locator('.ds-sidebar [data-doc-page]').evaluateAll(es=>es.map(e=>({slug:e.dataset.docPage,title:e.textContent})));
 for(const page of pages){await p.locator(`.ds-sidebar [data-doc-page="${page.slug}"]`).click();assert.equal(await p.locator('main>section:visible').count(),1,page.slug);assert.equal(await p.locator('.ds-page-heading h1').innerText(),page.title);const overflow=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);assert.equal(overflow,false,'desktop overflow '+page.slug);}
-console.log('Rendered all 88 pages on desktop.');
+console.log('Rendered all 87 pages on desktop.');
 await p.setViewportSize({width:390,height:844});
 for(const page of pages){await p.locator('.ds-menu-toggle').click();await p.locator(`.ds-sidebar [data-doc-page="${page.slug}"]`).click();assert.equal(await p.locator('main>section:visible').count(),1,'mobile '+page.slug);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'mobile overflow '+page.slug);}
-console.log('Rendered all 88 pages on mobile.');
+console.log('Rendered all 87 pages on mobile.');
 await p.setViewportSize({width:1440,height:1000});await p.locator('.ds-theme').click();await p.waitForFunction(()=>document.documentElement.classList.contains('dark'));
-for(const slug of ['materials','combobox','modal','gauge','coverage','introduction']){await p.locator(`.ds-sidebar [data-doc-page="${slug}"]`).click();assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'dark '+slug);}
+for(const slug of ['materials','combobox','modal','gauge','introduction']){await p.locator(`.ds-sidebar [data-doc-page="${slug}"]`).click();assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'dark '+slug);}
 await p.screenshot({path:'/tmp/bird-catalog-dark.png'});await p.locator('.ds-theme').click();
 console.log('DARK checks passed.');
 const go=async slug=>{await p.locator(`.ds-sidebar [data-doc-page="${slug}"]`).click();};
@@ -39,6 +39,6 @@ await go('split-button');const downloadPromise=p.waitForEvent('download');await 
 await go('keyboard-input');await p.locator('[data-keyboard-capture]').focus();await p.keyboard.press('Control+Shift+V');assert.match(await p.locator('[data-keyboard-capture]').inputValue(),/Ctrl.*Shift.*V/);
 await p.keyboard.press('Tab');await p.keyboard.press('Control+k');assert.equal(await p.locator('.cat-dialog--command').isVisible(),true);await p.keyboard.press('Control+k');assert.equal(await p.locator('.cat-dialog--command:visible').count(),1);await p.keyboard.press('Escape');
 await p.locator('.ds-catalog-search').click();await p.locator('#cat-command-input').fill('Materials');await p.locator('#cat-command-input').press('Enter');assert.match(p.url(),/\/materials$/);assert.equal(await p.locator('.ds-page-heading h1').evaluate(e=>e===document.activeElement),true);
-await p.locator('.ds-sidebar-filter input').fill('xyznoresults');assert.equal(await p.locator('.ds-nav-empty').isVisible(),true);await p.locator('.ds-sidebar-filter input').press('Escape');assert.equal(await p.locator('.ds-nav-link:visible').count(),88);
+await p.locator('.ds-sidebar-filter input').fill('xyznoresults');assert.equal(await p.locator('.ds-nav-empty').isVisible(),true);await p.locator('.ds-sidebar-filter input').press('Escape');assert.equal(await p.locator('.ds-nav-link:visible').count(),87);
 await p.setViewportSize({width:320,height:844});await p.goto(base+'/design-system/calendar');await p.locator('.ds-ready').waitFor();assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'320 overflow');
 assert.deepEqual(errors,[]);console.log('PASS: catalogue, mobile, themes, menus, keyboard, focus return, filters, search, calendar, selection, pagination, file tree, copy, validation, loading, tabs, video and captions.');await b.close();})().catch(e=>{console.error(e);process.exit(1)});
