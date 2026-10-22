@@ -9,10 +9,10 @@ Local copy of https://nest.trybird.io/design-system, downloaded on 2026-10-22.
 Requires Node.js 18 or newer. No package installation is needed to run the page.
 
 ```sh
-npm run dev
+node scripts/serve.mjs
 ```
 
-Open http://localhost:5174/design-system/colors. Each sidebar section has a direct URL, for example `/design-system/buttons`. Port 5174 keeps this separate from the Bird marketing website on port 5173. To use another port, run `PORT=5175 npm run dev`.
+Open http://localhost:5174/design-system/colors. Each sidebar section has a direct URL, for example `/design-system/buttons`. Port 5174 keeps this separate from the Bird marketing website on port 5173. To use another port, run `PORT=5175 node scripts/serve.mjs`.
 
 ## Edit
 
@@ -38,3 +38,5 @@ Verified with all external requests blocked:
 - Desktop and mobile layouts render correctly.
 
 Optional capture/check scripts use Playwright. If needed, install it separately with `npm install --no-save playwright` and `npx playwright install chromium`, then run `node scripts/verify-local.cjs` for the current sidebar interface. `BROWSER_EXECUTABLE_PATH` can select an existing Chromium executable.
+
+The optional local package manifest is saved as `package.example.json` so this folder is served as static files by the shared Vercel project.
