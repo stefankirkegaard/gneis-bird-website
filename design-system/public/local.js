@@ -123,9 +123,8 @@
       return { size, pixels };
     });
     const formatRadius = value => Number(value.toFixed(2)).toString();
-    const baseRadius = radiusScale.find(item => item.size === 'lg').pixels;
     radius.innerHTML = `<div id="radius-scale">
-      <div class="ds-group-heading"><h2>Radius scale</h2><p>Base radius: ${formatRadius(baseRadius)} px · 0.45 rem</p></div>
+      <div class="ds-group-heading"><h2>Radius scale</h2><p>2, 4, 6, 8, 12, 16, 24 px</p></div>
       <div class="ds-radius-grid">${radiusScale.map(({size, pixels}) => {
         const zoom = pixels * 3;
         const tangent = 12 + zoom;
@@ -140,7 +139,7 @@
               <circle class="ds-radius-center" cx="${tangent}" cy="${tangent}" r="2"/>
             </svg><span>Corner ×3</span></div>
           </div>
-          <div class="ds-radius-card-footer"><span>Corner radius</span><code>${formatRadius(pixels / 16)} rem</code></div>
+          <div class="ds-radius-card-footer"><span>CSS</span><code>border-radius: ${formatRadius(pixels)}px</code></div>
         </article>`;
       }).join('')}</div>
     </div>`;
