@@ -64,6 +64,8 @@ export function createBadges() {
     ['red','Red','Brick Red','Dusty Rose'],['green','Green','Foundation','Mint Foam'],['violet','Violet','Royal Violet','Lavender Mist'],['indigo','Indigo','Deep Indigo','Periwinkle'],
     ['sand','Sand','Umber','Yellow Sand'],['rose','Rose','Brick Red','Blush Pink']
   ];
+  const darkPairs = {blue:['Skyline','Foundation'],neutral:['Silver','Charcoal / Silver tint'],amber:['Ivory','Espresso'],orange:['Alabaster','Umber'],red:['Dusty Rose','Brick Red tint'],green:['Mint Foam','Forest Jade tint'],violet:['Lavender Mist','Royal Violet tint'],indigo:['Periwinkle','Deep Indigo tint'],sand:['Yellow Sand','Umber'],rose:['Blush Pink','Brick Red tint']};
+  const variantDarkPairs = ['Skyline / Foundation','Neutral surface / Silver','Brick Red tint / Dusty Rose','Transparent / Silver','Transparent / Silver','Inline navigation'];
   root.innerHTML=`<div id="badges-variants">
     ${heading('Variants','A shared shape for every label.')}
     <p class="ds-badge-intro">Bird’s existing badges, remapped to the new palette. Standard badges are 20 px high with 12 px Medium labels; compact counts are 16 px high with 10 px labels.</p>
@@ -74,7 +76,7 @@ export function createBadges() {
       ['Outline',badge('Outline','neutral',{style:'outline'}),'Transparent / Graphite'],
       ['Ghost',badge('Ghost','neutral',{style:'ghost'}),'Transparent / Graphite'],
       ['Link',`<a class="ds-badge ds-badge--link" data-tone="blue" data-slot="badge" href="#badges-status">View status ${icons.arrow}</a>`,'Inline navigation']
-    ].map(([name,preview,description])=>`<article class="ds-badge-variant"><div>${preview}</div><h3>${name}</h3><p>${description}</p></article>`).join('')}</div>
+    ].map(([name,preview,description],index)=>`<article class="ds-badge-variant"><div>${preview}</div><h3>${name}</h3><p data-badge-light="${description}" data-badge-dark="${variantDarkPairs[index]}">${description}</p></article>`).join('')}</div>
   </div>
   <div id="badges-priority">
     ${heading('Priority','Low → critical')}
@@ -87,7 +89,7 @@ export function createBadges() {
   <div id="badges-types">
     ${heading('Issue types','A distinct family for each category.')}
     <p class="ds-badge-intro">The platform’s nine issue types use the category colors defined in the new system. Category and workflow status remain separate labels.</p>
-    <div class="ds-badge-type-grid">${types.map(([label,tone,key,pair])=>`<article>${badge(label,tone,{attrs:`data-issue-type="${key}"`})}<code>${key}</code><p>${pair}</p></article>`).join('')}</div>
+    <div class="ds-badge-type-grid">${types.map(([label,tone,key,pair])=>`<article>${badge(label,tone,{attrs:`data-issue-type="${key}"`})}<code>${key}</code><p data-badge-light="${pair}" data-badge-dark="${[...darkPairs[tone]].reverse().join(' / ')}">${pair}</p></article>`).join('')}</div>
   </div>
   <div id="badges-workflows">
     ${heading('Commercial workflows','Shared meanings across the platform.')}
@@ -108,10 +110,13 @@ export function createBadges() {
   </div>
   <div id="badges-colors">
     ${heading('Color mapping','Named Bird colors, shared badge tokens.')}
-    <div class="ds-badge-color-grid">${colorFamilies.map(([tone,label,ink,fill])=>`<div class="ds-badge-color-row"><div>${badge(label,tone,{dot:tone==='green'})}</div><div><h3>${ink} <span>on</span> ${fill}</h3><code>--badge-${tone}-ink / --badge-${tone}-fill</code></div></div>`).join('')}</div>
+    <div class="ds-badge-color-grid">${colorFamilies.map(([tone,label,ink,fill])=>`<div class="ds-badge-color-row"><div>${badge(label,tone,{dot:tone==='green'})}</div><div><h3 data-badge-light="${ink} on ${fill}" data-badge-dark="${darkPairs[tone].join(' on ')}">${ink} on ${fill}</h3><code>--badge-${tone}-ink / --badge-${tone}-fill</code></div></div>`).join('')}</div>
     <p class="ds-badge-note">Green pairs Mint Foam with Foundation text and a Forest Jade dot. In dark mode, fills become deeper and labels use the light member of each family.</p>
     <p class="ds-badge-footnote">Collected from Bird’s badge component, issue priority and status components, change-order status, billing records, payment milestones, and global navigation. Sample data only.</p>
   </div>`;
+  const syncColorNames = () => root.querySelectorAll('[data-badge-light]').forEach(element => { element.textContent = element.dataset[document.documentElement.classList.contains('dark') ? 'badgeDark' : 'badgeLight']; });
+  new MutationObserver(syncColorNames).observe(document.documentElement, {attributes:true,attributeFilter:['class']});
+  syncColorNames();
   return root;
 }
 
