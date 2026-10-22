@@ -20,13 +20,12 @@
 .cat-row {display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;}
 .cat-stack {display:grid;gap:14px;width:100%;}
 .cat-prose {font-size:14px;color:var(--muted-foreground);line-height:1.85;max-width:72ch;margin-bottom:28px;}
-.cat-prose a,.cat-reference a {color:var(--foreground);text-decoration:underline;text-underline-offset:3px;}
+.cat-prose a {color:var(--foreground);text-decoration:underline;text-underline-offset:3px;}
 .cat-hint {font-size:12px;line-height:1.7;color:var(--muted-foreground);max-width:52ch;}
 .cat-guide-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
 .cat-guide-grid h3,.cat-card h3 {font-size:13px;margin-bottom:8px;}
 .cat-guide-grid p,.cat-card p {font-size:12px;color:var(--muted-foreground);line-height:1.8;}
 .cat-guide-grid article {padding:20px;border:1px solid var(--border);border-radius:8px;min-width:0;}
-.cat-reference {font-size:11px;line-height:1.8;color:var(--muted-foreground);margin-top:24px;}
 .cat-form {display:flex;flex-direction:column;align-items:stretch;gap:20px;width:100%;max-width:420px!important;}
 .cat-form .ds-btn[type=submit] {align-self:flex-start;}
 .cat-field {display:flex;flex-direction:column;gap:8px;width:100%;min-width:0;}
