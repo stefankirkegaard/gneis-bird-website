@@ -1,0 +1,8 @@
+{
+  "name": "bird-nest-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local working copy of the Bird Nest design-system page",
+  "scripts": { "start": "node scripts/serve.mjs", "dev": "node scripts/serve.mjs" },
+  "engines": { "node": ">=18" }
+}

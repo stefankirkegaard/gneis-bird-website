@@ -1,0 +1,135 @@
+{
+  "requests": [
+    {
+      "url": "https://nest.trybird.io/design-system",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/430r4uz859ngr.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/2-athdeuupl1v.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/21h2vpl1tctzc.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/3pt6q7-hc1kr4.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/media/83afe278b6a6bb3c-s.p.45535valc9rzk.woff2",
+      "status": 200,
+      "type": "font"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/turbopack-2g6c9lrofwzuf.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/2jxu3akqrias_.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/1s9b3hm_ryr6q.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/2t_wv72bxee66.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/0ck9aso0-ut28.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/3r6y6l7zaximy.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/231jluklb61ek.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/2gg7xocb97w3l.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/2267li_j2sff4.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/1473-o25qf8pz.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/138ca0izz808n.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/1g7r7vfb9sxnl.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/0soi4j84efox6.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/43_fm2vmc316t.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/20m59ktiy6iro.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/2zlx74ty8iz-0.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_next/static/immutable/chunks/1bkm0f6xb6yip.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/favicons/dark-mode.svg",
+      "status": 200,
+      "type": "other"
+    },
+    {
+      "url": "https://nest.trybird.io/_vercel/insights/script.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "https://nest.trybird.io/_vercel/speed-insights/script.js",
+      "status": 200,
+      "type": "script"
+    }
+  ],
+  "failures": []
+}

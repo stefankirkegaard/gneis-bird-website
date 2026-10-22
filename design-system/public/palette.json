@@ -1,0 +1,15 @@
+[
+  {"id":"primary","label":"Primary","description":"Core blues and neutrals. The foundation of Bird’s visual identity.","families":[
+    {"name":"Blue","colors":[["Blueprint","#0E74F1"],["Foundation","#001D41"],["Sea Blue","#01387F"],["Slate","#7599C7"],["Skyline","#D8E9FF"]]},
+    {"name":"Neutral","colors":[["Charcoal","#161616"],["Graphite","#525252"],["Ash","#898989"],["Silver","#D3D3D3"],["Mist","#F3F3F3"]]}
+  ]},
+  {"id":"secondary","label":"Secondary","description":"Warm accents for moments of emphasis.","families":[
+    {"name":"Clay","colors":[["Clay","#E2721D"],["Umber","#411C00"],["Terracotta","#893B00"],["Sandstone","#D49F77"],["Alabaster","#FFE7D5"]]},
+    {"name":"Marigold","colors":[["Marigold","#FFBB03"],["Espresso","#3E2D00"],["Ochre","#906900"],["Dune","#D5BB75"],["Ivory","#FFEFC3"]]}
+  ]},
+  {"id":"extended","label":"Extended","description":"Supporting color families for status, data, and illustration.","families":[
+    {"name":"Earth & rose","colors":[["Burnt Clay","#A84F0B"],["Yellow Sand","#FAE7B0"],["Pale Wheat","#FFF9E6"],["Brick Red","#A72821"],["Dusty Rose","#F9D6D7"],["Blush Pink","#FFEFEE"]]},
+    {"name":"Green & violet","colors":[["Forest Jade","#38835F"],["Mint Foam","#C3F7DA"],["Ice Mint","#ECFFF2"],["Royal Violet","#593D92"],["Lavender Mist","#E7D8FF"],["Soft Lilac","#F4EBFE"]]},
+    {"name":"Indigo & teal","colors":[["Deep Indigo","#38468F"],["Periwinkle","#CBD2EF"],["Powder Blue","#E8EEFF"],["Deep Teal","#056B87"],["Sky Aqua","#B3D3E5"],["Ice Blue","#EEFAFF"]]}
+  ]}
+]

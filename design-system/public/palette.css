@@ -1,0 +1,42 @@
+/* Generated from palette.json by python3 scripts/build-palette.py. */
+:root {
+  --bird-blueprint: #0E74F1;
+  --bird-foundation: #001D41;
+  --bird-sea-blue: #01387F;
+  --bird-slate: #7599C7;
+  --bird-skyline: #D8E9FF;
+  --bird-charcoal: #161616;
+  --bird-graphite: #525252;
+  --bird-ash: #898989;
+  --bird-silver: #D3D3D3;
+  --bird-mist: #F3F3F3;
+  --bird-clay: #E2721D;
+  --bird-umber: #411C00;
+  --bird-terracotta: #893B00;
+  --bird-sandstone: #D49F77;
+  --bird-alabaster: #FFE7D5;
+  --bird-marigold: #FFBB03;
+  --bird-espresso: #3E2D00;
+  --bird-ochre: #906900;
+  --bird-dune: #D5BB75;
+  --bird-ivory: #FFEFC3;
+  --bird-burnt-clay: #A84F0B;
+  --bird-yellow-sand: #FAE7B0;
+  --bird-pale-wheat: #FFF9E6;
+  --bird-brick-red: #A72821;
+  --bird-dusty-rose: #F9D6D7;
+  --bird-blush-pink: #FFEFEE;
+  --bird-forest-jade: #38835F;
+  --bird-mint-foam: #C3F7DA;
+  --bird-ice-mint: #ECFFF2;
+  --bird-royal-violet: #593D92;
+  --bird-lavender-mist: #E7D8FF;
+  --bird-soft-lilac: #F4EBFE;
+  --bird-deep-indigo: #38468F;
+  --bird-periwinkle: #CBD2EF;
+  --bird-powder-blue: #E8EEFF;
+  --bird-deep-teal: #056B87;
+  --bird-sky-aqua: #B3D3E5;
+  --bird-ice-blue: #EEFAFF;
+  --bird-white: #FFFFFF;
+}

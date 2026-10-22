@@ -1,0 +1,62 @@
+{
+  "name": "Bird Platform",
+  "short_name": "Bird",
+  "description": "Byggeprojektstyring – opgaver, tegninger, filer og kommunikation",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "lang": "da",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-light-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-dark-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ny opgave",
+      "short_name": "Ny opgave",
+      "description": "Opret en ny opgave",
+      "url": "/issues?action=new",
+      "icons": [{ "src": "/apple-icon.png", "sizes": "180x180" }]
+    },
+    {
+      "name": "Tag billede",
+      "short_name": "Tag billede",
+      "description": "Tag et billede og vedhæft til en opgave",
+      "url": "/issues?action=camera",
+      "icons": [{ "src": "/apple-icon.png", "sizes": "180x180" }]
+    },
+    {
+      "name": "Scan QR",
+      "short_name": "Scan QR",
+      "description": "Scan en QR-kode",
+      "url": "/issues?action=qr",
+      "icons": [{ "src": "/apple-icon.png", "sizes": "180x180" }]
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

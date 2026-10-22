@@ -1,0 +1,43 @@
+{
+  "name": "Bird Nest \u2014 Local Design System",
+  "short_name": "Bird",
+  "description": "Byggeprojektstyring \u2013 opgaver, tegninger, filer og kommunikation",
+  "start_url": "/design-system",
+  "scope": "/design-system/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "lang": "da",
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/design-system/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/design-system/icon-light-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/design-system/icon-dark-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/design-system/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [],
+  "screenshots": [],
+  "prefer_related_applications": false
+}
