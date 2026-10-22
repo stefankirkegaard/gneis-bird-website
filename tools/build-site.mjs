@@ -1,5 +1,5 @@
 // Publish only the static website and design-system assets.
-import { cp, mkdir, readdir, rm, stat } from 'node:fs/promises';
+import { cp, mkdir, readdir, readFile, rename, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -20,4 +20,21 @@ for (const name of await readdir(docsRoot)) {
     await cp(input, path.join(docsOutput, name), { recursive: true });
   }
 }
+// These are browser bundles, served as ordinary static assets in this project.
+// Keep them outside Vercel's reserved framework and telemetry namespaces.
+const docsPublic = path.join(docsOutput, 'public');
+await rename(path.join(docsPublic, '_next'), path.join(docsPublic, 'runtime'));
+await rename(path.join(docsPublic, '_vercel'), path.join(docsPublic, 'telemetry'));
+async function scopeAssets(directory) {
+  for (const item of await readdir(directory, { withFileTypes: true })) {
+    const file = path.join(directory, item.name);
+    if (item.isDirectory()) await scopeAssets(file);
+    else if (/\.(html|js|css|json)$/.test(item.name)) {
+      const input = await readFile(file, 'utf8');
+      const output = input.replaceAll('/_next/', '/runtime/').replaceAll('/_vercel/', '/telemetry/');
+      if (output !== input) await writeFile(file, output);
+    }
+  }
+}
+await scopeAssets(docsOutput);
 console.log('Static website and design system prepared in dist/.');
