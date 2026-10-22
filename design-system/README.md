@@ -67,7 +67,7 @@ Badge colors use dedicated `--badge-*-fill`, `--badge-*-ink`, and `--badge-*-mar
 
 The catalogue has 87 documentation routes covering Bird’s foundations and component examples.
 
-Start at `/design-system/introduction`. Components are grouped by purpose in the sidebar; its filter and global search work across all pages. New pages render lazily when opened. Existing React examples remain mounted and interactive.
+Start at `/design-system/introduction`. Component links are alphabetical under the Components heading; Foundations retains its own order; its filter and global search work across all pages. New pages render lazily when opened. Existing React examples remain mounted and interactive.
 
 The new patterns include searchable selection, calendar, menus and commands, native-dialog overlays, file trees, filters with URL state, pagination, feedback and validation, copying, local sample exports, loading, and media. Materials and spacing share CSS tokens. All examples use Bird's palette, Geist type, and integer radii.
 

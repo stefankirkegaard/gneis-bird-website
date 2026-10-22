@@ -185,11 +185,10 @@
     const {createCatalog} = await import('/design-system/public/catalog/index.js');
     const catalog = await createCatalog(main, {theme:chooseTheme});
     pages.push(...catalog.definitions);
-    const categories = ['Actions','Inputs','Navigation','Overlays','Data display','Feedback','Layout'];
     const existingCategories = {buttons:'Actions',badges:'Data display',forms:'Inputs',table:'Data display',listing:'Data display','empty-states':'Feedback','loading-states':'Feedback','thinking-orbs':'Feedback',feedback:'Feedback'};
     pages.forEach(page => { page.category ||= existingCategories[page.slug] || 'Foundations'; });
     const foundationOrder = ['introduction','colors','typography','materials','radius','spacing','icons','accessibility'];
-    pages.sort((a,b) => a.group !== b.group ? (a.group === 'Foundations' ? -1 : 1) : a.group === 'Foundations' ? foundationOrder.indexOf(a.slug)-foundationOrder.indexOf(b.slug) : categories.indexOf(a.category)-categories.indexOf(b.category) || a.title.localeCompare(b.title));
+    pages.sort((a,b) => a.group !== b.group ? (a.group === 'Foundations' ? -1 : 1) : a.group === 'Foundations' ? foundationOrder.indexOf(a.slug)-foundationOrder.indexOf(b.slug) : a.title.localeCompare(b.title, 'en', {sensitivity:'base'}));
     const storedTheme = localStorage.getItem('bird-docs-theme');
     if (storedTheme) chooseTheme(storedTheme);
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if(localStorage.getItem('bird-docs-theme') === 'system') chooseTheme('system'); });
@@ -205,12 +204,12 @@
     sidebar.className = 'ds-sidebar';
     sidebar.id = 'ds-navigation';
     const navLinks = items => items.map(page => `<a class="ds-nav-link" href="${pathFor(page.slug)}" data-doc-page="${page.slug}">${page.title}</a>`).join('');
-    sidebar.innerHTML = `<label class="ds-sidebar-filter"><span class="cat-sr-only">Filter pages</span><input type="search" placeholder="Filter pages…" aria-label="Filter pages"></label><nav aria-label="Design system"><div class="ds-nav-group"><p class="ds-nav-label">Foundations</p>${navLinks(pages.filter(page=>page.group==='Foundations'))}</div><div class="ds-nav-group"><p class="ds-nav-label">Components</p>${categories.map(category=>`<div class="ds-nav-category-group"><p class="ds-nav-category">${category}</p>${navLinks(pages.filter(page=>page.group==='Components'&&page.category===category))}</div>`).join('')}</div></nav><p class="ds-nav-empty" role="status" hidden>No matching pages.</p><p class="ds-sidebar-foot"><span aria-hidden="true"></span>Bird Design System</p>`;
+    sidebar.innerHTML = `<label class="ds-sidebar-filter"><span class="cat-sr-only">Filter pages</span><input type="search" placeholder="Filter pages…" aria-label="Filter pages"></label><nav aria-label="Design system"><div class="ds-nav-group"><p class="ds-nav-label">Foundations</p>${navLinks(pages.filter(page=>page.group==='Foundations'))}</div><div class="ds-nav-group"><p class="ds-nav-label">Components</p>${navLinks(pages.filter(page=>page.group==='Components'))}</div></nav><p class="ds-nav-empty" role="status" hidden>No matching pages.</p><p class="ds-sidebar-foot"><span aria-hidden="true"></span>Bird Design System</p>`;
     const sidebarFilter = sidebar.querySelector('input');
     sidebarFilter.addEventListener('input', () => {
       const query=sidebarFilter.value.toLowerCase();let count=0;
       sidebar.querySelectorAll('[data-doc-page]').forEach(link=>{const page=pages.find(page=>page.slug===link.dataset.docPage);link.hidden=!(page.title+' '+page.category+' '+page.description).toLowerCase().includes(query);if(!link.hidden)count++;});
-      sidebar.querySelectorAll('.ds-nav-category-group,.ds-nav-group').forEach(group=>group.hidden=![...group.querySelectorAll('[data-doc-page]')].some(link=>!link.hidden));
+      sidebar.querySelectorAll('.ds-nav-group').forEach(group=>group.hidden=![...group.querySelectorAll('[data-doc-page]')].some(link=>!link.hidden));
       sidebar.querySelector('.ds-nav-empty').hidden=count>0;
     });
     sidebarFilter.addEventListener('keydown', event=>{if(event.key==='Escape'){sidebarFilter.value='';sidebarFilter.dispatchEvent(new Event('input'));}});
