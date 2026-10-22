@@ -204,9 +204,6 @@ export function createButtons() {
     }
   });
   document.addEventListener('click', event => { if(!event.target.closest('.ds-button-dropdown')) closeMenus(); });
-  document.addEventListener('keydown', event => {
-    if (!root.hidden && (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') { event.preventDefault(); searchInput.value=''; updateSearch(); if(!searchDialog.open) searchDialog.showModal(); searchInput.focus(); }
-  });
   root.addEventListener('keydown', event => {
     if (event.key === 'Escape' && searchDialog.open) { event.preventDefault(); event.stopPropagation(); searchDialog.close(); return; }
     const menu = event.target.closest('[role="menu"]');

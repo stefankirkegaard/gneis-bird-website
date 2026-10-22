@@ -8,6 +8,7 @@
     check: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>',
     moon: '<svg class="ds-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.7 13A9 9 0 0 1 11 3.3 9 9 0 1 0 20.7 13Z"/></svg>',
     sun: '<svg class="ds-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>',
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg>',
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
   };
   const pages = [
@@ -176,6 +177,22 @@
     applyBadgeColors(main);
     const badges = createBadges();
     main.append(badges);
+    const chooseTheme = mode => {
+      const dark = mode === 'system' ? matchMedia('(prefers-color-scheme: dark)').matches : mode === 'dark';
+      if (document.documentElement.classList.contains('dark') !== dark) theme.click();
+      localStorage.setItem('bird-docs-theme', mode);
+    };
+    const {createCatalog} = await import('/design-system/public/catalog/index.js');
+    const catalog = await createCatalog(main, {theme:chooseTheme});
+    pages.push(...catalog.definitions);
+    const categories = ['Actions','Inputs','Navigation','Overlays','Data display','Feedback','Layout'];
+    const existingCategories = {buttons:'Actions',badges:'Data display',forms:'Inputs',table:'Data display',listing:'Data display','empty-states':'Feedback','loading-states':'Feedback','thinking-orbs':'Feedback',feedback:'Feedback'};
+    pages.forEach(page => { page.category ||= existingCategories[page.slug] || 'Foundations'; });
+    const foundationOrder = ['introduction','colors','typography','materials','radius','spacing','icons','accessibility','coverage'];
+    pages.sort((a,b) => a.group !== b.group ? (a.group === 'Foundations' ? -1 : 1) : a.group === 'Foundations' ? foundationOrder.indexOf(a.slug)-foundationOrder.indexOf(b.slug) : categories.indexOf(a.category)-categories.indexOf(b.category) || a.title.localeCompare(b.title));
+    const storedTheme = localStorage.getItem('bird-docs-theme');
+    if (storedTheme) chooseTheme(storedTheme);
+    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if(localStorage.getItem('bird-docs-theme') === 'system') chooseTheme('system'); });
     const footer = document.createElement('div');
     footer.className = 'ds-page-footer';
     main.append(footer);
@@ -183,11 +200,21 @@
     const topbar = document.createElement('div');
     topbar.className = 'ds-topbar';
     topbar.innerHTML = `<a class="ds-brand" href="/design-system/colors" data-doc-page="colors" aria-label="Bird Design System home"><img src="/design-system/public/favicons/light-mode.svg" alt="" width="26" height="26"><span>Bird</span><span class="ds-brand-divider" aria-hidden="true"></span><span class="ds-brand-label">Design System</span></a>
-      <div class="ds-topbar-actions"><button class="ds-icon-button ds-theme" type="button" aria-label="Toggle theme">${icons.moon}${icons.sun}</button><button class="ds-icon-button ds-menu-toggle" type="button" aria-label="Open navigation" aria-controls="ds-navigation" aria-expanded="false">${icons.menu}</button></div>`;
+      <div class="ds-topbar-actions"><button class="ds-catalog-search" type="button" aria-label="Search design system">${icons.search}<span>Find a component…</span><kbd>⌘ K</kbd></button><button class="ds-icon-button ds-theme" type="button" aria-label="Toggle theme">${icons.moon}${icons.sun}</button><button class="ds-icon-button ds-menu-toggle" type="button" aria-label="Open navigation" aria-controls="ds-navigation" aria-expanded="false">${icons.menu}</button></div>`;
     const sidebar = document.createElement('aside');
     sidebar.className = 'ds-sidebar';
     sidebar.id = 'ds-navigation';
-    sidebar.innerHTML = `<nav aria-label="Design system">${['Foundations', 'Components'].map(group => `<div class="ds-nav-group"><p class="ds-nav-label">${group}</p>${pages.filter(page => page.group === group).map(page => `<a class="ds-nav-link" href="${pathFor(page.slug)}" data-doc-page="${page.slug}">${page.title}</a>`).join('')}</div>`).join('')}</nav><p class="ds-sidebar-foot"><span aria-hidden="true"></span>Bird Design System</p>`;
+    const navLinks = items => items.map(page => `<a class="ds-nav-link" href="${pathFor(page.slug)}" data-doc-page="${page.slug}">${page.title}</a>`).join('');
+    sidebar.innerHTML = `<label class="ds-sidebar-filter"><span class="cat-sr-only">Filter pages</span><input type="search" placeholder="Filter pages…" aria-label="Filter pages"></label><nav aria-label="Design system"><div class="ds-nav-group"><p class="ds-nav-label">Foundations</p>${navLinks(pages.filter(page=>page.group==='Foundations'))}</div><div class="ds-nav-group"><p class="ds-nav-label">Components</p>${categories.map(category=>`<div class="ds-nav-category-group"><p class="ds-nav-category">${category}</p>${navLinks(pages.filter(page=>page.group==='Components'&&page.category===category))}</div>`).join('')}</div></nav><p class="ds-nav-empty" role="status" hidden>No matching pages.</p><p class="ds-sidebar-foot"><span aria-hidden="true"></span>Bird Design System</p>`;
+    const sidebarFilter = sidebar.querySelector('input');
+    sidebarFilter.addEventListener('input', () => {
+      const query=sidebarFilter.value.toLowerCase();let count=0;
+      sidebar.querySelectorAll('[data-doc-page]').forEach(link=>{const page=pages.find(page=>page.slug===link.dataset.docPage);link.hidden=!(page.title+' '+page.category+' '+page.description).toLowerCase().includes(query);if(!link.hidden)count++;});
+      sidebar.querySelectorAll('.ds-nav-category-group,.ds-nav-group').forEach(group=>group.hidden=![...group.querySelectorAll('[data-doc-page]')].some(link=>!link.hidden));
+      sidebar.querySelector('.ds-nav-empty').hidden=count>0;
+    });
+    sidebarFilter.addEventListener('keydown', event=>{if(event.key==='Escape'){sidebarFilter.value='';sidebarFilter.dispatchEvent(new Event('input'));}});
+
     const backdrop = document.createElement('div');
     backdrop.className = 'ds-menu-backdrop';
     const toc = document.createElement('nav');
@@ -214,7 +241,7 @@
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape' && document.body.classList.contains('ds-menu-open')) { setMenu(false); menuToggle.focus(); }
       if (event.key === 'Tab' && document.body.classList.contains('ds-menu-open')) {
-        const focusable = [menuToggle, ...sidebar.querySelectorAll('a')];
+        const focusable = [menuToggle, sidebarFilter, ...[...sidebar.querySelectorAll('a')].filter(link=>link.getClientRects().length)];
         const first = focusable[0], last = focusable.at(-1);
         if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
         else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
@@ -228,7 +255,7 @@
       semanticSection.querySelectorAll('[data-light]').forEach(label => label.textContent = label.dataset[dark ? 'dark' : 'light']);
       semanticSection.querySelector('thead th:nth-child(2)').textContent = dark ? 'Dark theme' : 'Light theme';
     };
-    topbar.querySelector('.ds-theme').addEventListener('click', () => theme.click());
+    topbar.querySelector('.ds-theme').addEventListener('click', () => chooseTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark'));
     new MutationObserver(syncTheme).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
     syncTheme();
 
@@ -236,7 +263,8 @@
     function showPage(slug, {push = false, focus = false, hash = ''} = {}) {
       const page = pages.find(page => page.slug === slug) || pages[0];
       activePage = page;
-      [...sections, colors, typography, radius, buttons, badges].forEach(section => section.hidden = section.id !== page.id);
+      catalog.activate(page.slug);
+      [...sections, colors, typography, radius, buttons, badges, ...catalog.sections].forEach(section => section.hidden = section.id !== page.id);
       sidebar.querySelectorAll('[data-doc-page]').forEach(link => {
         if (link.dataset.docPage === page.slug) link.setAttribute('aria-current', 'page');
         else link.removeAttribute('aria-current');
@@ -249,18 +277,23 @@
       if (page.slug === 'radius') toc.innerHTML = `<p>On this page</p>${radiusScale.map(({size}) => `<a href="#radius-${size}">rounded-${size}</a>`).join('')}<a href="#radius-nesting">Nested content</a>`;
       if (page.slug === 'buttons') toc.innerHTML = `<p>On this page</p>${buttonSections.map(([id,label]) => `<a href="#buttons-${id}">${label}</a>`).join('')}`;
       if (page.slug === 'badges') toc.innerHTML = `<p>On this page</p>${badgeSections.map(([id,label]) => `<a href="#badges-${id}">${label}</a>`).join('')}`;
-      toc.hidden = !['colors', 'typography', 'radius', 'buttons', 'badges'].includes(page.slug);
+      const catalogToc = catalog.toc(page.slug);
+      if (catalogToc) toc.innerHTML=catalogToc;
+      toc.hidden = !toc.innerHTML;
       document.title = `${page.title} — Bird Design System`;
       if (push) history.pushState({birdDoc:page.slug}, '', pathFor(page.slug));
       setMenu(false);
       if (hash) document.getElementById(hash)?.scrollIntoView({behavior:'instant'});
       else scrollTo({top:0, left:0, behavior:'instant'});
       if (focus) heading.querySelector('h1').focus({preventScroll:true});
+      const activeLink=sidebar.querySelector('[aria-current="page"]');
+      if (activeLink.hidden) { sidebarFilter.value='';sidebarFilter.dispatchEvent(new Event('input')); }
+      activeLink.scrollIntoView({block:'nearest'});
     }
     const currentRoute = () => {
       const suffix = location.pathname.split('/').filter(Boolean)[1];
       const oldHash = location.hash.slice(1);
-      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash || page.slug === oldHash)?.slug) || 'colors', hash: /^(palette-|type-|radius-|buttons-|badges-)/.test(oldHash) ? oldHash : '' };
+      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash || page.slug === oldHash)?.slug) || 'colors', hash: /^(palette-|type-|radius-|buttons-|badges-|catalog-)/.test(oldHash) ? oldHash : '' };
     };
     document.addEventListener('click', event => {
       const link = event.target.closest('[data-doc-page]');
@@ -271,6 +304,11 @@
     addEventListener('popstate', () => showPage(currentRoute().slug, {hash:currentRoute().hash}));
     const initial = currentRoute();
     showPage(initial.slug, {hash:initial.hash});
+
+    const searchDocs = () => catalog.search(pages, slug => showPage(slug, {push:true, focus:true}));
+    topbar.querySelector('.ds-catalog-search').addEventListener('click',searchDocs);
+    document.addEventListener('keydown', event=>{if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'&&!event.target.closest('[data-keyboard-capture]')){event.preventDefault();searchDocs();}});
+    document.documentElement.lang='en';
 
     let toastTimer;
     colors.addEventListener('click', async event => {
