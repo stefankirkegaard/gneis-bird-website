@@ -12,7 +12,7 @@
   };
   const pages = [
     { slug: 'colors', title: 'Colors', group: 'Foundations', id: 'bird-colors', description: 'Bird’s color palette, from our core blues and neutrals to supporting accents. Select a swatch to copy its hex value.' },
-    { slug: 'typography', title: 'Typography', group: 'Foundations', id: 'typography', description: 'A clear, consistent type scale for every part of the Bird experience.' },
+    { slug: 'typography', title: 'Typography', group: 'Foundations', id: 'bird-typography', description: 'Geist is Bird’s typeface. Medium (500) for headlines and Light (300) for body copy.' },
     { slug: 'radius', title: 'Radius', group: 'Foundations', id: 'radius', description: 'A shared scale of corner radii for surfaces, controls, and containers.' },
     { slug: 'buttons', title: 'Buttons', group: 'Components', id: 'buttons', description: 'Actions in every size and state. Use the primary variant for the most important action on a page.' },
     { slug: 'badges', title: 'Badges', group: 'Components', id: 'badges', description: 'Compact labels for priority, progress, and status.' },
@@ -80,6 +80,37 @@
       <tbody>${semantics.map(([token, usage, light, dark]) => `<tr><td><code>--${token}</code></td><td><span class="ds-token-chip" style="--token-color:var(--${token})"></span><span data-light="${light}" data-dark="${dark}">${light}</span></td><td>${usage}</td></tr>`).join('')}</tbody></table>`;
     colors.append(semanticSection);
     main.append(colors);
+    const typography = document.createElement('section');
+    typography.id = 'bird-typography';
+    typography.className = 'ds-typography';
+    const typeScale = [
+      ['Heading 1', 'Project clarity.', 48, 56, 500, '-.04em'],
+      ['Heading 2', 'Every detail, connected.', 32, 40, 500, '-.035em'],
+      ['Heading 3', 'One shared perspective.', 24, 32, 500, '-.025em'],
+      ['Heading 4', 'Keep everyone aligned.', 20, 28, 500, '-.02em'],
+      ['Body large', 'Bring every update together in one place.', 18, 30, 300, '0'],
+      ['Body', 'Stay connected to your projects, from first draft to final build.', 16, 26, 300, '0'],
+      ['Body small', 'The details that keep work moving.', 14, 22, 300, '0'],
+      ['Caption', 'Last updated a moment ago.', 12, 18, 300, '0']
+    ];
+    typography.innerHTML = `<div class="ds-type-group" id="type-family">
+      <div class="ds-group-heading"><h2>Typeface</h2><p>One family. Two core weights.</p></div>
+      <div class="ds-type-card">
+        <div class="ds-type-family-preview"><p class="ds-type-family-name">Geist</p><p class="ds-type-alphabet">Aa Bb Cc Dd Ee Ff<br>0123456789 Æ Ø Å</p></div>
+        <div class="ds-type-weights">
+          <div class="ds-type-weight"><div><h3>Headlines</h3><p>Geist Medium</p></div><code>500</code></div>
+          <div class="ds-type-weight"><div><h3>Body copy</h3><p>Geist Light</p></div><code>300</code></div>
+        </div>
+      </div>
+    </div>
+    <div class="ds-type-group" id="type-scale">
+      <div class="ds-group-heading"><h2>Type scale</h2><p>Medium headlines. Light body copy.</p></div>
+      <div>${typeScale.map(([label, text, size, line, weight, tracking]) => `<div class="ds-type-row">
+        <div class="ds-type-row-heading"><h3>${label}</h3><code>${size} / ${line} px · ${weight === 500 ? 'Medium 500' : 'Light 300'}</code></div>
+        <p class="ds-type-sample" data-type-weight="${weight}" style="--sample-size:${size}px;--sample-line:${line}px;--sample-weight:${weight};--sample-tracking:${tracking}">${text}</p>
+      </div>`).join('')}</div>
+    </div>`;
+    main.append(typography);
     const footer = document.createElement('div');
     footer.className = 'ds-page-footer';
     main.append(footer);
@@ -140,7 +171,7 @@
     function showPage(slug, {push = false, focus = false, hash = ''} = {}) {
       const page = pages.find(page => page.slug === slug) || pages[0];
       activePage = page;
-      [...sections, colors].forEach(section => section.hidden = section.id !== page.id);
+      [...sections, colors, typography].forEach(section => section.hidden = section.id !== page.id);
       sidebar.querySelectorAll('[data-doc-page]').forEach(link => {
         if (link.dataset.docPage === page.slug) link.setAttribute('aria-current', 'page');
         else link.removeAttribute('aria-current');
@@ -149,7 +180,8 @@
       const index = pages.indexOf(page), next = pages[(index + 1) % pages.length];
       footer.innerHTML = `<span>Bird Design System</span><a class="ds-next-link" href="${pathFor(next.slug)}" data-doc-page="${next.slug}">Next: ${next.title}${icons.arrow}</a>`;
       toc.innerHTML = page.slug === 'colors' ? `<p>On this page</p>${[...palette.map(group => [group.id, group.label]), ['semantic','Semantic tokens']].map(([id,label]) => `<a href="#palette-${id}">${label}</a>`).join('')}` : '';
-      toc.hidden = page.slug !== 'colors';
+      if (page.slug === 'typography') toc.innerHTML = '<p>On this page</p><a href="#type-family">Typeface</a><a href="#type-scale">Type scale</a>';
+      toc.hidden = !['colors', 'typography'].includes(page.slug);
       document.title = `${page.title} — Bird Design System`;
       if (push) history.pushState({birdDoc:page.slug}, '', pathFor(page.slug));
       setMenu(false);
@@ -160,7 +192,7 @@
     const currentRoute = () => {
       const suffix = location.pathname.split('/').filter(Boolean)[1];
       const oldHash = location.hash.slice(1);
-      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash)?.slug) || 'colors', hash: oldHash.startsWith('palette-') ? oldHash : '' };
+      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash || page.slug === oldHash)?.slug) || 'colors', hash: /^(palette-|type-)/.test(oldHash) ? oldHash : '' };
     };
     document.addEventListener('click', event => {
       const link = event.target.closest('[data-doc-page]');

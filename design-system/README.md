@@ -40,3 +40,7 @@ Verified with all external requests blocked:
 Optional capture/check scripts use Playwright. If needed, install it separately with `npm install --no-save playwright` and `npx playwright install chromium`, then run `node scripts/verify-local.cjs` for the current sidebar interface. `BROWSER_EXECUTABLE_PATH` can select an existing Chromium executable.
 
 The optional local package manifest is saved as `package.example.json` so this folder is served as static files by the shared Vercel project.
+
+## Typography
+
+Geist is self-hosted in `public/fonts/Geist-Variable.woff2` (official Vercel Geist v1.8.2, SIL Open Font License included in the same folder). Headlines use Medium 500; body copy uses Light 300. The Typography page shows both weights and the corresponding type scale.

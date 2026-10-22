@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "Geist";
+  src: url("./fonts/Geist-Variable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 /* Bird foundations. Brand values live in palette.json / palette.css. */
 :root {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-heading-weight: 500;
+  --font-body-weight: 300;
   --background: var(--bird-white);
   --foreground: var(--bird-charcoal);
   --card: var(--bird-white);
@@ -95,6 +106,9 @@
 }
 html { overscroll-behavior: none; scroll-padding-top: 104px; }
 body { overscroll-behavior: none; }
+body.ds-ready { --font-sans: "Geist", system-ui, sans-serif; font-family: var(--font-sans); font-weight: var(--font-body-weight); }
+.ds-ready :is(h1, h2, h3, h4, h5, h6), .ds-ready [data-slot="card-title"] { font-weight: var(--font-heading-weight); }
+.ds-ready p { font-weight: var(--font-body-weight); }
 button, a { -webkit-tap-highlight-color: transparent; }
 .ds-ready > div > div > header { display: none; }
 .ds-ready main {
@@ -115,7 +129,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
   padding: 0 28px; border-bottom: 1px solid var(--border); background: var(--background);
 }
-.ds-brand { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; letter-spacing: -.025em; }
+.ds-brand { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 500; letter-spacing: -.025em; }
 .ds-brand img { width: 26px; height: 26px; border-radius: 6px; }
 .ds-brand-divider { width: 1px; height: 20px; margin: 0 6px; background: var(--border); transform: rotate(20deg); }
 .ds-brand-label { color: var(--muted-foreground); font-size: 14px; font-weight: 400; letter-spacing: -.01em; }
@@ -144,7 +158,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .ds-breadcrumb { display: flex; gap: 9px; align-items: center; margin-bottom: 22px; font-size: 12px; color: var(--muted-foreground); }
 .ds-breadcrumb span:last-child { color: var(--foreground); }
 .ds-breadcrumb svg { width: 11px; height: 11px; color: var(--bird-ash); }
-.ds-page-heading h1 { font-size: 38px; font-weight: 600; line-height: 1.2; letter-spacing: -.045em; }
+.ds-page-heading h1 { font-size: 38px; font-weight: 500; line-height: 1.2; letter-spacing: -.045em; }
 .ds-page-description { max-width: 660px; margin-top: 16px; font-size: 14px; line-height: 1.75; color: var(--muted-foreground); text-wrap: pretty; }
 .ds-colors { display: flex; flex-direction: column; gap: 48px; }
 .ds-color-group { scroll-margin-top: 100px; }
@@ -227,3 +241,34 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .ds-page-footer { margin-top: 40px !important; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+/* Geist typography reference. */
+.ds-typography { display: flex; flex-direction: column; gap: 44px; }
+.ds-type-group { scroll-margin-top: 100px; }
+.ds-type-card { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.ds-type-family-preview { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 32px; }
+.ds-type-family-name { font-size: 72px; line-height: 1.1; font-weight: 500 !important; letter-spacing: -.055em; }
+.ds-type-alphabet { max-width: 240px; text-align: right; font-size: 18px; line-height: 1.6; color: var(--muted-foreground); letter-spacing: .01em; overflow-wrap: anywhere; }
+.ds-type-weights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--border); }
+.ds-type-weight { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 20px 24px; }
+.ds-type-weight + .ds-type-weight { border-left: 1px solid var(--border); }
+.ds-type-weight h3 { font-size: 12px; margin-bottom: 8px; }
+.ds-type-weight p { font-size: 18px; line-height: 1.3; }
+.ds-type-weight:first-child p { font-weight: 500; }
+.ds-type-weight code { font-family: var(--font-mono); font-size: 11px; color: var(--muted-foreground); }
+.ds-type-row { padding: 26px 0; border-bottom: 1px solid var(--border); }
+.ds-type-row:first-child { padding-top: 0; }
+.ds-type-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.ds-type-row-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 16px; }
+.ds-type-row-heading h3 { font-size: 12px; }
+.ds-type-row-heading code { color: var(--muted-foreground); font-family: var(--font-mono); font-size: 10px; white-space: nowrap; }
+.ds-type-sample { font-size: var(--sample-size); line-height: var(--sample-line); font-weight: var(--sample-weight) !important; letter-spacing: var(--sample-tracking, 0); max-width: 60ch; text-wrap: pretty; }
+@media (max-width: 700px) {
+  .ds-type-family-preview { align-items: flex-start; flex-direction: column; gap: 24px; padding: 24px; }
+  .ds-type-family-name { font-size: 64px; }
+  .ds-type-alphabet { text-align: left; font-size: 16px; }
+  .ds-type-weights { grid-template-columns: 1fr; }
+  .ds-type-weight { padding: 20px 24px; }
+  .ds-type-weight + .ds-type-weight { border-left: 0; border-top: 1px solid var(--border); }
+  .ds-type-row-heading { gap: 8px; align-items: flex-start; flex-direction: column; }
+}
