@@ -144,6 +144,31 @@
         </article>`;
       }).join('')}</div>
     </div>`;
+    const nestedExamples = [
+      { title: 'Workspace panel', description: 'A large container with grouped content.', outer: '4xl', middle: '2xl', inner: 'lg', variant: 'workspace', content: 'Project information', copy: 'Drawings, files, and updates for your team.' },
+      { title: 'Compact card', description: 'A smaller container with an inset panel.', outer: '2xl', middle: 'lg', inner: 'sm', variant: 'compact', content: 'Recent activity', copy: 'The latest changes, grouped together.' }
+    ];
+    const radiusLabel = size => `rounded-${size} · ${formatRadius(radiusScale.find(item => item.size === size).pixels)} px`;
+    radius.insertAdjacentHTML('beforeend', `<div class="ds-radius-nesting" id="radius-nesting">
+      <div class="ds-group-heading"><h2>Nested content</h2><p>From the outside in.</p></div>
+      <p class="ds-nesting-intro">Use a larger radius for the outer container, then smaller radii as content moves inward. Each layer below is labeled with the radius it uses.</p>
+      <div class="ds-nesting-grid">${nestedExamples.map(example => `<article class="ds-nesting-card">
+        <div class="ds-nesting-heading"><h3>${example.title}</h3><p>${example.description}</p></div>
+        <div class="ds-nesting-stage ds-nesting-stage--${example.variant}">
+          <div class="ds-nesting-outer rounded-${example.outer}" data-nested-radius="${example.outer}">
+            <div class="ds-nesting-label"><span>Outer container</span><code>${radiusLabel(example.outer)}</code></div>
+            <div class="ds-nesting-middle rounded-${example.middle}" data-nested-radius="${example.middle}">
+              <div class="ds-nesting-label"><span>Middle panel</span><code>${radiusLabel(example.middle)}</code></div>
+              <div class="ds-nesting-inner rounded-${example.inner}" data-nested-radius="${example.inner}">
+                <div class="ds-nesting-label"><span>Inner content</span><code>${radiusLabel(example.inner)}</code></div>
+                <h4>${example.content}</h4><p>${example.copy}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ds-nesting-key"><span>${radiusLabel(example.outer)}</span><span aria-hidden="true">→</span><span>${radiusLabel(example.middle)}</span><span aria-hidden="true">→</span><span>${radiusLabel(example.inner)}</span></div>
+      </article>`).join('')}</div>
+    </div>`);
     main.append(radius);
     const footer = document.createElement('div');
     footer.className = 'ds-page-footer';
@@ -215,7 +240,7 @@
       footer.innerHTML = `<span>Bird Design System</span><a class="ds-next-link" href="${pathFor(next.slug)}" data-doc-page="${next.slug}">Next: ${next.title}${icons.arrow}</a>`;
       toc.innerHTML = page.slug === 'colors' ? `<p>On this page</p>${[...palette.map(group => [group.id, group.label]), ['semantic','Semantic tokens']].map(([id,label]) => `<a href="#palette-${id}">${label}</a>`).join('')}` : '';
       if (page.slug === 'typography') toc.innerHTML = '<p>On this page</p><a href="#type-family">Typeface</a><a href="#type-scale">Type scale</a>';
-      if (page.slug === 'radius') toc.innerHTML = `<p>On this page</p>${radiusScale.map(({size}) => `<a href="#radius-${size}">rounded-${size}</a>`).join('')}`;
+      if (page.slug === 'radius') toc.innerHTML = `<p>On this page</p>${radiusScale.map(({size}) => `<a href="#radius-${size}">rounded-${size}</a>`).join('')}<a href="#radius-nesting">Nested content</a>`;
       toc.hidden = !['colors', 'typography', 'radius'].includes(page.slug);
       document.title = `${page.title} — Bird Design System`;
       if (push) history.pushState({birdDoc:page.slug}, '', pathFor(page.slug));
