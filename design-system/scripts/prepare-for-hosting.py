@@ -9,8 +9,11 @@ for p in root.rglob('*'):
  if not p.is_file() or p.suffix not in ['.html','.js','.json','.css']:continue
  s=p.read_text()
  for asset in asset_paths:
-  s=re.sub(r'(?<!/design-system)'+re.escape(asset),'/design-system'+asset,s)
- if p.suffix=='.js':s=s.replace('scope:"/",updateViaCache:', 'scope:"/design-system/",updateViaCache:')
+  s=s.replace('/design-system'+asset,asset)
+  s=re.sub(r'(?<!/design-system/public)'+re.escape(asset),'/design-system/public'+asset,s)
+ if p.suffix=='.js':
+  s=s.replace('scope:"/",updateViaCache:', 'scope:"/design-system/public/",updateViaCache:')
+  s=s.replace('scope:"/design-system/",updateViaCache:', 'scope:"/design-system/public/",updateViaCache:')
  if p.name=='manifest.json':
   m=json.loads(s);m['scope']='/design-system/';s=json.dumps(m,indent=2)+'\n'
  p.write_text(s)

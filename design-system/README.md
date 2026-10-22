@@ -1,4 +1,4 @@
-This folder is hosted at https://gneis-bird-website.vercel.app/design-system/colors through the repository root `vercel.json`. All design-system assets are scoped to `/design-system/`.
+This folder is hosted at https://gneis-bird-website.vercel.app/design-system/colors as plain static folders on the existing Bird deployment. All design-system assets are scoped to `/design-system/public/`. No deployment configuration or separate Vercel project is needed.
 
 # Bird Nest — local design system
 
@@ -23,7 +23,7 @@ Open http://localhost:5174/design-system/colors. Each sidebar section has a dire
 - `public/_next/static/`: original compiled Next.js JavaScript, stylesheets, and fonts.
 - `source-snapshot/`: untouched original HTML, original manifest, reference screenshots, request inventory, and local verification results.
 
-After refreshing downloaded assets, run `python3 scripts/prepare-for-hosting.py` to scope asset paths for hosting. Refresh the browser after editing. Local files are served without caching.
+After refreshing downloaded assets, run `python3 scripts/prepare-for-hosting.py` to scope asset paths for hosting, then run `python3 scripts/export-pages.py` to refresh the static section folders. Refresh the browser after editing. Local files are served without caching.
 
 The downloaded JavaScript preserves React hydration and the original interactive examples. Direct edits to React-managed HTML may be replaced by hydration. Changes to component structure or application logic are best made in the original React/Next.js repository; this download is the published browser build, not that source repository. Server code and the rest of the authenticated Bird application are not included.
 

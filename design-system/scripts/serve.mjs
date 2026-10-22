@@ -14,7 +14,7 @@ http.createServer(async (req, res) => {
     }
     if (pathname === '/') { res.writeHead(302, {Location:'/design-system'}); res.end(); return; }
     if (/^\/design-system(?:\/(?:colors|typography|radius|buttons|badges|forms|table|listing|empty-states|loading-states|thinking-orbs|feedback))?\/?$/.test(pathname)) pathname = '/design-system.html';
-    else if (pathname.startsWith('/design-system/')) pathname = pathname.slice('/design-system'.length);
+    else if (pathname.startsWith('/design-system/public/')) pathname = pathname.slice('/design-system/public'.length);
     const target = path.resolve(root, '.' + pathname);
     if (!target.startsWith(root)) { res.writeHead(403); res.end(); return; }
     const body = await readFile(target);

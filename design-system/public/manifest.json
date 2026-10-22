@@ -15,23 +15,23 @@
   ],
   "icons": [
     {
-      "src": "/design-system/apple-icon.png",
+      "src": "/design-system/public/apple-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/design-system/icon-light-32x32.png",
+      "src": "/design-system/public/icon-light-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/design-system/icon-dark-32x32.png",
+      "src": "/design-system/public/icon-dark-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/design-system/icon.svg",
+      "src": "/design-system/public/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

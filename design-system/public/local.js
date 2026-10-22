@@ -36,7 +36,7 @@
     const main = document.querySelector('main');
     const originalHeader = document.querySelector('header');
     const theme = originalHeader.querySelector('button[aria-label="Toggle theme"]');
-    const palette = await fetch('/design-system/palette.json').then(response => { if (!response.ok) throw new Error('Palette unavailable'); return response.json(); });
+    const palette = await fetch('/design-system/public/palette.json').then(response => { if (!response.ok) throw new Error('Palette unavailable'); return response.json(); });
     originalHeader.hidden = true;
     originalHeader.inert = true;
     originalHeader.classList.add('ds-original-header');
@@ -86,7 +86,7 @@
 
     const topbar = document.createElement('div');
     topbar.className = 'ds-topbar';
-    topbar.innerHTML = `<a class="ds-brand" href="/design-system/colors" data-doc-page="colors" aria-label="Bird Design System home"><img src="/design-system/favicons/light-mode.svg" alt="" width="26" height="26"><span>Bird</span><span class="ds-brand-divider" aria-hidden="true"></span><span class="ds-brand-label">Design System</span></a>
+    topbar.innerHTML = `<a class="ds-brand" href="/design-system/colors" data-doc-page="colors" aria-label="Bird Design System home"><img src="/design-system/public/favicons/light-mode.svg" alt="" width="26" height="26"><span>Bird</span><span class="ds-brand-divider" aria-hidden="true"></span><span class="ds-brand-label">Design System</span></a>
       <div class="ds-topbar-actions"><button class="ds-icon-button ds-theme" type="button" aria-label="Toggle theme">${icons.moon}${icons.sun}</button><button class="ds-icon-button ds-menu-toggle" type="button" aria-label="Open navigation" aria-controls="ds-navigation" aria-expanded="false">${icons.menu}</button></div>`;
     const sidebar = document.createElement('aside');
     sidebar.className = 'ds-sidebar';
