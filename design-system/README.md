@@ -19,6 +19,7 @@ Open http://localhost:5174/design-system/colors. Each sidebar section has a dire
 - `public/palette.json`: the 38 named Bird brand colors from the supplied palette reference. Edit here, then run `python3 scripts/build-palette.py` to regenerate `public/palette.css`.
 - `public/local.css`: light/dark semantic token mappings, sidebar layout, and component style overrides.
 - `public/local.js`: sidebar navigation, separate section views, the color reference, and swatch copying. Existing React examples remain interactive.
+- `public/badges.js`: platform badge variants, priorities, issue states/types, commercial workflows, and palette mapping for original examples.
 - `public/buttons.js`: the consolidated Button catalogue, interactive examples, and platform control inventory.
 - `public/design-system.html`: the downloaded document with the local CSS/JS hooks added.
 - `public/_next/static/`: original compiled Next.js JavaScript, stylesheets, and fonts.
@@ -51,3 +52,9 @@ Geist is self-hosted in `public/fonts/Geist-Variable.woff2` (official Vercel Gei
 The Buttons page combines the original six variants and four sizes with neutral filled actions, toolbar/menu triggers, grouped controls, assistant actions, and clickable cards observed in signed-in Chrome on 2026-10-22. Examples use the Bird palette, Geist, and the whole-pixel radius scale. Menu, search, loading, disclosure, and selection interactions run locally with sample data.
 
 The audit visited the 14 main navigation destinations. Budget showed an error/retry state and Changelog did not load. Unopened dialogs and record-specific actions were not exhaustively inspected. Raw signed-in exports and customer content are not included in the repository.
+
+## Badge catalogue
+
+The Badges page combines the shared Badge variants with the four issue priorities, eight supported issue states, nine issue categories, change-order statuses, billing and payment statuses, approval metadata, AI labels, notification counts, and reference tags. Labels and states were collected from the signed-in platform and its published component bundles on 2026-10-22.
+
+Badge colors use dedicated `--badge-*-fill`, `--badge-*-ink`, and `--badge-*-mark` aliases to the named palette. Light fills pair with dark text; dark mode uses deeper fills and pale labels. Green uses Foundation text on Mint Foam with Forest Jade for the status dot or outline. The same mappings decorate the original React badge examples, including tables and listings. All displayed record data is fictional.
