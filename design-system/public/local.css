@@ -272,3 +272,23 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .ds-type-weight + .ds-type-weight { border-left: 0; border-top: 1px solid var(--border); }
   .ds-type-row-heading { gap: 8px; align-items: flex-start; flex-direction: column; }
 }
+
+/* Radius: true-size shapes and a measured, three-times corner detail. */
+.ds-radius-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px; }
+.ds-radius-card { min-width: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; scroll-margin-top: 88px; }
+.ds-radius-card-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 16px; border-bottom: 1px solid var(--border); }
+.ds-radius-card-heading h3 { font-size: 12px; }
+.ds-radius-card-heading code { font-family: var(--font-mono); font-size: 11px; }
+.ds-radius-value { font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.ds-radius-stage { min-height: 184px; display: flex; justify-content: center; align-items: center; gap: 14px; padding: 24px 12px 20px; background-image: radial-gradient(var(--border) .7px, transparent .7px); background-size: 12px 12px; }
+.ds-radius-example { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.ds-radius-example > span { font-size: 10px; color: var(--muted-foreground); }
+.ds-radius-shape { width: 120px; height: 100px; border: 2px solid var(--bird-blueprint); background: var(--bird-skyline); }
+.ds-radius-detail svg { display: block; overflow: visible; }
+.ds-radius-guide { stroke: var(--bird-ash); stroke-width: 1; stroke-dasharray: 3 3; opacity: .6; }
+.ds-radius-measure { stroke: var(--bird-blueprint); stroke-width: 1; stroke-dasharray: 2 3; opacity: .5; }
+.ds-radius-curve { stroke: var(--bird-blueprint); stroke-width: 2; }
+.ds-radius-center { fill: var(--bird-blueprint); }
+.ds-radius-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border-top: 1px solid var(--border); font-size: 10px; color: var(--muted-foreground); }
+.ds-radius-card-footer code { font-family: var(--font-mono); }
+@media (max-width: 700px) { .ds-radius-grid { gap: 16px; } .ds-radius-stage { gap: 24px; } }

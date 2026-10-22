@@ -13,7 +13,7 @@
   const pages = [
     { slug: 'colors', title: 'Colors', group: 'Foundations', id: 'bird-colors', description: 'Bird’s color palette, from our core blues and neutrals to supporting accents. Select a swatch to copy its hex value.' },
     { slug: 'typography', title: 'Typography', group: 'Foundations', id: 'bird-typography', description: 'Geist is Bird’s typeface. Medium (500) for headlines and Light (300) for body copy.' },
-    { slug: 'radius', title: 'Radius', group: 'Foundations', id: 'radius', description: 'A shared scale of corner radii for surfaces, controls, and containers.' },
+    { slug: 'radius', title: 'Radius', group: 'Foundations', id: 'bird-radius', description: 'Compare each radius at its actual size, with an enlarged corner detail to make the differences clear.' },
     { slug: 'buttons', title: 'Buttons', group: 'Components', id: 'buttons', description: 'Actions in every size and state. Use the primary variant for the most important action on a page.' },
     { slug: 'badges', title: 'Badges', group: 'Components', id: 'badges', description: 'Compact labels for priority, progress, and status.' },
     { slug: 'forms', title: 'Form controls', group: 'Components', id: 'forms', description: 'Inputs, selections, and toggles for collecting information.' },
@@ -111,6 +111,40 @@
       </div>`).join('')}</div>
     </div>`;
     main.append(typography);
+    const radius = document.createElement('section');
+    radius.id = 'bird-radius';
+    radius.className = 'ds-radius';
+    const radiusScale = ['sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl'].map(size => {
+      const probe = document.createElement('span');
+      probe.className = `rounded-${size}`;
+      document.body.append(probe);
+      const pixels = parseFloat(getComputedStyle(probe).borderTopLeftRadius);
+      probe.remove();
+      return { size, pixels };
+    });
+    const formatRadius = value => Number(value.toFixed(2)).toString();
+    const baseRadius = radiusScale.find(item => item.size === 'lg').pixels;
+    radius.innerHTML = `<div id="radius-scale">
+      <div class="ds-group-heading"><h2>Radius scale</h2><p>Base radius: ${formatRadius(baseRadius)} px · 0.45 rem</p></div>
+      <div class="ds-radius-grid">${radiusScale.map(({size, pixels}) => {
+        const zoom = pixels * 3;
+        const tangent = 12 + zoom;
+        return `<article class="ds-radius-card" id="radius-${size}">
+          <div class="ds-radius-card-heading"><h3><code>rounded-${size}</code></h3><span class="ds-radius-value">${formatRadius(pixels)} px</span></div>
+          <div class="ds-radius-stage">
+            <div class="ds-radius-example"><div class="ds-radius-shape rounded-${size}" aria-label="${formatRadius(pixels)} pixel corner radius"></div><span>Actual size</span></div>
+            <div class="ds-radius-example ds-radius-detail"><svg width="96" height="100" viewBox="0 0 96 100" fill="none" role="img" aria-label="Corner enlarged three times">
+              <path class="ds-radius-guide" d="M12 84V12H84"/>
+              <path class="ds-radius-measure" d="M12 ${tangent}H${tangent}V12"/>
+              <path class="ds-radius-curve" d="M12 84V${tangent}A${zoom} ${zoom} 0 0 1 ${tangent} 12H84"/>
+              <circle class="ds-radius-center" cx="${tangent}" cy="${tangent}" r="2"/>
+            </svg><span>Corner ×3</span></div>
+          </div>
+          <div class="ds-radius-card-footer"><span>Corner radius</span><code>${formatRadius(pixels / 16)} rem</code></div>
+        </article>`;
+      }).join('')}</div>
+    </div>`;
+    main.append(radius);
     const footer = document.createElement('div');
     footer.className = 'ds-page-footer';
     main.append(footer);
@@ -171,7 +205,7 @@
     function showPage(slug, {push = false, focus = false, hash = ''} = {}) {
       const page = pages.find(page => page.slug === slug) || pages[0];
       activePage = page;
-      [...sections, colors, typography].forEach(section => section.hidden = section.id !== page.id);
+      [...sections, colors, typography, radius].forEach(section => section.hidden = section.id !== page.id);
       sidebar.querySelectorAll('[data-doc-page]').forEach(link => {
         if (link.dataset.docPage === page.slug) link.setAttribute('aria-current', 'page');
         else link.removeAttribute('aria-current');
@@ -181,7 +215,8 @@
       footer.innerHTML = `<span>Bird Design System</span><a class="ds-next-link" href="${pathFor(next.slug)}" data-doc-page="${next.slug}">Next: ${next.title}${icons.arrow}</a>`;
       toc.innerHTML = page.slug === 'colors' ? `<p>On this page</p>${[...palette.map(group => [group.id, group.label]), ['semantic','Semantic tokens']].map(([id,label]) => `<a href="#palette-${id}">${label}</a>`).join('')}` : '';
       if (page.slug === 'typography') toc.innerHTML = '<p>On this page</p><a href="#type-family">Typeface</a><a href="#type-scale">Type scale</a>';
-      toc.hidden = !['colors', 'typography'].includes(page.slug);
+      if (page.slug === 'radius') toc.innerHTML = `<p>On this page</p>${radiusScale.map(({size}) => `<a href="#radius-${size}">rounded-${size}</a>`).join('')}`;
+      toc.hidden = !['colors', 'typography', 'radius'].includes(page.slug);
       document.title = `${page.title} — Bird Design System`;
       if (push) history.pushState({birdDoc:page.slug}, '', pathFor(page.slug));
       setMenu(false);
@@ -192,7 +227,7 @@
     const currentRoute = () => {
       const suffix = location.pathname.split('/').filter(Boolean)[1];
       const oldHash = location.hash.slice(1);
-      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash || page.slug === oldHash)?.slug) || 'colors', hash: /^(palette-|type-)/.test(oldHash) ? oldHash : '' };
+      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash || page.slug === oldHash)?.slug) || 'colors', hash: /^(palette-|type-|radius-)/.test(oldHash) ? oldHash : '' };
     };
     document.addEventListener('click', event => {
       const link = event.target.closest('[data-doc-page]');
