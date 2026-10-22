@@ -19,6 +19,7 @@ Open http://localhost:5174/design-system/colors. Each sidebar section has a dire
 - `public/palette.json`: the 38 named Bird brand colors from the supplied palette reference. Edit here, then run `python3 scripts/build-palette.py` to regenerate `public/palette.css`.
 - `public/local.css`: light/dark semantic token mappings, sidebar layout, and component style overrides.
 - `public/local.js`: sidebar navigation, separate section views, the color reference, and swatch copying. Existing React examples remain interactive.
+- `public/buttons.js`: the consolidated Button catalogue, interactive examples, and platform control inventory.
 - `public/design-system.html`: the downloaded document with the local CSS/JS hooks added.
 - `public/_next/static/`: original compiled Next.js JavaScript, stylesheets, and fonts.
 - `source-snapshot/`: untouched original HTML, original manifest, reference screenshots, request inventory, and local verification results.
@@ -44,3 +45,9 @@ The optional local package manifest is saved as `package.example.json` so this f
 ## Typography
 
 Geist is self-hosted in `public/fonts/Geist-Variable.woff2` (official Vercel Geist v1.8.2, SIL Open Font License included in the same folder). Headlines use Medium 500; body copy uses Light 300. The Typography page shows both weights and the corresponding type scale.
+
+## Button catalogue
+
+The Buttons page combines the original six variants and four sizes with neutral filled actions, toolbar/menu triggers, grouped controls, assistant actions, and clickable cards observed in signed-in Chrome on 2026-10-22. Examples use the Bird palette, Geist, and the whole-pixel radius scale. Menu, search, loading, disclosure, and selection interactions run locally with sample data.
+
+The audit visited the 14 main navigation destinations. Budget showed an error/retry state and Changelog did not load. Unopened dialogs and record-specific actions were not exhaustively inspected. Raw signed-in exports and customer content are not included in the repository.

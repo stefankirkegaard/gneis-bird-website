@@ -14,7 +14,7 @@
     { slug: 'colors', title: 'Colors', group: 'Foundations', id: 'bird-colors', description: 'Bird’s color palette, from our core blues and neutrals to supporting accents. Select a swatch to copy its hex value.' },
     { slug: 'typography', title: 'Typography', group: 'Foundations', id: 'bird-typography', description: 'Geist is Bird’s typeface. Medium (500) for headlines and Light (300) for body copy.' },
     { slug: 'radius', title: 'Radius', group: 'Foundations', id: 'bird-radius', description: 'Compare each radius at its actual size, with an enlarged corner detail to make the differences clear.' },
-    { slug: 'buttons', title: 'Buttons', group: 'Components', id: 'buttons', description: 'Actions in every size and state. Use the primary variant for the most important action on a page.' },
+    { slug: 'buttons', title: 'Buttons', group: 'Components', id: 'bird-buttons', description: 'One catalogue for Bird’s actions. Core variants, sizes, and states, together with the controls used across the platform.' },
     { slug: 'badges', title: 'Badges', group: 'Components', id: 'badges', description: 'Compact labels for priority, progress, and status.' },
     { slug: 'forms', title: 'Form controls', group: 'Components', id: 'forms', description: 'Inputs, selections, and toggles for collecting information.' },
     { slug: 'table', title: 'Table', group: 'Components', id: 'table', description: 'Column-aligned records for scanning and comparing project data.' },
@@ -169,6 +169,9 @@
       </article>`).join('')}</div>
     </div>`);
     main.append(radius);
+    const {createButtons, buttonSections} = await import('/design-system/public/buttons.js');
+    const buttons = createButtons();
+    main.append(buttons);
     const footer = document.createElement('div');
     footer.className = 'ds-page-footer';
     main.append(footer);
@@ -229,7 +232,7 @@
     function showPage(slug, {push = false, focus = false, hash = ''} = {}) {
       const page = pages.find(page => page.slug === slug) || pages[0];
       activePage = page;
-      [...sections, colors, typography, radius].forEach(section => section.hidden = section.id !== page.id);
+      [...sections, colors, typography, radius, buttons].forEach(section => section.hidden = section.id !== page.id);
       sidebar.querySelectorAll('[data-doc-page]').forEach(link => {
         if (link.dataset.docPage === page.slug) link.setAttribute('aria-current', 'page');
         else link.removeAttribute('aria-current');
@@ -240,7 +243,8 @@
       toc.innerHTML = page.slug === 'colors' ? `<p>On this page</p>${[...palette.map(group => [group.id, group.label]), ['semantic','Semantic tokens']].map(([id,label]) => `<a href="#palette-${id}">${label}</a>`).join('')}` : '';
       if (page.slug === 'typography') toc.innerHTML = '<p>On this page</p><a href="#type-family">Typeface</a><a href="#type-scale">Type scale</a>';
       if (page.slug === 'radius') toc.innerHTML = `<p>On this page</p>${radiusScale.map(({size}) => `<a href="#radius-${size}">rounded-${size}</a>`).join('')}<a href="#radius-nesting">Nested content</a>`;
-      toc.hidden = !['colors', 'typography', 'radius'].includes(page.slug);
+      if (page.slug === 'buttons') toc.innerHTML = `<p>On this page</p>${buttonSections.map(([id,label]) => `<a href="#buttons-${id}">${label}</a>`).join('')}`;
+      toc.hidden = !['colors', 'typography', 'radius', 'buttons'].includes(page.slug);
       document.title = `${page.title} — Bird Design System`;
       if (push) history.pushState({birdDoc:page.slug}, '', pathFor(page.slug));
       setMenu(false);
@@ -251,7 +255,7 @@
     const currentRoute = () => {
       const suffix = location.pathname.split('/').filter(Boolean)[1];
       const oldHash = location.hash.slice(1);
-      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash || page.slug === oldHash)?.slug) || 'colors', hash: /^(palette-|type-|radius-)/.test(oldHash) ? oldHash : '' };
+      return { slug: suffix || (oldHash === 'tokens' ? 'colors' : pages.find(page => page.id === oldHash || page.slug === oldHash)?.slug) || 'colors', hash: /^(palette-|type-|radius-|buttons-)/.test(oldHash) ? oldHash : '' };
     };
     document.addEventListener('click', event => {
       const link = event.target.closest('[data-doc-page]');
