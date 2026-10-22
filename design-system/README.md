@@ -1,4 +1,4 @@
-This folder is hosted at https://gneis-bird-website.vercel.app/design-system/colors as plain static folders on the existing Bird deployment. All design-system assets are scoped to `/design-system/public/`. No deployment configuration or separate Vercel project is needed.
+This folder is hosted at https://gneis-bird-website.vercel.app/design-system/colors as plain static folders on the existing Bird deployment. All design-system assets are scoped to `/design-system/public/`. The root `tools/build-site.mjs` script copies the website and design-system files into `dist/` for the shared Vercel deployment.
 
 # Bird Nest — local design system
 
